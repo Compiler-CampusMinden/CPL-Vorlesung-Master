@@ -105,21 +105,23 @@ Vorstellung der Lösung im jeweiligen Praktikum in der Abgabewoche.
 
 # Prüfungsform, Note und Credits
 
-**Parcoursprüfung plus Testat**, 10 ECTS
+**Mündliche Prüfung plus Studienleistung**, 10 ECTS
 
--   **Testat**: Vergabe der Credit-Points
+-   **Studienleistung**: "Portfolio"
 
-    1.  **Aktive** Teilnahme an mind. 5 der 7 "Status Workshop"-Termine, **und**
-    2.  **aktive** Teilnahme an allen 3 Edmonton-Terminen.
+    Kriterien je Team (2 Personen):
 
--   **Gesamtnote**:
+    - Aktive Teilnahme an beiden Edmonton/Minden-Terminen
+    - 1x Kurzvortrag plus Diskussionsleitung "PL Features" (Gabbrielli & Martini) a 20'
+    - 1x Vortrag "Compiler" (Parser Generatoren, Parser, Type Checking, VM/Bytecode) a 60'
+    - 1x Vortrag Edmonton (20' pro Team)
+    - Durchführung DSL-Projekt und Einhaltung der Meilensteine
+    - Vortrag pro Team am Ende (W14) a 30'
 
-    Die Workshops werden bewertet und ergeben in folgender Gewichtung die
-    Gesamtnote:
+    Je Kriterium: Abgabe eines Post Mortem im ILIAS (**jede Person individuell**)
 
-    -   20% [Workshop I](homework/project.md),
-    -   30% [Workshop II](homework/project.md),
-    -   50% [Workshop III](homework/project.md).
+-   **Gesamtnote**: Mündliche Prüfung (einzeln, ca. 45 Minuten)
+
 
 Die Bearbeitung der Aufgaben (Workshops) erfolgt in 2er Teams.
 
