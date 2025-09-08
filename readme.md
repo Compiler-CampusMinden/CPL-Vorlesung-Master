@@ -114,13 +114,16 @@ Vorstellung der Lösung im jeweiligen Praktikum in der Abgabewoche.
     Kriterien je Team (2 Personen):
 
     1.  Aktive Teilnahme an beiden Edmonton/Minden-Terminen
-    2.  1x Kurzvortrag plus Diskussionsleitung "PL Features" (Gabbrielli & Martini) a 20 Minuten
-    3.  1x Vortrag "Compiler" (Parser Generatoren, Parser, Type Checking, VM/Bytecode) a 60 Minuten
+    2.  1x Kurzvortrag plus Diskussionsleitung "PL Features" (Gabbrielli & Martini)
+        a 20 Minuten
+    3.  1x Vortrag "Compiler" (Parser Generatoren, Parser, Type Checking,
+        VM/Bytecode) a 60 Minuten
     4.  1x Vortrag Edmonton (20 Minuten pro Team)
     5.  Durchführung DSL-Projekt und Einhaltung der Meilensteine
     6.  Vortrag pro Team am Ende (W14) a 30 Minuten
 
-    Je Kriterium: Abgabe eines Post Mortem im ILIAS[^1] (**jede Person individuell**)
+    Je Kriterium: Abgabe eines Post Mortem im ILIAS[^1] (**jede Person
+    individuell**)
 
 -   **Gesamtnote**: Mündliche Prüfung (einzeln, ca. 45 Minuten)
 
@@ -141,7 +144,8 @@ Vorstellung der Lösung im jeweiligen Praktikum in der Abgabewoche.
     6.  Link zu Ihrem Repo mit den relevanten Artefakten (Lösung, Slides für den
         Vortrag, ...).
 
-    Für die Edmonton/Minden-Meetings passen Sie bitte die Punkte (1) bis (4) und (5) entsprechend inhaltlich an, (6) entfällt.
+    Für die Edmonton/Minden-Meetings passen Sie bitte die Punkte (1) bis (4) und (5)
+    entsprechend inhaltlich an, (6) entfällt.
 
     Siehe auch
     https://github.com/Compiler-CampusMinden/CPL-Vorlesung-Master-W25/discussions/2.
