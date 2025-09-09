@@ -70,7 +70,7 @@ Programmiersprachen für die Java-VM oder WASM ein.
 
 | Seminaristischer Unterricht (2 SWS) | Praktikum (3 SWS)            |
 |:------------------------------------|:-----------------------------|
-| Di, 09:45 - 11:15 Uhr (Zoom)        | Di, 11:30 - 14:00 Uhr (Zoom) |
+| Di, 09:45 - 11:15 Uhr (Zoom)        | Di, 11:30 - 13:45 Uhr (Zoom) |
 
 Durchführung des seminaristischen Unterrichts als *Flipped Classroom* (Carsten) bzw.
 als *reguläre Vorlesung* (BC). Zugangsdaten Zoom siehe
