@@ -82,10 +82,6 @@ Hier finden Sie einen abonnierbaren [Google
 Kalender](https://calendar.google.com/calendar/ical/4ba4736f0bc2005e4bcd75d48671e49cd4c9f3839988bf4f522f45a8bfbf676b%40group.calendar.google.com/public/basic.ics)
 mit allen Terminen der Veranstaltung zum Einbinden in Ihre Kalender-App.
 
-Abgabe der Übungsblätter jeweils **Dienstag bis 14:00 Uhr** im
-[ILIAS](https://www.hsbi.de/elearning/goto.php?target=exc_1421692&client_id=FH-Bielefeld).
-Vorstellung der Lösung im jeweiligen Praktikum in der Abgabewoche.
-
 | Woche      | Sem. Unterricht: Selbststudium (Vorbereitung)                                                                                                           | Sem. Unterricht: Gemeinsame Sitzung                                                                             | Praktikum                                                                                                                                                          | Edmonton/Minden-Meetings                                                            |
 |:-----------|:--------------------------------------------------------------------------------------------------------------------------------------------------------|:----------------------------------------------------------------------------------------------------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------|:------------------------------------------------------------------------------------|
 | W01 / KW41 | [Überblick](lecture/00-intro/overview.md) \| [Sprachen](lecture/00-intro/languages.md) \| [Anwendungen](lecture/00-intro/applications.md)               | [Orga](https://github.com/Compiler-CampusMinden/CPL-Vorlesung-Master-W25) (*Zoom*)                              |                                                                                                                                                                    |                                                                                     |
@@ -113,7 +109,7 @@ Vorstellung der Lösung im jeweiligen Praktikum in der Abgabewoche.
 
     Kriterien je Team (2 Personen):
 
-    1.  Aktive Teilnahme an beiden Edmonton/Minden-Terminen
+    1.  Aktive Teilnahme an beiden Edmonton/Minden-Terminen (zus. mit 4.)
     2.  1x Kurzvortrag plus Diskussionsleitung "PL Features" (Gabbrielli & Martini)
         a 20 Minuten
     3.  1x Vortrag "Compiler" (Parser Generatoren, Parser, Type Checking,
@@ -122,23 +118,21 @@ Vorstellung der Lösung im jeweiligen Praktikum in der Abgabewoche.
     5.  Durchführung DSL-Projekt und Einhaltung der Meilensteine
     6.  Vortrag pro Team am Ende (W14) a 30 Minuten
 
-    Je Kriterium: Abgabe eines Post Mortem im ILIAS[^1] (**jede Person
-    individuell**)
+    Je Kriterium: Erstellen eines Post Mortems pro Studienleistung und Abgabe als
+    Lerntagebuch im ILIAS[^1] (**jede Person individuell**)
 
 -   **Gesamtnote**: Mündliche Prüfung (einzeln, ca. 45 Minuten)
 
-[^1]: **Post Mortem**: Jede Person beschreibt in der ILIAS-Abgabe individuell(!) die
-    Bearbeitung des jeweiligen Kriteriums bzw. die Teilnahme am
-    Edmonton/Minden-Meeting zurückblickend mit mind. 200 bis max. 400 Wörtern
-    (Nutzlast; Überschriften und Links zählen nicht mit). Gehen Sie dabei
-    aussagekräftig und nachvollziehbar auf folgende Punkte ein:
+[^1]: **Post Mortem**: Jede Person beschreibt individuell(!) für jede selbst
+    durchgeführte Studienleistung die Bearbeitung des jeweiligen Kriteriums bzw. die
+    Teilnahme am Edmonton/Minden-Meeting zurückblickend mit jeweils mind. 200 bis
+    max. 400 Wörtern (Nutzlast; Überschriften und Links zählen nicht mit). Gehen Sie
+    dabei aussagekräftig und nachvollziehbar auf folgende Punkte ein:
 
-    1.  Zusammenfassung: Was wurde gemacht bzw. was wurde auf dem Meeting
-        besprochen?
-    2.  Details: Kurze Beschreibung besonders interessanter Aspekte der Umsetzung
-        bzw. des Meetings.
-    3.  Reflexion: Was war der schwierigste Teil bei der Bearbeitung? Wie haben Sie
-        dieses Problem gelöst?
+    1.  Zusammenfassung: Was wurde gemacht?
+    2.  Details: Kurze Beschreibung besonders interessanter Aspekte.
+    3.  Reflexion: Was war der schwierigste Teil? Wie haben Sie dieses Problem
+        gelöst?
     4.  Reflexion: Was haben Sie gelernt oder (besser) verstanden?
     5.  Team: Mit wem haben Sie zusammengearbeitet?
     6.  Link zu Ihrem Repo mit den relevanten Artefakten (Lösung, Slides für den
@@ -146,6 +140,11 @@ Vorstellung der Lösung im jeweiligen Praktikum in der Abgabewoche.
 
     Für die Edmonton/Minden-Meetings passen Sie bitte die Punkte (1) bis (4) und (5)
     entsprechend inhaltlich an, (6) entfällt.
+
+    Die Post Mortems geben Sie bitte zusammengefasst als Lerntagebuch bis spätestens
+    zur letzten gemeinsamen Sitzung im
+    [ILIAS](https://www.hsbi.de/elearning/goto.php?target=exc_1421692&client_id=FH-Bielefeld)
+    ab.
 
     Siehe auch
     https://github.com/Compiler-CampusMinden/CPL-Vorlesung-Master-W25/discussions/2.
