@@ -68,12 +68,12 @@ Programmiersprachen für die Java-VM oder WASM ein.
 
 # Kursformat
 
-| Vorlesung (2 SWS)            | Praktikum (3 SWS)            |
-|:-----------------------------|:-----------------------------|
-| Di, 09:45 - 11:15 Uhr (Zoom) | Di, 11:30 - 14:00 Uhr (Zoom) |
+| Seminaristischer Unterricht (2 SWS) | Praktikum (3 SWS)            |
+|:------------------------------------|:-----------------------------|
+| Di, 09:45 - 11:15 Uhr (Zoom)        | Di, 11:30 - 14:00 Uhr (Zoom) |
 
-Durchführung der Vorlesung als *Flipped Classroom* (Carsten) bzw. als *reguläre
-Vorlesung* (BC). Zugangsdaten Zoom siehe
+Durchführung des seminaristischen Unterrichts als *Flipped Classroom* (Carsten) bzw.
+als *reguläre Vorlesung* (BC). Zugangsdaten Zoom siehe
 [ILIAS](https://www.hsbi.de/elearning/goto.php?target=crs_1400597&client_id=FH-Bielefeld).
 
 # Fahrplan
@@ -86,7 +86,7 @@ Abgabe der Übungsblätter jeweils **Dienstag bis 14:00 Uhr** im
 [ILIAS](https://www.hsbi.de/elearning/goto.php?target=exc_1421692&client_id=FH-Bielefeld).
 Vorstellung der Lösung im jeweiligen Praktikum in der Abgabewoche.
 
-| Woche      | Vorlesung: Selbststudium (Vorbereitung)                                                                                                                 | Vorlesung: Gemeinsame Sitzung                                                                                   | Praktikum                                                                                                                                                          | Edmonton/Minden-Meetings                                                            |
+| Woche      | Sem. Unterricht: Selbststudium (Vorbereitung)                                                                                                           | Sem. Unterricht: Gemeinsame Sitzung                                                                             | Praktikum                                                                                                                                                          | Edmonton/Minden-Meetings                                                            |
 |:-----------|:--------------------------------------------------------------------------------------------------------------------------------------------------------|:----------------------------------------------------------------------------------------------------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------|:------------------------------------------------------------------------------------|
 | W01 / KW41 | [Überblick](lecture/00-intro/overview.md) \| [Sprachen](lecture/00-intro/languages.md) \| [Anwendungen](lecture/00-intro/applications.md)               | [Orga](https://github.com/Compiler-CampusMinden/CPL-Vorlesung-Master-W25) (*Zoom*)                              |                                                                                                                                                                    |                                                                                     |
 | W02 / KW42 |                                                                                                                                                         | [Reguläre Sprachen](lecture/01-lexing/regular.md)                                                               | [CFG](lecture/02-parsing/cfg.md)                                                                                                                                   |                                                                                     |
