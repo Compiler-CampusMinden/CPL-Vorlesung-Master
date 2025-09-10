@@ -22,41 +22,22 @@ Programmiersprachen für die Java-VM oder WASM ein.
 
 1.  Lexikalische Analyse: Scanner/Lexer
     -   Reguläre Sprachen
-    -   Klassisches Vorgehen: RegExp nach NFA (Thompson's Construction), NFA nach
-        DFA (Subset Construction), DFA nach Minimal DFA (Hopcroft's Algorithm)
-    -   Manuelle Implementierung, Generierung mit ANTLR oder Flex
+    -   Manuelle Implementierung, Parsergeneratoren (ANTLR, Flex, ...)
 2.  Syntaxanalyse: Parser
     -   Kontextfreie Grammatiken (CFG), Chomsky
     -   LL-Parser (Top-Down-Parser)
-        -   FIRST, FOLLOW
-        -   Tabellenbasierte Verfahren, rekursiver Abstieg
-        -   LL(1), LL(k), LL(\*)
-        -   Umgang mit Vorrang-Regeln, Assoziativität und linksrekursiven
-            Grammatiken
     -   LR-Parser (Bottom-Up-Parser)
-        -   Shift-Reduce
-        -   LR(0), SLR(1), LR(1), LALR
-    -   Generierung mit ANTLR oder Bison
+    -   Manuelle Implementierung, Parsergeneratoren (ANTLR, Bison, ...)
 3.  Semantische Analyse und Optimierungen
     -   Symboltabellen
-        -   Namen und Scopes
-        -   Typen, Klassen, Polymorphie
-    -   Attributierte Grammatiken: L-attributed vs. R-attributed grammars
     -   Typen, Typ-Inferenz, Type Checking
     -   Datenfluss- und Kontrollfluss-Analyse
     -   Optimierungen: Peephole u.a.
 4.  Zwischencode: Intermediate Representation (IR), LLVM-IR
-5.  Interpreter
-    -   AST-Traversierung
-    -   Read-Eval-Schleife
-    -   Resolver: Beschleunigung der Interpretation
-6.  Code-Generierung, Bytecode/VM
-    -   Speicherlayout
-    -   Erzeugen von Bytecode
-    -   Ausführen in einer Virtuellen Maschine
-    -   Garbage Collection
-7.  Programmiersprachen: Ruby, Prolog, Haskell, Lisp und die Auswirkungen der
-    Konzepte auf den Compiler/Interpreter und die Laufzeitumgebung
+5.  Interpreter: AST-Traversierung vs. Bytecode/VM, Garbage Collection
+6.  Code-Generierung
+7.  Programmiersprachen-Konzepte: OOP, FP, LP, CP u.a. und die Auswirkungen auf
+    Compiler/Interpreter und Laufzeitumgebung
 
 # Team
 
