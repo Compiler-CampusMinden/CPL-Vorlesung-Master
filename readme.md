@@ -100,7 +100,7 @@ mit allen Terminen der Veranstaltung zum Einbinden in Ihre Kalender-App.
 
 -   **Gesamtnote**: Mündliche Prüfung (einzeln, ca. 45 Minuten)
 
-*Hinweise*:
+::: {.details title="Hinweise"}
 
 -   Die Bearbeitung der Leistungen erfolgt im Team.
 -   Ein Team umfasst 3 Personen.
@@ -132,6 +132,8 @@ mit allen Terminen der Veranstaltung zum Einbinden in Ihre Kalender-App.
 
     Siehe auch
     https://github.com/Compiler-CampusMinden/CPL-Vorlesung-Master-W25/discussions/2.
+
+:::
 
 # Materialien
 
