@@ -91,7 +91,7 @@ mit allen Terminen der Veranstaltung zum Einbinden in Ihre Kalender-App.
     1.  Teilnahme an beiden Edmonton/Minden-Terminen mit aktiver Beteiligung, pro
         Team ist am ersten Treffen ein Vortrag zum DSL-Projekt a 45 Minuten zu
         halten (Englisch!)
-    2.  Kurzvortrag plus Diskussionsleitung "PL Features" a 20 Minuten (pro Team)
+    2.  Kurzvortrag "PL Features" a 20 Minuten (pro Team) plus Diskussionsleitung
     3.  Vortrag "Compiler" a 60 Minuten (pro Team)
     4.  Abschlussvortrag zum DSL-Projekt am Semesterende (W14) a 30 Minuten (pro
         Team)
