@@ -84,25 +84,28 @@ mit allen Terminen der Veranstaltung zum Einbinden in Ihre Kalender-App.
 
 # Prüfungsform, Note und Credits
 
-**Mündliche Prüfung plus Studienleistung**, 10 ECTS
+**Mündliche Prüfung plus Studienleistung (Portfolio)**, 10 ECTS
 
--   **Studienleistung**: "Portfolio"
+-   **Studienleistung**: "Portfolio" - Kriterien je Team (3 Personen):
 
-    Kriterien je Team (2 Personen):
-
-    1.  Aktive Teilnahme an beiden Edmonton/Minden-Terminen (zus. mit 4.)
-    2.  1x Kurzvortrag plus Diskussionsleitung "PL Features" (Gabbrielli & Martini)
-        a 20 Minuten
-    3.  1x Vortrag "Compiler" (Parser Generatoren, Parser, Type Checking,
-        VM/Bytecode) a 60 Minuten
-    4.  1x Vortrag Edmonton (20 Minuten pro Team)
-    5.  Durchführung DSL-Projekt und Einhaltung der Meilensteine
-    6.  Vortrag pro Team am Ende (W14) a 30 Minuten
+    1.  Teilnahme an beiden Edmonton/Minden-Terminen mit aktiver Beteiligung, pro
+        Team ist am ersten Treffen ein Vortrag a 20 Minuten zu halten (Englisch!)
+    2.  Kurzvortrag plus Diskussionsleitung "PL Features" a 20 Minuten (pro Team)
+    3.  Vortrag "Compiler" a 60 Minuten (pro Team)
+    4.  Abschlussvortrag zum DSL-Projekt pro Team am Ende (W14) a 30 Minuten (pro
+        Team)
 
     Je Kriterium: Erstellen eines Post Mortems pro Studienleistung und Abgabe als
     Lerntagebuch im ILIAS[^1] (**jede Person individuell**)
 
 -   **Gesamtnote**: Mündliche Prüfung (einzeln, ca. 45 Minuten)
+
+*Hinweise*:
+
+-   "Aktive Beteiligung" umfasst Anwesenheit und sachbezogene Beiträge;
+    Anwesenheit/Beteiligung werden dokumentiert.
+-   Fehlzeiten sind unverzüglich zu melden und nur mit geeignetem Nachweis
+    entschuldbar.
 
 [^1]: **Post Mortem**: Jede Person beschreibt individuell(!) für jede selbst
     durchgeführte Studienleistung die Bearbeitung des jeweiligen Kriteriums bzw. die
@@ -122,8 +125,8 @@ mit allen Terminen der Veranstaltung zum Einbinden in Ihre Kalender-App.
     Für die Edmonton/Minden-Meetings passen Sie bitte die Punkte (1) bis (4) und (5)
     entsprechend inhaltlich an, (6) entfällt.
 
-    Die Post Mortems geben Sie bitte zusammengefasst als Lerntagebuch bis spätestens
-    zur letzten gemeinsamen Sitzung im
+    Die Post Mortems geben Sie bitte pro Person zusammengefasst als Lerntagebuch bis
+    spätestens zur letzten gemeinsamen Sitzung im
     [ILIAS](https://www.hsbi.de/elearning/goto.php/exc/1582798) ab.
 
     Siehe auch
