@@ -86,34 +86,34 @@ mit allen Terminen der Veranstaltung zum Einbinden in Ihre Kalender-App.
 
 **Mündliche Prüfung plus Studienleistung (Portfolio)**, 10 ECTS
 
--   **Studienleistung**: "Portfolio" - Kriterien je Team (3 Personen):
+-   **Studienleistung**: "Portfolio" - Kriterien je Person:
 
     1.  Teilnahme an beiden Edmonton/Minden-Terminen mit aktiver Beteiligung, pro
         Team ist am ersten Treffen ein Vortrag a 20 Minuten zu halten (Englisch!)
     2.  Kurzvortrag plus Diskussionsleitung "PL Features" a 20 Minuten (pro Team)
     3.  Vortrag "Compiler" a 60 Minuten (pro Team)
-    4.  Abschlussvortrag zum DSL-Projekt pro Team am Ende (W14) a 30 Minuten (pro
+    4.  Abschlussvortrag zum DSL-Projekt am Semesterende (W14) a 30 Minuten (pro
         Team)
 
-    Je Kriterium: Erstellen eines Post Mortems pro Studienleistung und Abgabe als
-    Lerntagebuch im ILIAS[^1] (**jede Person individuell**)
+    Je Kriterium: Abgabe eines Post Mortem im ILIAS (**jede Person individuell**)
 
 -   **Gesamtnote**: Mündliche Prüfung (einzeln, ca. 45 Minuten)
 
 *Hinweise*:
 
+-   Die Bearbeitung der Leistungen erfolgt im Team.
+-   Ein Team umfasst 3 Personen.
+-   Die Post Mortems sind individuell zu erstellen und abzugeben.
 -   "Aktive Beteiligung" umfasst Anwesenheit und sachbezogene Beiträge;
     Anwesenheit/Beteiligung werden dokumentiert.
--   Fehlzeiten sind unverzüglich zu melden und nur mit geeignetem Nachweis
-    entschuldbar.
+-   **Post Mortem**: Jede Person beschreibt individuell(!) die Bearbeitung des
+    jeweiligen Kriteriums bzw. die Teilnahme am Edmonton/Minden-Meeting
+    zurückblickend mit mind. 200 bis max. 400 Wörtern (Nutzlast; Überschriften und
+    Links zählen nicht mit). Gehen Sie dabei aussagekräftig und nachvollziehbar auf
+    folgende Punkte ein:
 
-[^1]: **Post Mortem**: Jede Person beschreibt individuell(!) für jede selbst
-    durchgeführte Studienleistung die Bearbeitung des jeweiligen Kriteriums bzw. die
-    Teilnahme am Edmonton/Minden-Meeting zurückblickend mit jeweils mind. 200 bis
-    max. 400 Wörtern (Nutzlast; Überschriften und Links zählen nicht mit). Gehen Sie
-    dabei aussagekräftig und nachvollziehbar auf folgende Punkte ein:
-
-    1.  Zusammenfassung: Was wurde gemacht?
+    1.  Zusammenfassung: Was wurde gemacht bzw. was wurde auf dem Meeting
+        besprochen?
     2.  Details: Kurze Beschreibung besonders interessanter Aspekte.
     3.  Reflexion: Was war der schwierigste Teil? Wie haben Sie dieses Problem
         gelöst?
@@ -125,8 +125,8 @@ mit allen Terminen der Veranstaltung zum Einbinden in Ihre Kalender-App.
     Für die Edmonton/Minden-Meetings passen Sie bitte die Punkte (1) bis (4) und (5)
     entsprechend inhaltlich an, (6) entfällt.
 
-    Die Post Mortems geben Sie bitte pro Person zusammengefasst als Lerntagebuch bis
-    spätestens zur letzten gemeinsamen Sitzung im
+    Die Post Mortems geben Sie bitte pro Person bis spätestens zur letzten
+    gemeinsamen Sitzung im
     [ILIAS](https://www.hsbi.de/elearning/goto.php/exc/1582798) ab.
 
     Siehe auch
