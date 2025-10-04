@@ -107,6 +107,9 @@ mit allen Terminen der Veranstaltung zum Einbinden in Ihre Kalender-App.
 -   Die Post Mortems sind individuell zu erstellen und abzugeben.
 -   "Aktive Beteiligung" umfasst Anwesenheit und sachbezogene Beiträge;
     Anwesenheit/Beteiligung werden dokumentiert.
+
+\smallskip
+
 -   **Post Mortem**: Jede Person beschreibt individuell(!) die Bearbeitung des
     jeweiligen Kriteriums bzw. die Teilnahme am Edmonton/Minden-Meeting
     zurückblickend mit mind. 200 bis max. 400 Wörtern (Nutzlast; Überschriften und
@@ -124,7 +127,7 @@ mit allen Terminen der Veranstaltung zum Einbinden in Ihre Kalender-App.
         Vortrag, ...).
 
     Für die Edmonton/Minden-Meetings passen Sie bitte die Punkte (1) bis (4) und (5)
-    entsprechend inhaltlich an, (6) entfällt.
+    entsprechend inhaltlich an, (6) entfällt für das zweite Meeting.
 
     Die Post Mortems geben Sie bitte pro Person bis spätestens zur letzten
     gemeinsamen Sitzung im
