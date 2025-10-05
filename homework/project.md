@@ -7,37 +7,40 @@ title: "Compiler-Projekt: DSL-gestützte Aufgaben- und Rätselbeschreibung mit
 
 # Zusammenfassung
 
-Im Rahmen dieses Projektes werden Sie sich mit der Analyse und Implementierung einer
-Programmiersprache zu beschäftigen. Ziel ist es, sowohl die theoretischen als auch
-die praktischen Aspekte des Compilerbaus zu vertiefen.
+In diesem Projekt beschäftigen Sie sich mit der Analyse, dem Entwurf und der
+Implementierung einer domänenspezifischen Sprache (DSL) einschließlich eines
+Interpreters. Ziel ist es, theoretische Grundlagen des Compilerbaus mit praktischer
+Laufzeitintegration in eine bestehende Spiele-Engine zu verbinden.
 
-Es wird drei Vorträge geben, an denen Sie Ihre Arbeitsergebnisse präsentieren.
+Ihre Arbeitsergebnisse präsentieren Sie in drei Terminen über den Verlauf des
+Semesters.
 
 ## Fristen
 
 -   Vorstellung der Konzepte (intern): Di, 18.11. (Praktikumsslot)
--   Edmonton/Minden: Minden Presentations: Vorstellung DSL-Projekt: Mo, 01.12.,
-    18:00 - 19:00 Uhr, englische Sprache
+-   Edmonton/Minden: Vorstellung DSL-Projekt (englisch): Mo, 01.12., 18:00--19:00
+    Uhr
 -   Abschlusspräsentation: Di, 20.01. (Vorlesungs- und Praktikumsslot)
 
 ## Teams
 
-Das Projekt wird in 3er Teams bearbeitet.
+Die Bearbeitung erfolgt in 3er-Teams.
 
 # Projekt
 
 ## Kurzbeschreibung
 
-Im Projekt entwickeln Sie eine domänenspezifische Sprache (DSL) für fachliche
+Sie entwickeln eine domänenspezifische Sprache (DSL) zur Beschreibung fachlicher
 Unterrichtsaufgaben und Escape-Room-Rätsel sowie einen Interpreter, der diese
 Spezifikationen zur Laufzeit in das Java-basierte
 [Dungeon-Framework](https://github.com/Dungeon-CampusMinden/Dungeon) integriert.
 
-Die DSL ermöglicht Lehrenden, Aufgaben und Bewertungen deklarativ zu beschreiben,
-ohne direkt mit der Dungeon-API zu arbeiten. Der Interpreter übernimmt sowohl die
-initiale Konfiguration von Levels als auch die Beobachtung von Spielereignissen, die
-Bewertung von Lösungen und die Interaktion mit Spieler:innen (REPL) während der
-Laufzeit.
+Die DSL ermöglicht Lehrenden, Aufgaben, Bewertungen und Interaktionen deklarativ zu
+beschreiben, ohne direkt die Dungeon-API zu nutzen.
+
+Der Interpreter übernimmt die initiale Levelkonfiguration, beobachtet
+Spielereignisse, bewertet Lösungen und interagiert zur Laufzeit mit Spieler:innen
+(REPL).
 
 ## Motivation
 
@@ -45,51 +48,38 @@ Didaktische Inhalte können in Serious-Games effizienter bereitgestellt werden, 
 Lehrende über eine fachnahe, deklarative Sprache arbeiten. Das zugrundeliegende
 Dungeon-Framework (ECS, Game-Loop) hat eine entsprechende API, die Nutzung erfordert
 jedoch aktuell Java- und API-Kenntnisse. Eine DSL mit Interpreter schließt diese
-Lücke und erlaubt Forschung zu Sprachdesign, Laufzeitintegration, Event-Verarbeitung
-und Performanz in Game-Loops.
+Lücke und eröffnet Raum für Forschung zu Sprachdesign, Laufzeitintegration,
+Event-Verarbeitung und Performanz in Game-Loops.
 
 ## Ziele
 
-Projekt: DSL für Interaktion mit dem Dungeon. Interpreter oder VM mit Dungeon als besondere Laufzeitumgebung. Beschreibung und Auswerten von Aufgaben.
-
-- Typen, Arbeiten und Auflösen mit/von Typen
-- Dungeon API: Erreichbar über neue spezielle Sprachelemente? Erreichbar über Namensauflösung?
-- Eigene Funktionen und Typen neu definieren
-- Callback im Dungeon (Funktion im Hero setzen)
-- Auswertung von Zuständen
-- Synchronisation Dungeon - Interpreter
-- LSP für die DSL
-- (Graphisches Interface -> DSL als Schnittstelle/IR)
-
-
-Bezug zur Forschung
-
-- Compiler
-- Gamification
-
 ### Fachliche Ziele
 
-1.  Konzeption und formale Spezifikation einer DSL zur Beschreibung:
-    -   fachlicher Aufgaben (Single Choice, Multiple Choice, Zuordnung),
-    -   Escape-Room-Rätsel (Rätsel und Aufgaben, aber auch Elemente wie
-        Schlösser/Schlüssel, Abhängigkeiten, Zeit-Constraints, Hinweise),
-    -   Level- und Szenenkonfiguration (Geometrie, Entities, NPCs, Items,
-        Fähigkeiten, Positionen),
-    -   Bewertungslogik, Feedback, Hints, Scoring und Lernziele.
+1.  Konzeption und formale Spezifikation einer DSL für die Interaktion mit dem
+    Dungeon
+    -   Beschreibung von fachliche Aufgaben (Single Choice, Multiple Choice,
+        Zuordnung)
+    -   Beschreibung von Escape-Room-Rätsel (Rätsel und Aufgaben, aber auch Elemente
+        wie Schlösser/Schlüssel, Abhängigkeiten, Zeit-Constraints, Hinweise)
+    -   Beschreibung von Level- und Szenenkonfiguration (Geometrie, Entities, NPCs,
+        Items, Fähigkeiten, Positionen)
+    -   Beschreibung von Bewertungslogik, Feedback, Hints, Scoring und Lernziele
+    -   Interaktion mit einem laufenden Spiel (Bewegen des Helden o.ä.)
 
 \smallskip
 
-2.  Implementierung eines Interpreters, der:
-    -   DSL-Artefakte in den Dungeon überführt und ein ausführbares Spiel
-        konfiguriert,
-    -   Spielereignisse zur Laufzeit beobachtet und regelbasiert reagiert,
-    -   Bewertungen ausführt, sobald Bedingungen erfüllt sind,
-    -   mit der Escape-Room-API interagiert,
-    -   über eine REPL von außen erreichbar ist, um weitere Statements einzugeben
-        und auszuwerten
+2.  Implementierung eines Interpreters mit dem Dungeon als spezieller
+    Laufzeitumgebung
+    -   Überführung von DSL-Artefakten in den Dungeon und Konfiguration eines
+        ausführbares Spiels
+    -   Beobachtung von und Reaktion auf Spielereignisse zur Laufzeit
+    -   Durchführung von Bewertungen, sobald Bedingungen erfüllt sind
+    -   Interaktion mit der Escape-Room-API
+    -   Erreichbarkeit über eine REPL von außen (Eingabe/Auswertung weiterer
+        Statements zur Laufzeit)
 
-Der Interpreter soll den laufenden Dungeon als eine Art erweitertes Environment
-behandeln.
+Der Interpreter behandelt den laufenden Dungeon als eine Art erweitertes
+Environment.
 
 ### Technische Ziele
 
@@ -104,7 +94,7 @@ behandeln.
 3.  Laufzeitinteraktion:
     -   Anzeige von Informationen, Dialogen, Aufgaben-UI (SC/MC/Zuordnung),
     -   Eingabe/Antworterfassung und Feedback,
-    -   optional REPL/Overlay für Debugging und Live-Inspektion.
+    -   REPL für Debugging und Live-Inspektion.
 
 ## Initiale Forschungsfragen
 
@@ -119,29 +109,32 @@ behandeln.
 -   Wie kann deterministisches Verhalten (für reproduzierbare Tests) trotz
     Zufall/Prozeduralität erzielt werden?
 
-**Hinweis**: Diese initialen Forschungsfragen basieren noch nicht auf aktueller
-Literatur. Ihre Aufgabe ist es, diese Fragen basierend auf dem Stand der Forschung
-neu zu formulieren.
+**Hinweis**: Diese initialen Forschungsfragen sind vorläufig und basieren noch nicht
+auf aktueller Literatur. Reformulieren und schärfen Sie sie anhand aktueller
+Literatur (State of the Art) und belegen Sie Ihre Entscheidungen.
+
+Das Projekt verbindet damit verschiedene Forschungsgebiete:
+Programmiersprachen/Compilerbau, Gamification und Serious Games sowie
+Softwarearchitektur in Echtzeit-/Game-Loop-Umgebungen.
 
 ## Scope und Nicht-Ziele
 
 Im Scope: DSL-Design (Syntax, statische/operative Semantik), Interpreter,
-Integration mit Dungeon/ECS, Aufgaben-UI, Bewertungslogik, Beispiellevels,
-Dokumentation, Tests.
+Integration mit Dungeon/ECS, Aufgaben-UI, Bewertungslogik, Beispiellevel, Tests.
 
 Nicht im Fokus: Vollständiger visueller Level-Editor, Multiplayer, umfangreiche
 Rendering-/Physik-Neuentwicklungen, umfassende Analytics-Plattform.
 
 ## Erwartete Ergebnisse (Deliverables)
 
--   Sprachspezifikation: Grammatik, Lexikon, Typsystem, statische Analysen
-    (Referenzprüfung), Semantikbeschreibung
--   Interpreter: Parser (z.B. ANTLR/Recursive Descent), AST/IR, Evaluator,
+-   Sprachspezifikation: Grammatik, Typsystem, statische Analysen,
+    Semantikbeschreibung
+-   Interpreter: Parser (z.B. ANTLR oder Recursive Descent), AST/IR, Evaluator,
     Event-Engine, Runtime-Bibliothek für Dungeon-Operationen
 -   Dungeon-Integration: Adapter zu ECS (Entity/Component/Systems),
     Event-Subscription, Name-Resolution- und State-Access-Schicht
--   Beispielartefakte: Katalog von Beispielaufgaben und mind. zwei vollständige
-    Escape-Room-Szenarien
+-   Beispielartefakte: Katalog von Beispielaufgaben und mind. ein vollständiges
+    Escape-Room-Szenario
 -   Demo: Live-Demonstration im Dungeon, Screencast, reproduzierbares Setup
     (Build-Skripte, ggf. Container)
 
@@ -155,20 +148,16 @@ Rendering-/Physik-Neuentwicklungen, umfassende Analytics-Plattform.
     -   Statische Analysen: Typ-/Referenzprüfung, Verbot ungültiger
         Dungeon-Zugriffe, optionale Effektsysteme
 -   Interpreter-Architektur:
-    -   Frontend: Lexer/Parser -\> AST -\> optionale IR
+    -   Frontend: Lexer/Parser -\> AST -\> IR
     -   Runtime: Environment/Scope, Name-Resolution (lokal -\> Dungeon),
         Event-Dispatch, Scheduler für kooperative Ausführung
-        (Time-Slicing/Coroutines)
     -   Sicherheit/Isolation: kein unkontrollierter Zugriff außerhalb des Dungeons
-        (Sandboxing)
 -   ECS-Integration:
-    -   Option A: Interpreter als ECS-System; erhält Events, erzeugt Commands;
-        Commits im Engine-Takt
-    -   Option B: Interpreter in separatem Thread; Kommunikation über thread-sichere
-        Queues; Commit im Hauptthread
+    -   Option A: Interpreter als ECS-System und Ausführung im Engine-Takt
+    -   Option B: Interpreter in separatem Thread und Kommunikation über
+        thread-sichere Queues
 -   Laufzeitinteraktion:
-    -   UI-Brücke für Aufgabenanzeige und Eingabe; Feedback-Kanäle;
-        Logging/Telemetry für Auswertungen
+    -   REPL für Ein- und Ausgabe; Logging/Telemetry für Auswertungen
 -   Performanz und Stabilität:
     -   Pro-Frame-Budgetierung (z. B. \< 2 ms Interpreterarbeit), inkrementelle
         Auswertung, Backpressure bei Eventfluten
@@ -180,9 +169,9 @@ Rendering-/Physik-Neuentwicklungen, umfassende Analytics-Plattform.
     -   Stakeholder-Interviews (Lehrende, Dungeon-Entwickler:innen),
         Aufgaben-/Rätsel-Taxonomie, Use-Cases
 2.  Sprachentwurf:
-    -   Syntax-Entwurf, Minimalbeispiele, Semantikskizzen, statische Analysen
+    -   Syntax-Entwurf, Minimalbeispiele, Semantik-Skizzen, statische Analysen
 3.  Prototyp Parser/AST:
-    -   Toolauswahl (ANTLR/...), erste End-to-End-Pipeline bis AST
+    -   Toolauswahl (ANTLR/...), erste Pipeline Lexer bis AST
 4.  Prototyp Interpreter:
     -   IR/Runtime-Umgebung, einfache Events, Konfiguration eines minimalen
         Levels/Rätselraums
@@ -204,7 +193,7 @@ Rendering-/Physik-Neuentwicklungen, umfassende Analytics-Plattform.
 -   Woche 9: Parser/AST funktionsfähig, erste Konfigurationen im Dungeon
     (**Edmonton-Meeting**)
 -   Woche 11: Interpreter als ECS-System oder via Thread-Synchronisation integriert;
-    Event-Handling lauffähig.
+    Event-Handling lauffähig
 -   Woche 13: erster Escape-Room end-to-end
 -   Woche 14: Projektvorstellung, Demo, Erfahrungsbericht
     (**Abschlusspräsentation**)
@@ -219,11 +208,11 @@ Konzepten und Ideen in Ihrem Projekt vorstellen. Folgende Punkte sollten Sie
 abdecken:
 
 -   DSL-Skizze:
-    -   was soll der User über die DSL im Dungeon erreichen können?
+    -   Zielbild, was Nutzer:innen im Dungeon mit der DSL erreichen können
     -   Syntax und Semantik und Konzepte der DSL
--   Domänenmodell: Geplante technische Anbindung der DSL an den Dungeon
-    (Interpreter, Dungeon/Game-Loop, Abarbeitung und Interaktion)
--   Praktische Beispiele, um die Konzepte zu veranschaulichen
+-   Domänenmodell: technische Anbindung der DSL an den Dungeon (Interpreter,
+    Dungeon/Game-Loop, Abarbeitung und Interaktion)
+-   Konkrete Minimalbeispiele zur Veranschaulichung der Konzepte
 
 Betrachten Sie diesen Vortrag als einen ersten Meilenstein für Ihr Projekt und als
 eine Art Generalprobe für den zwei Wochen später folgenden [Talk](talk.md) auf dem
@@ -238,8 +227,7 @@ Halten Sie Ihre Präsentation auf dem ersten Edmonton-/Minden-Meeting (Mo, 01.12
 18-19 Uhr, EN):
 
 -   Dauer: ca. 40-45 Minuten pro Team, parallel in Breakout-Gruppen
--   Ziel: Vorstellung von Idee, Problemstellung, Architektur/Design,
-    MVP/Prototyp-Status, Risiken und Evaluationsplan
+-   Ziel: Vorstellung von Idee, Problemstellung, Architektur/Design, MVP/Prototyp
 -   Publikum: Kanadische Studierende; bitte auf klare
     "Problem-Ansatz-Nutzen"-Struktur achten
 -   Sprache: Englisch
@@ -260,5 +248,5 @@ Es gelten folgende Randbedingungen:
 Wir freuen uns darauf, Sie in diesem herausfordernden und spannenden Projekt zu
 begleiten und wünschen Ihnen viel Erfolg!
 
-Stimmen Sie alle Schritte und Ergebnisse mit Ihren Dozent:innen ab und holen Sie
-sich aktiv Feedback.
+Bitte stimmen Sie alle Schritte und Ergebnisse mit Ihren Dozent:innen ab und holen
+Sie sich aktiv Feedback.
