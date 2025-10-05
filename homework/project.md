@@ -50,6 +50,23 @@ und Performanz in Game-Loops.
 
 ## Ziele
 
+Projekt: DSL für Interaktion mit dem Dungeon. Interpreter oder VM mit Dungeon als besondere Laufzeitumgebung. Beschreibung und Auswerten von Aufgaben.
+
+- Typen, Arbeiten und Auflösen mit/von Typen
+- Dungeon API: Erreichbar über neue spezielle Sprachelemente? Erreichbar über Namensauflösung?
+- Eigene Funktionen und Typen neu definieren
+- Callback im Dungeon (Funktion im Hero setzen)
+- Auswertung von Zuständen
+- Synchronisation Dungeon - Interpreter
+- LSP für die DSL
+- (Graphisches Interface -> DSL als Schnittstelle/IR)
+
+
+Bezug zur Forschung
+
+- Compiler
+- Gamification
+
 ### Fachliche Ziele
 
 1.  Konzeption und formale Spezifikation einer DSL zur Beschreibung:
