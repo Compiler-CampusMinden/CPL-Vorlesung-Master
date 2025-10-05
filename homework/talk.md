@@ -1,75 +1,116 @@
 ---
 author: BC George, Carsten Gips (HSBI)
 no_beamer: true
-title: "Concepts of Programming Languages: Vortrag III"
+title: "CPL: Vorträge"
 ---
 
-::: center
-**Wir arbeiten gerade an dieser Seite ...**
-:::
+# Seminaristischer Unterricht: Vorträge zu Programmiersprachen und Compilerbau
+
+In diesem Semester sind mehrere Vorträge Teil der Prüfungsleistung. Pro Team sind zu
+halten:
+
+-   ein Kurzvortrag (ca. 20 Minuten) zu einem Thema aus dem Bereich
+    Programmiersprachen/-konzepte,
+-   ein Fachvortrag (ca. 60 Minuten) zu einem Compiler-Thema,
+-   zwei Projektvorträge (einmal im Edmonton-/Minden-Meeting, einmal zum
+    Semesterende).
+
+Alle Vorträge richten sich an Master-Studierende und sollen fachlich fundiert, klar
+strukturiert und mit nachvollziehbaren Beispielen unterlegt sein. Bitte planen Sie
+aktivierende Elemente (Diskussionsfragen, kurze Demos) ein.
+
+Die zeitliche Verteilung entnehmen Sie bitte dem [Fahrplan](../readme.md).
+
+## Kurzvortrag "PL Feature" (ca. 20 Minuten, DE)
+
+Ziel ist die Einführung in ein ausgewähltes Programmiersprachen-Thema. Das
+vortragende Team arbeitet die Kernideen heraus und demonstriert zentrale Konzepte
+anhand kleiner, prägnanter Beispiele und leitet die anschließende Diskussion.
+
+Verfügbare Themen:
+
+1.  Object-Oriented Paradigm (OOP) ([@Gabbrielli2023], Kap. 10)
+2.  Functional Programming Paradigm (FP) ([@Gabbrielli2023], Kap. 11)
+3.  Logic Programming Paradigm (LP) ([@Gabbrielli2023], Kap. 12)
+4.  Constraint Programming Paradigm (CP) ([@Gabbrielli2023], Kap. 13)
+5.  Borrow Checking und Lifetimes am Beispiel [Rust](https://www.rust-lang.org/)
+6.  Dependent Type Systems am Beispiel [Idris](https://www.idris-lang.org/)
+    -   [Why Dependent Types
+        Matter](https://people.cs.nott.ac.uk/psztxa/publ/ydtm.pdf)
+    -   [IDRIS ---: systems programming meets full dependent
+        types](https://dl.acm.org/doi/10.1145/1929529.1929536)
 
 <!--
-Der Vortrag III ist Teil der Prüfungsleistung. Die Vorträge sollen 20 Minuten dauern
-und werden in der letzten Vorlesungswoche stattfinden. Planen Sie eine Diskussion
-von zusätzlich ca. 10 Minuten ein. Zusätzlich ist eine kurze Zusammenfassung des
-Vortrags als Blog im Discussions-Thread des jeweiligen Exposés zu erstellen.
+Weitere mögliche Themen:
 
-Wir bieten Ihnen hier verschiedene Themen zur Auswahl an, Sie können aber auch gern
-eigene Vorschläge erarbeiten. Erstellen Sie in beiden Fällen ein kurzes Exposé
-(Thema, Kernthesen, Paper) als neuen Beitrag in den
-[GitHub-Discussions](https://github.com/Compiler-CampusMinden/CPL-Vorlesung-Master/discussions/new?category=vortrag-iii)
-und stimmen Sie dieses bis zum Meilenstein I mit Ihren Dozent:innen ab. Ein Thema
-(bezogen auf die genutzten Paper/Quellen) kann nur einmal vergeben werden - hier
-gilt das *first-come-first-serve*-Prinzip in den Discussions.
+-   Algebraische Effekte und Effekt-Systeme (z. B. Koka), Exceptions vs. Effekte
+-   Pattern Matching und Algebraische Datentypen (OCaml/F#/Scala)
+-   Metaprogrammierung und Makros (Lisp/Clojure, Rust macro_rules! und proc-macros)
+-   Gradual Typing (TypeScript, Sorbet), Typklassen und Traits (Haskell/Rust)
+-->
 
-1.  LR-Parsergeneratoren im Vergleich:
-    -   Flex und Bison vs. [Tree-Sitter](http://tree-sitter.github.io/tree-sitter/)
-2.  Advanced Parsing:
-    -   Pratt-Parser
-    -   PEG-Parser
-    -   Parser-Kombinatoren
-    -   [flap: A Deterministic Parser with Fused
-        Lexing](https://dl.acm.org/doi/pdf/10.1145/3591269)
-    -   [Interval Parsing Grammars for File Format
-        Parsing](https://dl.acm.org/doi/10.1145/3591264)
-    -   [Resolvable Ambiguity: Principled Resolution of Syntactically Ambiguous
-        Programs](https://people.kth.se/~dbro/papers/palmkvist-et-al-2021-resolvable-ambiguity.pdf)
-3.  VM und Bytecode:
+Hinweise:
+
+-   *Jede Person* bereitet sich vorab vor; das präsentierende Team moderiert die
+    Diskussion
+-   Ziel ist Transferfähigkeit: Nach dem Vortrag sollen Zuhörende weiterführende
+    Literatur verstehen und Ideen praktisch erproben können
+-   Empfohlen: Zwei bis drei gut kuratierte Codebeispiele (live oder als Snippets),
+    Vorbereitung von einigen Diskussionsfragen
+-   Vortragssprache ist Deutsch
+
+Empfohlene weitere Referenzen (allgemein):
+
+-   @Gabbrielli2023
+-   @PLAI2025
+-   @Thain2020
+
+## Fachvortrag "Compiler" (ca. 60 Minuten + 10 Minuten Q&A, DE)
+
+Ziel ist die systematische Einführung in ein Compiler/VM-Thema mit genügend
+fachlicher Tiefe, so dass die Zuhörenden danach relevante Literatur lesen und das
+Thema praktisch anwenden können.
+
+Verfügbare Themen:
+
+1.  Parsergeneratoren ([ANTLR](https://www.antlr.org/),
+    [Tree-Sitter](http://tree-sitter.github.io/tree-sitter/), Flex & Bison, ...)
+2.  Fortgeschrittene Parsertechniken: LALR, PEG, Pratt, Parser-Combinators
+3.  Typen, Typsysteme, Type Checking
+    -   [Hindley-Milner-Typsystem](https://en.wikipedia.org/wiki/Hindley%E2%80%93Milner_type_system)
+    -   [Propositions as Types (Wadler)](https://dl.acm.org/doi/abs/10.1145/2699407)
+    -   [Typechecker Zoo (Diehl)](https://sdiehl.github.io/typechecker-zoo/)
+    -   [On Understanding Types, Data Abstraction, and Polymorphism
+        (Cardelli/Wegner)](https://dl.acm.org/doi/pdf/10.1145/6041.6042)
+4.  VM & Bytecode
     -   [AST vs. Bytecode: Interpreters in the Age of
-        Meta-Compilation](https://stefan-marr.de/downloads/oopsla23-larose-et-al-ast-vs-bytecode-interpreters-in-the-age-of-meta-compilation.pdf)
+        Meta-Compilation](https://dl.acm.org/doi/abs/10.1145/3622808)
     -   [An Introduction to Interpreters and JIT
         Compilation](https://stefan-marr.de/2023/09/pliss-summer-school/)
     -   [Optimizing the Order of Bytecode Handlers in Interpreters using a Genetic
-        Algorithm](https://stefan-marr.de/downloads/acmsac23-huang-et-al-optimizing-the-order-of-bytecode-handlers-in-interpreters-using-a-genetic-algorithm.pdf)
-4.  Garbage Collection:
+        Algorithm](https://dl.acm.org/doi/abs/10.1145/3555776.3577712)
+    -   Beispiele: JVM oder WASM
+5.  Garbage Collection
+    -   [@Nystrom2021], Kap. 26
     -   [Unified Theory of Garbage
-        Collection](https://scholar.google.de/scholar?hl=en&as_sdt=0%2C5&as_vis=1&q=Unified+Theory+of+Garbage+Collection&btnG=)
+        Collection](https://dl.acm.org/doi/10.1145/1035292.1028982)
     -   [Fast Conservative Garbage
-        Collection](https://scholar.google.de/scholar?hl=en&as_sdt=0%2C5&as_vis=1&q=Fast+Conservative+Garbage+Collection&btnG=)
-    -   [Ownership guided C to Rust
-        translation](https://arxiv.org/pdf/2303.10515.pdf)
-    -   [Precise Garbage Collection for
-        C](https://www-old.cs.utah.edu/plt/publications/ismm09-rwrf.pdf)
-5.  Optimierung:
-    -   [Alias-Based Optimization](https://dl.acm.org/doi/10.1145/277652.277670)
-    -   [Applying Optimizations for Dynamically-typed Languages to
-        Java](https://stefan-marr.de/downloads/manlang17-grimmer-et-al-applying-optimizations-for-dynamically-typed-languages-to-java.pdf)
-    -   [Provably Correct Peephole Optimizations with
-        Alive](https://web.ist.utl.pt/nuno.lopes/pubs/alive-pldi15.pdf)
-6.  Profiling:
-    -   [Efficient Path Profiling](https://dl.acm.org/citation.cfm?id=243857)
-    -   [Efficiently counting program events with support for on-line
-        queries](https://dl.acm.org/doi/10.1145/186025.186027)
-    -   [Whole program paths](https://dl.acm.org/doi/10.1145/301631.301678)
-    -   [Don't Trust Your Profiler: An Empirical Study on the Precision and Accuracy
-        of Java
-        Profilers](https://stefan-marr.de/downloads/mplr23-burchell-et-al-dont-trust-your-profiler.pdf)
-7.  LL(\*) und Adaptive LL(\*) in ANTLR v4
-    -   T. Parr: "*LL(\*): The Foundation of the ANTLR Parser Generator*"
-    -   T. Parr: "*Adaptive LL(\*) Parsing: The Power of Dynamic Analysis*"
-    -   T. Parr: [*LL(\*) grammar
-        analysis*](https://theantlrguy.atlassian.net/wiki/spaces/~admin/pages/524294/LL+grammar+analysis)
-8.  Testing:
+        Collection](https://dl.acm.org/doi/10.1145/2660193.2660198)
+    -   [GC vs. explicit memory
+        management](https://dl.acm.org/doi/10.1145/1103845.1094836)
+6.  Just-in-Time Compilation (JIT)
+    -   [An Introduction to Interpreters and JIT
+        Compilation](https://stefan-marr.de/2023/09/pliss-summer-school/)
+    -   [AST vs. Bytecode: Interpreters in the Age of
+        Meta-Compilation](https://dl.acm.org/doi/abs/10.1145/3622808)
+
+<!--
+Weitere mögliche Themen:
+
+-   Fehlertolerantes Parsen und Diagnosequalität (Error Recovery, präzise
+    Fehlermeldungen)
+-   Inkrementelle/Interaktive Compiler (IDE-Services, Language Server Protocol)
+-   Testen von Compilern
     -   [Finding and Understanding Bugs in C
         Compilers](https://users.cs.utah.edu/~regehr/papers/pldi11-preprint.pdf)
     -   [Validating JIT Compilers via Compilation Space
@@ -85,31 +126,49 @@ gilt das *first-come-first-serve*-Prinzip in den Discussions.
     -   [Tiny Unified Runner N' Tester (Turnt)](https://github.com/cucapra/turnt)
     -   [Testing Language
         Implementations](https://youtu.be/ZJUk8_k1HbY?si=Mis0l6M07vbI8Rqx)
-9.  Typen und Typinferenzsysteme:
-    -   Hindley-Milner Typinferenzsystem
-    -   [On Understanding Types, Data Abstraction, and
-        Polymorphism](http://lucacardelli.name/Papers/OnUnderstanding.A4.pdf)
-    -   [Propositions as
-        Types](https://homepages.inf.ed.ac.uk/wadler/papers/propositions-as-types/propositions-as-types.pdf)
-10. DSL:
-    -   [A Modern Compiler for the French Tax
-        Code](https://arxiv.org/pdf/2011.07966.pdf)
-    -   [Compiling ML models to C for
-        fun](https://bernsteinbear.com/blog/compiling-ml-models/)
-11. Programming Language Concepts
-    -   Erforschen Sie das **actor model** mit [Elixir](https://elixir-lang.org/),
-        einer neuen funktionalen Programmiersprache für das Web basierend auf der
-        Erlang Virtual Machine.
-    -   Erkunden Sie **borrowing and lifetimes** anhand von
-        [Rust](https://www.rust-lang.org/), einer Systemsprache ohne Garbage
-        Collector.
-    -   Erforschen Sie **dependent type systems** mit
-        [Idris](https://www.idris-lang.org/), einer neuen, von Haskell inspirierten
-        Sprache mit beispielloser Unterstützung für typgesteuerte Entwicklung.
-    -   Erforschen Sie **Algebraische Typen mit Pattern Matching**, deren
-        praktischen Einsatz (etwa in Haskell, Scala und Java) sowie die interne
-        Umsetzung im Compiler und der Laufzeitumgebung.
-    -   Erkunden Sie Konzepte zur Behandlung von optionalen und/oder
-        `null`-/`nil`-Werten sowie deren Umsetzung im Compiler und der
-        Laufzeitumgebung.
 -->
+
+Empfohlene weitere Referenzen (allgemein):
+
+-   @Nystrom2021
+-   @Torczon2012
+-   @Thain2020
+-   @Pierce2002
+
+Planen Sie im Anschluss an den 60-minütigen Vortrag ca. 10 Minuten Q&A und
+Diskussion ein.
+
+## Zwei Vorträge zum Projekt
+
+1.  Edmonton-/Minden-Meeting (Mo, 01.12., 18-19 Uhr, EN)
+    -   Dauer: ca. 40-45 Minuten pro Team, parallel in Breakout-Gruppen
+    -   Ziel: Vorstellung von Idee, Problemstellung, Architektur/Design,
+        MVP/Prototyp-Status, Risiken und Evaluationsplan
+    -   Publikum: Kanadische Studierende; bitte auf klare
+        "Problem-Ansatz-Nutzen"-Struktur achten
+    -   Sprache: Englisch
+
+\smallskip
+
+2.  Abschlusspräsentation (Di, 20.01., DE)
+    -   Dauer: ca. 30 Minuten pro Team (Vorlesungs- und Praktikumsslot).
+    -   Ziel: Ergebnisse, Demos, Evaluation, Lessons Learned, Ausblick.
+
+# Erwartungshorizont und Qualitätssicherung
+
+-   Inhaltliche Tiefe: Präzise Begriffsbildung, Einordnung in den Stand der
+    Forschung/Praxis
+-   Nachvollziehbarkeit: Klare Beispiele, ggf. kurze Demos; Code sollte lauffähig
+    und kommentiert sein
+-   Literaturarbeit: 3-6 belastbare Quellen (Primärliteratur bevorzugt), saubere
+    Zitate
+-   Visualisierung: Aussagekräftige Abbildungen/Diagramme; Folien sind barrierearm
+    (Kontrast, Schriftgröße)
+-   Diskurs: 2-4 gezielte Diskussionsfragen zur Aktivierung der Zuhörenden
+-   Zeitmanagement: Bitte Proben durchführen; Puffer für Q&A einplanen
+-   Teamarbeit: Klare Rollen, abgestimmter Vortrag; alle Teammitglieder präsentieren
+
+# Organisatorisches
+
+Die Themen für den Kurzvortrag und den Fachvortrag werden in der zweiten Vorlesung
+(14.10.) vergeben.
