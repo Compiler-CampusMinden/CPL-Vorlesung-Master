@@ -151,8 +151,12 @@ Diskussion ein.
 \smallskip
 
 2.  Abschlusspräsentation (Di, 20.01., DE)
-    -   Dauer: ca. 30 Minuten pro Team (Vorlesungs- und Praktikumsslot).
-    -   Ziel: Ergebnisse, Demos, Evaluation, Lessons Learned, Ausblick.
+    -   Dauer: ca. 30 Minuten pro Team (Vorlesungs- und Praktikumsslot)
+    -   Ziel: Ergebnisse, Demos, Evaluation, Lessons Learned, Ausblick
+
+\bigskip
+
+Siehe auch [Beschreibung zum Projekt](project.md).
 
 # Erwartungshorizont und Qualitätssicherung
 
