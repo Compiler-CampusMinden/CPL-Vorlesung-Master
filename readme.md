@@ -93,7 +93,7 @@ mit allen Terminen der Veranstaltung zum Einbinden in Ihre Kalender-App.
         halten (Englisch!)
     2.  Kurzvortrag "PL Features" a 20 Minuten (pro Team) plus Diskussionsleitung
     3.  Vortrag "Compiler" a 60 Minuten (pro Team)
-    4.  Abschlussvortrag zum DSL-Projekt am Semesterende (W14) a 30 Minuten (pro
+    4.  Abschlussvortrag zum DSL-Projekt am Semesterende (20.01.) a 30 Minuten (pro
         Team)
 
     Je Kriterium: Abgabe eines Post Mortem im ILIAS (**jede Person individuell**)
