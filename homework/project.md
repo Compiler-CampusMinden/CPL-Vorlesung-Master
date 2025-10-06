@@ -1,8 +1,7 @@
 ---
 author: BC George, Carsten Gips (HSBI)
 no_beamer: true
-title: "Compiler-Projekt: DSL-gestützte Aufgaben- und Rätselbeschreibung mit
-  Laufzeit-Interpretation im Dungeon-Framework (Java, 2D Roguelike, ECS)"
+title: Compiler-Projekt
 ---
 
 # Zusammenfassung
@@ -18,7 +17,7 @@ Semesters.
 ## Fristen
 
 -   Vorstellung der Konzepte (intern): Di, 18.11. (Praktikumsslot)
--   Edmonton/Minden: Vorstellung DSL-Projekt (englisch): Mo, 01.12., 18:00--19:00
+-   Edmonton/Minden: Vorstellung DSL-Projekt (englisch): Mo, 01.12., 18:00 - 19:00
     Uhr
 -   Abschlusspräsentation: Di, 20.01. (Vorlesungs- und Praktikumsslot)
 
@@ -26,7 +25,7 @@ Semesters.
 
 Die Bearbeitung erfolgt in 3er-Teams.
 
-# Projekt
+# Projekt: DSL-gestützte Aufgaben- und Rätselbeschreibung mit Laufzeit-Interpretation im Dungeon-Framework (Java, 2D Roguelike, ECS)
 
 ## Kurzbeschreibung
 
