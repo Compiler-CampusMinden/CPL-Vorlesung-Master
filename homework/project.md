@@ -4,230 +4,248 @@ no_beamer: true
 title: Compiler-Projekt
 ---
 
-::: center
-**Wir arbeiten gerade an dieser Seite ...**
-:::
-
-<!--
 # Zusammenfassung
 
-Im Rahmen dieses Projektes werden Sie sich mit der Analyse und Implementierung einer
-Programmiersprache zu beschäftigen. Ziel ist es, sowohl die theoretischen als auch
-die praktischen Aspekte des Compilerbaus zu vertiefen.
+In diesem Projekt beschäftigen Sie sich mit der Analyse, dem Entwurf und der
+Implementierung einer domänenspezifischen Sprache (DSL) einschließlich eines
+Interpreters. Ziel ist es, theoretische Grundlagen des Compilerbaus mit praktischer
+Laufzeitintegration in eine bestehende Spiele-Engine zu verbinden.
 
-Es wird drei Workshops geben, an denen Sie bestimmte Arbeitsergebnisse präsentieren.
-Diese Workshops werden bewertet und gehen in die Gesamtnote ein.
+Ihre Arbeitsergebnisse präsentieren Sie in drei Terminen über den Verlauf des
+Semesters.
 
-## Fristen (siehe Orga-Seite)
+## Fristen
 
--   Workshop I: Präsentation der Programmiersprache: 29. Oktober (14:00 - 15:30 Uhr,
-    online)
--   Workshop II: Präsentation Analyse von Compiler-Technologien: 26. November
-    (18:00 - 19:30 Uhr, online)
--   Workshop III: Abgabe und Präsentation des Compilers und der Dokumentation: 31.
-    Januar (10:00 - 12:30 Uhr, online)
-
-Feedback-Gespräche: 07. Februar (10:00 - 12:00 Uhr, online)
+-   Vorstellung der Konzepte (intern): Di, 18.11. (Praktikumsslot)
+-   Edmonton/Minden: Vorstellung DSL-Projekt (englisch): Mo, 01.12., 18:00 - 19:00
+    Uhr
+-   Abschlusspräsentation: Di, 20.01. (Vorlesungs- und Praktikumsslot)
 
 ## Teams
 
-Die Aufgaben (Workshops) werden in 2er Teams bearbeitet.
+Die Bearbeitung erfolgt in 3er-Teams.
 
-# Wahl der Programmiersprache
+# Projekt: DSL-gestützte Aufgaben- und Rätselbeschreibung mit Laufzeit-Interpretation im Dungeon-Framework (Java, 2D Roguelike, ECS)
 
-Wählen Sie eine Programmiersprache aus den folgenden Kategorien:
+## Kurzbeschreibung
 
--   Objektorientiert: Ruby
-    -   Imperative Konzepte (Statements, Expression, Funktionen)
-    -   Klassen
-        -   Monkey Patching
-        -   Überladene und überschriebene Methoden
-        -   (Mehrfach-) Vererbung
-        -   Traits
-    -   Module/Importe (benannte Scopes)
-    -   Duck-Typing (dynamisches vs. statisches Binden), Type-Checking, Type
-        Coercion
--   Funktional: Haskell
-    -   Offside Rule
-    -   Listen, List Comprehensions
-    -   Pattern Matching
-    -   Currying, Lambda-Kalkül
-    -   Funktionen höherer Ordnung
-    -   algebraische Datentypen
-    -   Polymorphic Typing, Hindley-Milner-Typinferenz
-    -   Lazy Evaluation
-    -   Compiler (Desugaring, Graph-Reduction, Strictness Analysis) und Laufzeit
-        ("functional core")
--   Logisch: Prolog
-    -   Horn-Klauseln
-    -   Unifikation, Substitution
-    -   Resolutionskalkül
-    -   Abarbeitung
-    -   Listen, Prädikate, Terme
-    -   Cut
+Sie entwickeln eine domänenspezifische Sprache (DSL) zur Beschreibung fachlicher
+Unterrichtsaufgaben und Escape-Room-Rätsel sowie einen Interpreter, der diese
+Spezifikationen zur Laufzeit in das Java-basierte
+[Dungeon-Framework](https://github.com/Dungeon-CampusMinden/Dungeon) integriert.
 
-Die genannten Sprachen sind als Beispiele zu verstehen. Sie können gern auch andere
-Sprachen und Paradigmen einbringen.
+Die DSL ermöglicht Lehrenden, Aufgaben, Bewertungen und Interaktionen deklarativ zu
+beschreiben, ohne direkt die Dungeon-API zu nutzen.
 
-Dokumentieren Sie Ihre Wahl und begründen Sie, warum Sie sich für diese Sprache
-entschieden haben.
+Der Interpreter übernimmt die initiale Levelkonfiguration, beobachtet
+Spielereignisse, bewertet Lösungen und interagiert zur Laufzeit mit Spieler:innen
+(REPL).
 
-# Workshop I: Präsentation der Programmiersprache
+## Motivation
 
-Bereiten Sie pro Team eine Präsentation (ca. 20 Minuten) vor, in der Sie die
-zentralen Sprachkonzepte Ihrer gewählten Programmiersprache vorstellen. Folgende
-Punkte sollten Sie abdecken:
+Didaktische Inhalte können in Serious-Games effizienter bereitgestellt werden, wenn
+Lehrende über eine fachnahe, deklarative Sprache arbeiten. Das zugrundeliegende
+Dungeon-Framework (ECS, Game-Loop) hat eine entsprechende API, die Nutzung erfordert
+jedoch aktuell Java- und API-Kenntnisse. Eine DSL mit Interpreter schließt diese
+Lücke und eröffnet Raum für Forschung zu Sprachdesign, Laufzeitintegration,
+Event-Verarbeitung und Performanz in Game-Loops.
 
--   Syntax und Semantik der Sprache
--   Wichtige Sprachmerkmale und Konzepte (z.B. Typisierung, Paradigmen)
--   Praktische Beispiele, um die Konzepte zu veranschaulichen
+## Ziele
 
-Reichen Sie ein Begleitdokument (PDF) zu Ihrer Präsentation ein, das eine Übersicht
-Ihrer Darstellung enthält.
+### Fachliche Ziele
 
-Sie können sich inhaltlich an [@Tate2011] und [@Tate2014] orientieren. Beide Werke
-finden Sie im HSBI-Online-Zugang auf der Plattform O'Reilly.
+1.  Konzeption und formale Spezifikation einer DSL für die Interaktion mit dem
+    Dungeon
+    -   Beschreibung von fachliche Aufgaben (Single Choice, Multiple Choice,
+        Zuordnung)
+    -   Beschreibung von Escape-Room-Rätsel (Rätsel und Aufgaben, aber auch Elemente
+        wie Schlösser/Schlüssel, Abhängigkeiten, Zeit-Constraints, Hinweise)
+    -   Beschreibung von Level- und Szenenkonfiguration (Geometrie, Entities, NPCs,
+        Items, Fähigkeiten, Positionen)
+    -   Beschreibung von Bewertungslogik, Feedback, Hints, Scoring und Lernziele
+    -   Interaktion mit einem laufenden Spiel (Bewegen des Helden o.ä.)
 
-# Workshop II: Analyse von Compiler-Technologien
+\smallskip
 
-Analysieren Sie, wie spezifische Sprachkonzepte den Compiler und seine verschiedenen
-Phasen beeinflussen. Berücksichtigen Sie dabei u.a. die Semantische Analyse, die
-Interpreter-Entwicklung und Codegenerierung sowie Einfluss auf die Laufzeitumgebung.
+2.  Implementierung eines Interpreters mit dem Dungeon als spezieller
+    Laufzeitumgebung
+    -   Überführung von DSL-Artefakten in den Dungeon und Konfiguration eines
+        ausführbares Spiels
+    -   Beobachtung von und Reaktion auf Spielereignisse zur Laufzeit
+    -   Durchführung von Bewertungen, sobald Bedingungen erfüllt sind
+    -   Interaktion mit der Escape-Room-API
+    -   Erreichbarkeit über eine REPL von außen (Eingabe/Auswertung weiterer
+        Statements zur Laufzeit)
 
-Untersuchen Sie (passend zu Ihrer gewählten Sprache) spezielle Themen wie
-beispielsweise
+Der Interpreter behandelt den laufenden Dungeon als eine Art erweitertes
+Environment.
 
-1.  LR-Parsergeneratoren im Vergleich:
-    -   Flex und Bison vs. [Tree-Sitter](http://tree-sitter.github.io/tree-sitter/)
-2.  Advanced Parsing:
-    -   Pratt-Parsing, PEG-Parser, Parser-Kombinatoren
-    -   LALR-Parsing
-    -   LL(\*) und Adaptive LL(\*) in ANTLR v4
-        -   T. Parr: "*LL(\*): The Foundation of the ANTLR Parser Generator*"
-        -   T. Parr: "*Adaptive LL(\*) Parsing: The Power of Dynamic Analysis*"
-        -   T. Parr: [*LL(\*) grammar
-            analysis*](https://theantlrguy.atlassian.net/wiki/spaces/~admin/pages/524294/LL+grammar+analysis)
-    -   [flap: A Deterministic Parser with Fused
-        Lexing](https://dl.acm.org/doi/pdf/10.1145/3591269)
-3.  VM und Bytecode:
-    -   [AST vs. Bytecode: Interpreters in the Age of
-        Meta-Compilation](https://stefan-marr.de/downloads/oopsla23-larose-et-al-ast-vs-bytecode-interpreters-in-the-age-of-meta-compilation.pdf)
-    -   [An Introduction to Interpreters and JIT
-        Compilation](https://stefan-marr.de/2023/09/pliss-summer-school/)
-    -   [Optimizing the Order of Bytecode Handlers in Interpreters using a Genetic
-        Algorithm](https://stefan-marr.de/downloads/acmsac23-huang-et-al-optimizing-the-order-of-bytecode-handlers-in-interpreters-using-a-genetic-algorithm.pdf)
-    -   WASM vs. Java-VM
-4.  Memory Management:
-    -   Garbage Collection:
-        -   [Unified Theory of Garbage
-            Collection](https://scholar.google.de/scholar?hl=en&as_sdt=0%2C5&as_vis=1&q=Unified+Theory+of+Garbage+Collection&btnG=)
-        -   [Fast Conservative Garbage
-            Collection](https://scholar.google.de/scholar?hl=en&as_sdt=0%2C5&as_vis=1&q=Fast+Conservative+Garbage+Collection&btnG=)
-        -   [Ownership guided C to Rust
-            translation](https://arxiv.org/pdf/2303.10515.pdf)
-        -   [Precise Garbage Collection for
-            C](https://www-old.cs.utah.edu/plt/publications/ismm09-rwrf.pdf)
-    -   Borrow Checking/Lifetime-Analysis
-5.  Optimierung:
-    -   [Alias-Based Optimization](https://dl.acm.org/doi/10.1145/277652.277670)
-    -   [Applying Optimizations for Dynamically-typed Languages to
-        Java](https://stefan-marr.de/downloads/manlang17-grimmer-et-al-applying-optimizations-for-dynamically-typed-languages-to-java.pdf)
-    -   [Provably Correct Peephole Optimizations with
-        Alive](https://web.ist.utl.pt/nuno.lopes/pubs/alive-pldi15.pdf)
-    -   [Don't Trust Your Profiler: An Empirical Study on the Precision and Accuracy
-        of Java
-        Profilers](https://stefan-marr.de/downloads/mplr23-burchell-et-al-dont-trust-your-profiler.pdf)
-6.  Testing:
-    -   [Finding and Understanding Bugs in C
-        Compilers](https://users.cs.utah.edu/~regehr/papers/pldi11-preprint.pdf)
-    -   [Validating JIT Compilers via Compilation Space
-        Exploration](https://connglli.github.io/pdfs/artemis_sosp23.pdf)
-    -   [A Survey of Compiler
-        Testing](https://software-lab.org/publications/csur2019_compiler_testing.pdf)
-    -   [An empirical comparison of compiler testing
-        techniques](https://xiongyingfei.github.io/papers/ICSE16.pdf)
-    -   [Compiler Testing: A Systematic Literature
-        Analysis](https://arxiv.org/abs/1810.02718)
-    -   [Snapshot Testing for
-        Compilers](https://www.cs.cornell.edu/~asampson/blog/turnt.html)
-    -   [Tiny Unified Runner N' Tester (Turnt)](https://github.com/cucapra/turnt)
-    -   [Testing Language
-        Implementations](https://youtu.be/ZJUk8_k1HbY?si=Mis0l6M07vbI8Rqx)
-7.  Typen und Typinferenzsysteme:
-    -   Hindley-Milner Typinferenzsystem
-    -   [On Understanding Types, Data Abstraction, and
-        Polymorphism](http://lucacardelli.name/Papers/OnUnderstanding.A4.pdf)
-    -   [Propositions as
-        Types](https://homepages.inf.ed.ac.uk/wadler/papers/propositions-as-types/propositions-as-types.pdf)
-8.  IR
-    -   [Multi-Level Intermediate Representation (MLIR)](https://mlir.llvm.org/) und
-        [Clang IR (CIR)](https://llvm.github.io/clangir/), [MLIR: A Compiler
-        Infrastructure for the End of Moore's Law](https://arxiv.org/abs/2002.11054)
-    -   [Sea-of-Nodes IR](https://github.com/SeaOfNodes/Simple)
+### Technische Ziele
 
-Führen Sie eine eigenständige Recherche durch und arbeiten Sie die Themen durch.
+1.  Einbindung in ein ECS-basiertes System:
+    -   als eigenes System in der Game-Loop, oder
+    -   als separater Thread mit synchronisierter Schnittstelle
+        (Message-Queue/Command-Buffer).
+2.  Namens- und Umgebungsauflösung:
+    -   zuerst lokaler DSL-Scope, dann Auflösung im Dungeon (Entities, Komponenten,
+        Ressourcen).
+    -   Lese-/Schreibzugriffe wirken konsistent auf den Dungeon-Zustand.
+3.  Laufzeitinteraktion:
+    -   Anzeige von Informationen, Dialogen, Aufgaben-UI (SC/MC/Zuordnung),
+    -   Eingabe/Antworterfassung und Feedback,
+    -   REPL für Debugging und Live-Inspektion.
 
-Bereiten Sie pro Team eine kurze Präsentation (ca. 20 bis 30 Minuten) vor, in der
-Sie die Konzepte vorstellen und deren Arbeitsweise an ausgewählten Beispielen
-verdeutlichen.
+## Initiale Forschungsfragen
 
-Die Präsentation findet im Rahmen des zweiten Edmonton-Treffens ("Edmonton II", 26.
-November) und wird von Ihnen in englischer Sprache gehalten.
+-   Wie gestaltet man eine DSL, die didaktische Intentionen, Aufgabenlogik und
+    Escape-Room-Mechaniken klar, knapp und überprüfbar ausdrückt?
+-   Welche Einbettungsvariante des Interpreters ist bzgl. Korrektheit, Performanz
+    und Wartbarkeit vorzuziehen (ECS-System vs. Parallel-Thread)?
+-   Wie viel Interpreterlogik darf pro Frame ausgeführt werden, um Spielbarkeit und
+    Responsiveness zu garantieren (Budgetierung, inkrementelle Auswertung)?
+-   Wie lassen sich Ereignisse (Input, Kollisionen, Zustandswechsel) robust in
+    Regeln, Auslöser und Bewertungen abbilden?
+-   Wie kann deterministisches Verhalten (für reproduzierbare Tests) trotz
+    Zufall/Prozeduralität erzielt werden?
 
-# Workshop III: Implementierung eines einfachen Compilers
+**Hinweis**: Diese initialen Forschungsfragen sind vorläufig und basieren noch nicht
+auf aktueller Literatur. Reformulieren und schärfen Sie sie anhand aktueller
+Literatur (State of the Art) und belegen Sie Ihre Entscheidungen.
 
-Entwickeln Sie einen kleinen Compiler für die gewählte Programmiersprache. Die
-Implementierung sollte grundlegende Sprachfeatures unterstützen (z.B. einfache
-Datentypen, Kontrollstrukturen) und eine einfache Codegenerierung (etwa nach C oder
-Java, oder nach WASM o.ä.) beinhalten. Berücksichtigen Sie dabei nach Möglichkeit
-die von Ihnen in Workshop II vorgestellten Techniken und Algorithmen.
+Das Projekt verbindet damit verschiedene Forschungsgebiete:
+Programmiersprachen/Compilerbau, Gamification und Serious Games sowie
+Softwarearchitektur in Echtzeit-/Game-Loop-Umgebungen.
 
-Sie finden in [@Grune2012] in den Kapiteln 11 bis 13 wertvolle Ideen zu
-verschiedenen Sprachparadigmen.
+## Scope und Nicht-Ziele
 
-Dokumentieren Sie den Entwicklungsprozess, die Herausforderungen und die Lösungen,
-die Sie gefunden haben.
+Im Scope: DSL-Design (Syntax, statische/operative Semantik), Interpreter,
+Integration mit Dungeon/ECS, Aufgaben-UI, Bewertungslogik, Beispiellevel, Tests.
 
-Halten Sie eine Präsentation von ca. 30 Minuten, in der Sie den Compiler vorstellen,
-seine Architektur und die von Ihnen gewählten Lösungsansätze erläutern.
+Nicht im Fokus: Vollständiger visueller Level-Editor, Multiplayer, umfangreiche
+Rendering-/Physik-Neuentwicklungen, umfassende Analytics-Plattform.
 
-**Abgabeformat**
+## Erwartete Ergebnisse (Deliverables)
 
-Reichen Sie alle relevanten Unterlagen elektronisch über ILIAS ein. Dazu gehören:
+-   Sprachspezifikation: Grammatik, Typsystem, statische Analysen,
+    Semantikbeschreibung
+-   Interpreter: Parser (z.B. ANTLR oder Recursive Descent), AST/IR, Evaluator,
+    Event-Engine, Runtime-Bibliothek für Dungeon-Operationen
+-   Dungeon-Integration: Adapter zu ECS (Entity/Component/Systems),
+    Event-Subscription, Name-Resolution- und State-Access-Schicht
+-   Beispielartefakte: Katalog von Beispielaufgaben und mind. ein vollständiges
+    Escape-Room-Szenario
+-   Demo: Live-Demonstration im Dungeon, Screencast, reproduzierbares Setup
+    (Build-Skripte, ggf. Container)
 
--   Präsentationen und Begleitdokumente für jeden Workshop
--   Der Quellcode Ihres Compilers (mit Kommentaren und Anleitungen zur Ausführung)
--   Eine umfassende Projektdokumentation, die die folgenden Punkte behandelt:
-    -   Einführung ins Projekt
-    -   Technische Architektur des Compilers
-    -   Reflexion: Herausforderungen und Lösungen
-    -   Fazit und Ausblick
+## Technisches Konzept (Überblick)
 
-# Bewertung
+-   DSL-Design:
+    -   Deklarativer Kern (Level, Entities, Aufgaben, Ziele, Bewertungen) plus
+        reaktive/regelbasierte Blöcke (`on event ... do ...`)
+    -   Didaktische Metadaten (Lernziele, Schwierigkeitsgrad, Tags), Randomisierung
+        mit Seeds, Hints/Feedback
+    -   Statische Analysen: Typ-/Referenzprüfung, Verbot ungültiger
+        Dungeon-Zugriffe, optionale Effektsysteme
+-   Interpreter-Architektur:
+    -   Frontend: Lexer/Parser -\> AST -\> IR
+    -   Runtime: Environment/Scope, Name-Resolution (lokal -\> Dungeon),
+        Event-Dispatch, Scheduler für kooperative Ausführung
+    -   Sicherheit/Isolation: kein unkontrollierter Zugriff außerhalb des Dungeons
+-   ECS-Integration:
+    -   Option A: Interpreter als ECS-System und Ausführung im Engine-Takt
+    -   Option B: Interpreter in separatem Thread und Kommunikation über
+        thread-sichere Queues
+-   Laufzeitinteraktion:
+    -   REPL für Ein- und Ausgabe; Logging/Telemetry für Auswertungen
+-   Performanz und Stabilität:
+    -   Pro-Frame-Budgetierung (z. B. \< 2 ms Interpreterarbeit), inkrementelle
+        Auswertung, Backpressure bei Eventfluten
+    -   Fehlerbehandlung mit klaren Diagnosen, Hot-Reload von DSL optional
 
-Die Bewertung erfolgt anhand der Qualität der Präsentationen, der Tiefe der Analyse,
-der technischen Umsetzung des Compilers sowie der Reflexion über den gesamten
-Prozess.
+## Vorgehen und Arbeitspakete
 
-Berücksichtigen Sie bei Ihrer Analyse auch die Einflüsse diverser
-Programmiersprachen auf Compiler-Designs und beschreiben Sie eventuelle
-Inspirationsquellen oder alternative Ansätze.
+1.  Anforderungsanalyse und Domänenmodell:
+    -   Stakeholder-Interviews (Lehrende, Dungeon-Entwickler:innen),
+        Aufgaben-/Rätsel-Taxonomie, Use-Cases
+2.  Sprachentwurf:
+    -   Syntax-Entwurf, Minimalbeispiele, Semantik-Skizzen, statische Analysen
+3.  Prototyp Parser/AST:
+    -   Toolauswahl (ANTLR/...), erste Pipeline Lexer bis AST
+4.  Prototyp Interpreter:
+    -   IR/Runtime-Umgebung, einfache Events, Konfiguration eines minimalen
+        Levels/Rätselraums
+5.  ECS-Integration:
+    -   Entscheidung Einbettungsvariante; Implementierung
+        Adapter/Command-Buffer/Event-Bus
+6.  Aufgaben- und Bewertungslogik:
+    -   SC/MC/Zuordnung, Bewertungsregeln, Erfolgsbedingungen, Feedback
+7.  Escape-Room-API-Integration:
+    -   Modellierung von Rätseln/Locks, Sequenzen, Timer,
+        Fehlversuche/Hinweismechaniken
+8.  Laufzeitinteraktion und Debugging:
+    -   Logging, REPL
+
+## Meilensteine
+
+-   Woche 7: Domänenmodell, DSL-Skizze, Tooling-Entscheidungen (**interne
+    Projektvorstellung**)
+-   Woche 9: Parser/AST funktionsfähig, erste Konfigurationen im Dungeon
+    (**Edmonton-Meeting**)
+-   Woche 11: Interpreter als ECS-System oder via Thread-Synchronisation integriert;
+    Event-Handling lauffähig
+-   Woche 13: erster Escape-Room end-to-end
+-   Woche 14: Projektvorstellung, Demo, Erfahrungsbericht
+    (**Abschlusspräsentation**)
+
+# Geplante Projektpräsentationen
+
+## Vorstellung der Konzepte (intern)
+
+Bereiten Sie pro Team eine Präsentation (ca. 20 Minuten, Di, 18.11., Praktikumsslot,
+Deutsch) vor, in der Sie den aktuellen Stand der Diskussion zu den zentralen
+Konzepten und Ideen in Ihrem Projekt vorstellen. Folgende Punkte sollten Sie
+abdecken:
+
+-   DSL-Skizze:
+    -   Zielbild, was Nutzer:innen im Dungeon mit der DSL erreichen können
+    -   Syntax und Semantik und Konzepte der DSL
+-   Domänenmodell: technische Anbindung der DSL an den Dungeon (Interpreter,
+    Dungeon/Game-Loop, Abarbeitung und Interaktion)
+-   Konkrete Minimalbeispiele zur Veranschaulichung der Konzepte
+
+Betrachten Sie diesen Vortrag als einen ersten Meilenstein für Ihr Projekt und als
+eine Art Generalprobe für den zwei Wochen später folgenden [Talk](talk.md) auf dem
+Edmonton-/Minden-Meeting.
+
+## Edmonton/Minden: Minden Presentations
+
+Ergänzen Sie den Vortrag aus der internen Vorstellen (s.o.) um die in der
+Zwischenzeit erreichten Arbeitsschritte und Teilergebnisse.
+
+Halten Sie Ihre Präsentation auf dem ersten Edmonton-/Minden-Meeting (Mo, 01.12.,
+18-19 Uhr, EN):
+
+-   Dauer: ca. 40-45 Minuten pro Team, parallel in Breakout-Gruppen
+-   Ziel: Vorstellung von Idee, Problemstellung, Architektur/Design, MVP/Prototyp
+-   Publikum: Kanadische Studierende; bitte auf klare
+    "Problem-Ansatz-Nutzen"-Struktur achten
+-   Sprache: Englisch
+
+## Abschlusspräsentation
+
+Die Abschlusspräsentation findet im Rahmen der Vorlesungs- und Praktikumszeit in der
+letzten Vorlesungswoche (Di, 20.01.) statt.
+
+Es gelten folgende Randbedingungen:
+
+-   Dauer: ca. 30 Minuten pro Team (Vorlesungs- und Praktikumsslot)
+-   Ziel: Ergebnisse, Demos, Evaluation, Lessons Learned, Ausblick
+-   Sprache: Deutsch
 
 ------------------------------------------------------------------------------------
 
 Wir freuen uns darauf, Sie in diesem herausfordernden und spannenden Projekt zu
 begleiten und wünschen Ihnen viel Erfolg!
 
-Stimmen Sie alle Schritte und Ergebnisse mit Ihren Dozent:innen ab und holen Sie
-sich aktiv Feedback.
-
-**Hinweis**: Wir werden in der Vorlesung nicht alle benötigten Techniken besprechen
-können (und auch möglicherweise nicht rechtzeitig). Es besteht die Erwartung, dass
-Sie sich selbstständig und rechtzeitig mit den jeweiligen Themen auseinander setzen.
-Nutzen Sie wissenschaftliche Literatur.
-
-::: readings
--   @Tate2011
--   @Tate2014
-:::
--->
+Bitte stimmen Sie alle Schritte und Ergebnisse mit Ihren Dozent:innen ab und holen
+Sie sich aktiv Feedback.
