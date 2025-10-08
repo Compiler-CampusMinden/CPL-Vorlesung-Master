@@ -22,7 +22,7 @@ Das führt zu einfachen Grundregeln:
 :::
 
 ::: youtube
--   [VL Grenze Lexer und Parser](https://youtu.be/)
+-   [VL Grenze Lexer und Parser](https://youtu.be/https://youtu.be/u9fE_I764rg)
 :::
 
 # Grenze Lexer und Parser (Faustregeln)
