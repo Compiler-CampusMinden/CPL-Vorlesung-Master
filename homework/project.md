@@ -25,17 +25,18 @@ Semesters.
 
 Die Bearbeitung erfolgt in 3er-Teams.
 
-# Projekt: DSL-gestützte Aufgaben- und Rätselbeschreibung mit Laufzeit-Interpretation im Dungeon-Framework (Java, 2D Roguelike, ECS)
+# Projekt: DSL-gestützte Aufgaben- und Rätselbeschreibung mit Laufzeit-Interpretation in einem Spiel
 
 ## Kurzbeschreibung
 
 Sie entwickeln eine domänenspezifische Sprache (DSL) zur Beschreibung fachlicher
 Unterrichtsaufgaben und Escape-Room-Rätsel sowie einen Interpreter, der diese
-Spezifikationen zur Laufzeit in das Java-basierte
-[Dungeon-Framework](https://github.com/Dungeon-CampusMinden/Dungeon) integriert.
+Spezifikationen zur Laufzeit in ein Computer-Spiel wie das Java-basierte
+[Dungeon-Framework](https://github.com/Dungeon-CampusMinden/Dungeon) oder das von
+Ihnen parallel im Wahlmodul "Computer Games" entwickelte Spiel integriert.
 
 Die DSL ermöglicht Lehrenden, Aufgaben, Bewertungen und Interaktionen deklarativ zu
-beschreiben, ohne direkt die Dungeon-API zu nutzen.
+beschreiben, ohne direkt die Spiele-API zu nutzen.
 
 Der Interpreter übernimmt die initiale Levelkonfiguration, beobachtet
 Spielereignisse, bewertet Lösungen und interagiert zur Laufzeit mit Spieler:innen
@@ -55,7 +56,7 @@ Event-Verarbeitung und Performanz in Game-Loops.
 ### Fachliche Ziele
 
 1.  Konzeption und formale Spezifikation einer DSL für die Interaktion mit dem
-    Dungeon
+    Spiel
     -   Beschreibung von fachliche Aufgaben (Single Choice, Multiple Choice,
         Zuordnung)
     -   Beschreibung von Escape-Room-Rätsel (Rätsel und Aufgaben, aber auch Elemente
@@ -67,9 +68,9 @@ Event-Verarbeitung und Performanz in Game-Loops.
 
 \smallskip
 
-2.  Implementierung eines Interpreters mit dem Dungeon als spezieller
+2.  Implementierung eines Interpreters mit dem Spiel als spezieller
     Laufzeitumgebung
-    -   Überführung von DSL-Artefakten in den Dungeon und Konfiguration eines
+    -   Überführung von DSL-Artefakten in das Spiel und Konfiguration eines
         ausführbares Spiels
     -   Beobachtung von und Reaktion auf Spielereignisse zur Laufzeit
     -   Durchführung von Bewertungen, sobald Bedingungen erfüllt sind
@@ -77,8 +78,7 @@ Event-Verarbeitung und Performanz in Game-Loops.
     -   Erreichbarkeit über eine REPL von außen (Eingabe/Auswertung weiterer
         Statements zur Laufzeit)
 
-Der Interpreter behandelt den laufenden Dungeon als eine Art erweitertes
-Environment.
+Der Interpreter behandelt das laufende Spiel als eine Art erweitertes Environment.
 
 ### Technische Ziele
 
@@ -87,9 +87,9 @@ Environment.
     -   als separater Thread mit synchronisierter Schnittstelle
         (Message-Queue/Command-Buffer).
 2.  Namens- und Umgebungsauflösung:
-    -   zuerst lokaler DSL-Scope, dann Auflösung im Dungeon (Entities, Komponenten,
+    -   zuerst lokaler DSL-Scope, dann Auflösung im Spiel (Entities, Komponenten,
         Ressourcen).
-    -   Lese-/Schreibzugriffe wirken konsistent auf den Dungeon-Zustand.
+    -   Lese-/Schreibzugriffe wirken konsistent auf den Spiel-Zustand.
 3.  Laufzeitinteraktion:
     -   Anzeige von Informationen, Dialogen, Aufgaben-UI (SC/MC/Zuordnung),
     -   Eingabe/Antworterfassung und Feedback,
@@ -119,7 +119,8 @@ Softwarearchitektur in Echtzeit-/Game-Loop-Umgebungen.
 ## Scope und Nicht-Ziele
 
 Im Scope: DSL-Design (Syntax, statische/operative Semantik), Interpreter,
-Integration mit Dungeon/ECS, Aufgaben-UI, Bewertungslogik, Beispiellevel, Tests.
+Integration mit Spiel/Dungeon/ECS, Aufgaben-UI, Bewertungslogik, Beispiellevel,
+Tests.
 
 Nicht im Fokus: Vollständiger visueller Level-Editor, Multiplayer, umfangreiche
 Rendering-/Physik-Neuentwicklungen, umfassende Analytics-Plattform.
@@ -129,12 +130,12 @@ Rendering-/Physik-Neuentwicklungen, umfassende Analytics-Plattform.
 -   Sprachspezifikation: Grammatik, Typsystem, statische Analysen,
     Semantikbeschreibung
 -   Interpreter: Parser (z.B. ANTLR oder Recursive Descent), AST/IR, Evaluator,
-    Event-Engine, Runtime-Bibliothek für Dungeon-Operationen
--   Dungeon-Integration: Adapter zu ECS (Entity/Component/Systems),
+    Event-Engine, Runtime-Bibliothek für Spiel-Operationen
+-   Integration ins Spiel: Adapter zu ECS (Dungeon: Entity/Component/Systems),
     Event-Subscription, Name-Resolution- und State-Access-Schicht
 -   Beispielartefakte: Katalog von Beispielaufgaben und mind. ein vollständiges
     Escape-Room-Szenario
--   Demo: Live-Demonstration im Dungeon, Screencast, reproduzierbares Setup
+-   Demo: Live-Demonstration im Spiel, Screencast, reproduzierbares Setup
     (Build-Skripte, ggf. Container)
 
 ## Technisches Konzept (Überblick)
@@ -189,7 +190,7 @@ Rendering-/Physik-Neuentwicklungen, umfassende Analytics-Plattform.
 
 -   Woche 7: Domänenmodell, DSL-Skizze, Tooling-Entscheidungen (**interne
     Projektvorstellung**)
--   Woche 9: Parser/AST funktionsfähig, erste Konfigurationen im Dungeon
+-   Woche 9: Parser/AST funktionsfähig, erste Konfigurationen im Dungeon oder Spiel
     (**Edmonton-Meeting**)
 -   Woche 11: Interpreter als ECS-System oder via Thread-Synchronisation integriert;
     Event-Handling lauffähig
@@ -207,9 +208,9 @@ Konzepten und Ideen in Ihrem Projekt vorstellen. Folgende Punkte sollten Sie
 abdecken:
 
 -   DSL-Skizze:
-    -   Zielbild, was Nutzer:innen im Dungeon mit der DSL erreichen können
+    -   Zielbild, was Nutzer:innen im Spiel bzw. Dungeon mit der DSL erreichen können
     -   Syntax und Semantik und Konzepte der DSL
--   Domänenmodell: technische Anbindung der DSL an den Dungeon (Interpreter,
+-   Domänenmodell: technische Anbindung der DSL an das Spiel bzw. den Dungeon (Interpreter,
     Dungeon/Game-Loop, Abarbeitung und Interaktion)
 -   Konkrete Minimalbeispiele zur Veranschaulichung der Konzepte
 
