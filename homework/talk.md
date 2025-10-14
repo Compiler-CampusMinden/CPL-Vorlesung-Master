@@ -1,11 +1,11 @@
 ---
 author: BC George, Carsten Gips (HSBI)
 no_beamer: true
-title: "CPL: Vorträge"
+title: "Seminaristischer Unterricht: Vorträge zu Programmiersprachen und
+  Compilerbau"
 ---
 
-# Seminaristischer Unterricht: Vorträge zu Programmiersprachen und Compilerbau
-
+::: tldr
 In diesem Semester sind mehrere Vorträge Teil der Prüfungsleistung. Pro Team sind zu
 halten:
 
@@ -20,12 +20,17 @@ strukturiert und mit nachvollziehbaren Beispielen unterlegt sein. Bitte planen S
 aktivierende Elemente (Diskussionsfragen, kurze Demos) ein.
 
 Die zeitliche Verteilung entnehmen Sie bitte dem [Fahrplan](../readme.md).
+:::
 
-## Kurzvortrag "PL Feature" (ca. 20 Minuten, DE)
+# Kurzvortrag "PL Feature" (ca. 20 Minuten, DE)
 
 Ziel ist die Einführung in ein ausgewähltes Programmiersprachen-Thema. Das
 vortragende Team arbeitet die Kernideen heraus und demonstriert zentrale Konzepte
 anhand kleiner, prägnanter Beispiele und leitet die anschließende Diskussion.
+
+Alle Teams sollen die Literatur zu den Kurzvorträgen zumindest grob überflogen
+haben. Das vortragende Team leitet die an den Vortrag anschließende Diskussion und
+bereitet 2-4 gezielte Diskussionsfragen zur Aktivierung der Zuhörenden vor.
 
 Verfügbare Themen:
 
@@ -65,11 +70,14 @@ Empfohlene weitere Referenzen (allgemein):
 -   @PLAI2025
 -   @Thain2020
 
-## Fachvortrag "Compiler" (ca. 60 Minuten + 10 Minuten Q&A, DE)
+# Fachvortrag "Compiler" (ca. 60 Minuten + 10 Minuten Q&A, DE)
 
 Ziel ist die systematische Einführung in ein Compiler/VM-Thema mit genügend
 fachlicher Tiefe, so dass die Zuhörenden danach relevante Literatur lesen und das
 Thema praktisch anwenden können.
+
+Bitte achten Sie auf eine präzise Begriffsbildung und den Einordnung in den Stand
+der Forschung/Praxis. Erstellen Sie eigene Beispiele und ggf. kurze Demos.
 
 Verfügbare Themen:
 
@@ -138,7 +146,7 @@ Empfohlene weitere Referenzen (allgemein):
 Planen Sie im Anschluss an den 60-minütigen Vortrag ca. 10 Minuten Q&A und
 Diskussion ein.
 
-## Zwei Vorträge zum Projekt
+# Zwei Vorträge zum Projekt
 
 1.  Edmonton-/Minden-Meeting (Mo, 01.12., 18-19 Uhr, EN)
     -   Dauer: ca. 40-45 Minuten pro Team, parallel in Breakout-Gruppen
@@ -157,22 +165,3 @@ Diskussion ein.
 \bigskip
 
 Siehe auch [Beschreibung zum Projekt](project.md).
-
-# Erwartungshorizont und Qualitätssicherung
-
--   Inhaltliche Tiefe: Präzise Begriffsbildung, Einordnung in den Stand der
-    Forschung/Praxis
--   Nachvollziehbarkeit: Klare Beispiele, ggf. kurze Demos; Code sollte lauffähig
-    und kommentiert sein
--   Literaturarbeit: 3-6 belastbare Quellen (Primärliteratur bevorzugt), saubere
-    Zitate
--   Visualisierung: Aussagekräftige Abbildungen/Diagramme; Folien sind barrierearm
-    (Kontrast, Schriftgröße)
--   Diskurs: 2-4 gezielte Diskussionsfragen zur Aktivierung der Zuhörenden
--   Zeitmanagement: Bitte Proben durchführen; Puffer für Q&A einplanen
--   Teamarbeit: Klare Rollen, abgestimmter Vortrag; alle Teammitglieder präsentieren
-
-# Organisatorisches
-
-Die Themen für den Kurzvortrag und den Fachvortrag werden in der zweiten Vorlesung
-(14.10.) vergeben.
