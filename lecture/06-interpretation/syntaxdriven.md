@@ -7,7 +7,7 @@ title: Syntaxgesteuerte Interpreter
 Zur Einordnung noch einmal die bisher betrachteten Phasen und die jeweiligen
 Ergebnisse:
 
-![](https://github.com/Compiler-CampusMinden/CPL-Vorlesung-Master/blob/master/lecture/06-interpretation/images/architektur_cb.png?raw=true){width="60%"}
+![](images/architektur_cb.png){width="60%"}
 
 |   | Phase                          | Ergebnis                                                        |
 |:--|:-------------------------------|:----------------------------------------------------------------|
@@ -34,10 +34,8 @@ oder Visitor-Pattern. Die in dieser Sitzung gezeigten einfachen Beispiele der
 syntaxgesteuerten Interpreter werden erweitert auf die jeweilige Traversierung mit
 dem Listener- bzw. Visitor-Pattern. Für nicht so einfache Fälle braucht man aber
 zusätzlich noch Speicherstrukturen, die wir in [AST-basierte Interpreter:
-Basics](https://github.com/Compiler-CampusMinden/CPL-Vorlesung-Master/blob/master/lecture/06-interpretation/astdriven-part1.md)
-und [AST-basierte Interpreter: Funktionen und
-Klassen](https://github.com/Compiler-CampusMinden/CPL-Vorlesung-Master/blob/master/lecture/06-interpretation/astdriven-part2.md)
-betrachten.
+Basics](astdriven-part1.md) und [AST-basierte Interpreter: Funktionen und
+Klassen](astdriven-part2.md) betrachten.
 :::
 
 ::: youtube
