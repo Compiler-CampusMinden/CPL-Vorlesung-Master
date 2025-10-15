@@ -83,8 +83,7 @@ href="https://github.com/Compiler-CampusMinden/CPL-Vorlesung-Master/blob/master/
 
 ::: notes
 *Anmerkung*: Die nachfolgenden Fehler werden am Beispiel der Grammatik
-[VarDef.g4](https://github.com/Compiler-CampusMinden/CPL-Vorlesung-Master/blob/master/lecture/02-parsing/src/VarDef.g4)
-und ANTLR demonstriert.
+[VarDef.g4](src/VarDef.g4) und ANTLR demonstriert.
 
 ## Lexikalische Fehler
 
