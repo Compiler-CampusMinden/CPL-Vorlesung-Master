@@ -412,6 +412,8 @@ def lookahead(i):
 :::
 
 ::: challenges
+**Quizzfragen**:
+
 -   Wie kann man aus einer LL(1)-Grammatik einen LL(1)-Parser mit rekursivem Abstieg
     implementieren? Wie "übersetzt" man dabei Token und Regeln?
 -   Wie geht man mit Alternativen um? Wie mit optionalen Subregeln?
@@ -419,4 +421,30 @@ def lookahead(i):
     Linksrekursion beseitigen?
 -   Wie kann man Vorrangregeln implementieren?
 -   Wann braucht man mehr als ein Token Lookahead? Geben Sie ein Beispiel an.
+
+**Manuell implementierter Parser**
+
+Betrachten Sie erneut die folgende einfache Sprache:
+
+    a = 10 - 5     # Zuweisung des Ausdruckes 10-5 (Integer-Wert 5) an Variable a
+    b = a + 2 * 3  # Zuweisung von 16 an Variable b
+    c = a != b     # Zuweisung eines boolschen Werts an c
+
+Es gibt nur Statements und Expressions:
+
+-   Statement: Zuweisung; jedes Statement endet mit einem NL
+-   Expression: Zahl, Variable, Addition, Subtraktion, Multiplikation (mit üblichem
+    Vorrang), Vergleich
+
+**Aufgaben**:
+
+In den Challenges von [LL Lexer](../01-lexing/recursive.md) haben Sie eine Grammatik
+definiert und einen Lexer implementiert.
+
+-   Geben Sie nun geeignete Datenstrukturen für den AST an.
+-   Implementieren Sie analog zum Vorgehen in der Vorlesung einen Parser mit
+    *recursive descent* für diese Sprache.
+-   Was müssten Sie anpassen bzw. ergänzen, wenn Sie beispielsweise weitere
+    Statements wie eine `if`-Abfrage oder eine `while`-Schleife mit einbauen
+    wollten?
 :::
