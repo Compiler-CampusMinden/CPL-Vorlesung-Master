@@ -356,9 +356,8 @@ Optionen:
 -   Typische Fehler beim Scannen
 
 ::: readings
--   @Aho2023: Abschnitt 2.6 und Kapitel 3
--   @Torczon2012: Kapitel 2
--   @Mogensen2017: Kapitel 1 (insbesondere Abschnitt 1.8)
+-   @Nystrom2021: Kapitel 4
+-   @Parr2010: Kapitel 2 ("Pattern 2: LL(1) Recursive-Decent Lexer")
 :::
 
 ::: outcomes
