@@ -168,8 +168,6 @@ Die Syntaxanalyse kann keine kontextsensitiven Analysen durchführen
 
 # Syntax-gesteuerte Übersetzung: Attribute und Aktionen
 
-<!-- 40 Minuten: 12 Folien (3.0 Min/Folie; inkl. Diskussion) -->
-
 ## Berechnen der Ausdrücke
 
     expr : expr '+' term ;
