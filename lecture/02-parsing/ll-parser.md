@@ -66,6 +66,8 @@ reduzierte Grammatiken.
 
 # Algorithmus: Rekursiver Abstieg
 
+## Algorithmus: Rekursiver Abstieg
+
 Hier ist ein einfacher Algorithmus, der (indeterministisch) top-down Ableitungen vom
 Nonterminal *X* aufbaut:
 
@@ -209,6 +211,8 @@ als initialem Kellerinhalt
 **Ausgabe:** Wenn $w \in L(G)$, eine Linksableitung von $w$, Fehler sonst
 
 ![Algorithmus zum tabellengesteuerten LL-Parsen](images/LL-Parser.png){width="49%"}
+
+# Wrap-Up
 
 ## Wrap-Up
 
