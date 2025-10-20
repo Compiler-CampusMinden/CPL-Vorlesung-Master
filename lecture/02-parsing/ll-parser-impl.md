@@ -402,11 +402,8 @@ def lookahead(i):
 -   Beachtung und Auflösung von Linksrekursion
 
 ::: readings
--   @Parr2010: Kapitel 2
--   @Parr2014
--   @Mogensen2017: Kapitel 2 (insbesondere Abschnitte 2.3 bis (einschließlich) 2.19)
--   @Aho2023: Abschnitte 2.4 und 4.4
--   @Grune2012: Abschnitte 3.1 bis (einschließlich) 3.4
+-   @Nystrom2021: Kapitel 5 und 6
+-   @Parr2010: Kapitel 2 ("Pattern 3: LL(1) Recursive-Decent Parser")
 :::
 
 ::: outcomes
