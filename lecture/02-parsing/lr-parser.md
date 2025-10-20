@@ -25,8 +25,6 @@ title: "Syntaxanalyse: LR-Parser (LR(0), LALR)"
 
 # Motivation
 
-<!-- 5 Minuten -->
-
 ## *LL* ist nicht alles
 
 Die Menge der *LL*-Sprachen ist eine echte Teilmenge der deterministisch
@@ -39,6 +37,8 @@ allen deterministisch parsebaren Grammatiken möglich und erschwert die
 Fehlerbehandlung.
 
 # Von unten nach oben
+
+## Von unten nach oben
 
 Bei der Bottom-Up-Analyse wird der Parse Tree wird von unten nach oben aufgebaut,
 von links nach rechts. Dabei entsteht eine *Rechtsableitung*.
@@ -219,6 +219,8 @@ Folgendes kann bei Mehrdeutigkeiten helfen:
     der Grammatik zuerst kommt bei Reduce-Reduce-Konflikten
 
 # Hierarchie der kontextfreien Sprachen
+
+## Hierarchie der kontextfreien Sprachen
 
 ![Sprachenhierarchie](images/CFG-Hierarchy.png){width="80%" web_width="60%"}
 
