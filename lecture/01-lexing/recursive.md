@@ -195,8 +195,8 @@ Schlüsselwörtern und Bezeichnern dem Parser überlassen.
 1.  Schlüsselwörter
 
     -   Ein eigenes Token (RE/DFA) für jedes Schlüsselwort, oder
-    -   Erkennung als Name und Vergleich mit Wörterbuch [und nachträgliche Korrektur
-        des Tokentyps]{.notes}
+    -   Erkennung als Name (`ID`) und nachträglich Vergleich mit Wörterbuch [sowie
+        Korrektur des Tokentyps]{.notes}
 
     ::: notes
     Wenn Schlüsselwörter über je ein eigenes Token abgebildet werden, benötigt man
@@ -227,7 +227,7 @@ Schlüsselwörtern und Bezeichnern dem Parser überlassen.
 
 6.  Komma, Semikolon, Klammern, ...: Je ein eigenes Token
 
-\smallskip
+    \bigskip
 
 7.  Regeln für White-Space und Kommentare etc. ...
 
