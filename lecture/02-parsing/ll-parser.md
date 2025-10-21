@@ -84,6 +84,9 @@ $a$.
 
 ## Wann scheitert das Verfahren?
 
+::: notes
+Hier entsteht eine Tafelskizze ...
+:::
 # Tabellengesteuerte Parser: LL(k)-Grammatiken
 
 ## First-Mengen
