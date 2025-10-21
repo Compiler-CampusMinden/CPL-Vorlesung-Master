@@ -30,12 +30,18 @@ title: LL-Parser
 
 ## Themen für heute
 
--   Syntaxanlyse
+-   Syntaxanalyse
 -   Top-down-Analyse
 -   rekursiver Abstieg
 -   LL(k)-Analyse
 
 # Syntaxanalyse
+
+## Ziele der Syntaxanalyse
+
+-   Auffinden von Syntaxfehlern mit möglichst genauer Fehlerangabe
+-   evtl. Vorschläge zur Fehlerbehebung
+-   Erstellen eines AST (abstract parse trees) zur semantischen Analyse = Ableitungsbaum ohne strukturell überflüssige Token (Semikolons, geschweifte Klammern, ...)
 
 ## Arten der Syntaxanalyse
 
@@ -76,6 +82,11 @@ $a$.
 
 ![Recursive Descent-Algorithmus](images/recursive_descent.png){width="55%"}
 
+## Wann scheitert das Verfahren?
+
+::: notes
+Hier entsteht eine Tafelskizze ...
+:::
 # Tabellengesteuerte Parser: LL(k)-Grammatiken
 
 ## First-Mengen
