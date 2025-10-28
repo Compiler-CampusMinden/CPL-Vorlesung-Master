@@ -64,6 +64,11 @@ Das Projekt verbindet damit verschiedene Forschungsgebiete:
 Programmiersprachen/Compilerbau, Gamification und Serious Games sowie
 Softwarearchitektur in Echtzeit-/Game-Loop-Umgebungen.
 
+Potentiell interessante Literatur:
+
+-   @Voelter2013
+
+
 # Ziele
 
 ## Fachliche Ziele
