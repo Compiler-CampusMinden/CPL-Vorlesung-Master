@@ -67,7 +67,8 @@ Softwarearchitektur in Echtzeit-/Game-Loop-Umgebungen.
 Potentiell interessante Literatur:
 
 -   @Fowler2010
--   @Voelter2013 (*Anmerkung*: Das Buch ist recht alt, aber die ersten drei Kapitel könnten hilfreich sein.)
+-   @Voelter2013 (*Anmerkung*: Das Buch ist recht alt, aber die ersten drei Kapitel
+    könnten hilfreich sein.)
 -   @mernik2005
 
 # Ziele
