@@ -97,13 +97,49 @@ def eval(self, AST t):
 
 [[Hinweis "Read-Eval-Print-Loop" (REPL)]{.ex}]{.slides}
 
-::: notes
+:::: notes
 Nach dem Aufbau des AST durch Scanner und Parser und der semantischen Analyse anhand
 der Symboltabellen müssen die Ausdrücke (*expressions*) und Anweisungen
 (*statements*) durch den Interpreter ausgewertet werden. Eine Möglichkeit dazu ist
 das Traversieren des AST mit dem Visitor-Pattern. Basierend auf dem Typ des aktuell
 betrachteten AST-Knotens wird entschieden, wie damit umgegangen werden soll. Dies
 erinnert an den Aufbau der Symboltabellen ...
+
+::: tip
+**Exkurs Expressions (Ausdrücke) vs. Statements (Anweisungen)**
+
+In Programmiersprachen unterscheiden wir häufig **Expressions** (*Ausdrücke*) und
+**Statements** (*Anweisungen*).
+
+Expressions sind dabei syntaktische Konstrukte einer Programmiersprache, die (in
+einem gegebenen Kontext) zu einem Wert **evaluiert** werden können. Typische
+Expressions sind beispielsweise Ausdrücke wie `2*3` oder `foo(42);`... In manchen
+Sprachen sind beispielsweise auch Zuweisungen Expressions: `v = 42 + 7;` würde in C
+der Variablen `v` den Wert 49 zuweisen, dies ist gleichzeitig auch der Wert des
+gesamten Ausdrucks. Man könnte in C also Dinge formulieren wie `if (v = 42 + 7) ...`
+(wobei das Interpretieren eines Integers in einem bool'schen Kontext nochmal ein
+anderes Problem ist).
+
+Statements sind syntaktische Konstrukte in Programmiersprachen, die **ausgeführt**
+werden können und dabei in der Regel einen Zustand im Programm verändern, also einen
+Seiteneffekt haben. Die Ausführung eines Statements hat normalerweise keinen Wert an
+sich. Typische Beispiele sind Zuweisungen `v = 7`, Kontrollfluss
+`if (...) then {...} else {...}`, Schleifen `for x in foo: ...`,
+`switch/case`-Statements. (Es gibt aber auch Programmiersprachen, wo ein
+`if/then/else`-Konstrukt eine Expression ist, also bei der Ausführung einen Wert
+ergibt.) In den meisten Programmiersprachen können Expressions Teile von Statements
+bilden: In `v = 42 + 7` ist die gesamte Zuweisung eine Anweisung (Seiteneffekt: die
+Variable `v` hat danach einen anderen Zustand), und der Teil `42 + 7` ist ein
+Ausdruck, der ausgewertet werden kann und üblicherweise den Wert 49 ergibt (außer
+man beauftragt ein LLM mit der Auswertung). In C-ähnlichen Sprachen kann durch
+Hinzufügen eines Semikolons aus dem Ausdruck `42 +7` eine Anweisung gemacht
+werden...
+
+Vergleiche auch @Nystrom2021, Kapitel 6 "Parsing Expressions", Kapitel 7 "Evaluating
+Expressions" und Kapitel 8 "Statements and State", aber auch [Wikipedia:
+Expression](https://en.wikipedia.org/wiki/Expression_(computer_science)) und
+[Wikipedia: Statement](https://en.wikipedia.org/wiki/Statement_(computer_science)).
+:::
 
 Die `eval()`-Methode bildet das Kernstück des (AST-traversierenden) Interpreters.
 Hier wird passend zum aktuellen AST-Knoten die passende Methode des Interpreters
@@ -123,7 +159,7 @@ die Symboltabelle *ergänzt*, damit die neuen Eingaben auf frühere verarbeitete
 Eingaben zurückgreifen können. Durch die Form der Schleife "Einlesen -- Verarbeiten
 -- Auswerten" hat sich auch der Name "*Read-Eval-Loop*" bzw.
 "*Read-Eval-Print-Loop*" (**REPL**) eingebürgert.
-:::
+::::
 
 # Auswertung von Literalen und Ausdrücken
 
@@ -263,7 +299,8 @@ class Interpreter(BaseVisitor<Object>):
 [AST-Interpreter: Eigener Code basierend auf einer Idee nach
 [Interpreter.java](https://github.com/munificent/craftinginterpreters/blob/master/java/com/craftinginterpreters/lox/Interpreter.java#L21)
 by [Bob Nystrom](https://github.com/munificent) on Github.com
-([MIT](https://github.com/munificent/craftinginterpreters/blob/master/LICENSE))]{.credits nolist=true}
+([MIT](https://github.com/munificent/craftinginterpreters/blob/master/LICENSE))]{.credits
+nolist="true"}
 
 # Ausführen einer Variablendeklaration
 
@@ -319,7 +356,8 @@ class Environment:
 [Evaluieren einer Zuweisung: Eigener Code basierend auf einer Idee nach
 [Environment.java](https://github.com/munificent/craftinginterpreters/blob/master/java/com/craftinginterpreters/lox/Environment.java#L38)
 by [Bob Nystrom](https://github.com/munificent) on Github.com
-([MIT](https://github.com/munificent/craftinginterpreters/blob/master/LICENSE))]{.credits nolist=true}
+([MIT](https://github.com/munificent/craftinginterpreters/blob/master/LICENSE))]{.credits
+nolist="true"}
 
 ::: notes
 Wenn wir bei der Traversierung des AST mit `eval()` bei einer Zuweisung
@@ -363,7 +401,8 @@ def block(self, AST t):
 [Nested Environments: Eigener Code basierend auf einer Idee nach
 [Interpreter.java](https://github.com/munificent/craftinginterpreters/blob/master/java/com/craftinginterpreters/lox/Interpreter.java#L92)
 by [Bob Nystrom](https://github.com/munificent) on Github.com
-([MIT](https://github.com/munificent/craftinginterpreters/blob/master/LICENSE))]{.credits nolist=true}
+([MIT](https://github.com/munificent/craftinginterpreters/blob/master/LICENSE))]{.credits
+nolist="true"}
 
 ::: notes
 Beim Interpretieren von Blöcken muss man einfach nur eine weitere
