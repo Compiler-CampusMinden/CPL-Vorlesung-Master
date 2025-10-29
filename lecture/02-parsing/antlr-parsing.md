@@ -711,6 +711,44 @@ geschrieben
 :::
 
 ::: challenges
+**Lexer und Parser mit ANTLR**
+
+Betrachten Sie den folgenden Programmschnipsel:
+
+    result99 = acc_2*ACC_2 + spillover7 + bonus_1*3 + inc_0;
+    calc_42 = __9 * zZ_1 + 5 + FooBar_42 * bar_7 + q0;
+    _ExprLine + A_1 * bB_2 + cc3 * 7 +      11;
+
+Erstellen Sie für diese fiktive Sprache einen Lexer+Parser mit ANTLR. Implementieren
+Sie mit Hilfe des Parse-Trees und der Listener oder Visitoren einen einfachen
+Pretty-Printer.
+
+<!--
+grammar MyLang;
+
+start
+  : stmt* EOF
+  ;
+
+stmt
+  : id=ID '=' value=expr ';'    # Assign
+  | expr ';'                    # ExprStmt
+  ;
+
+expr
+  : lhs=expr '*' rhs=expr       # Mul
+  | lhs=expr '+' rhs=expr       # Add
+  | ID                          # Name
+  | NUM                         # Number
+  ;
+
+
+ID  : [a-zA-Z_] [a-zA-Z_0-9]* ;
+NUM : [0-9]+ ;
+
+WS  : [ \t\r\n]+ -> skip ;
+-->
+
 **Lexer und Parser mit ANTLR: Programmiersprache Lox**
 
 Betrachten Sie folgenden Code-Schnipsel in der Sprache
