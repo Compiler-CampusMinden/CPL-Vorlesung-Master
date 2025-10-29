@@ -35,7 +35,7 @@ Tokenstreams.
 -   [Demo Lexer-Regeln mit Aktionen](https://youtu.be/bNpgqctiQM8)
 :::
 
-# Hello World
+# "Hello World" mit ANTLR (Lexer)
 
 ``` antlr
 grammar Hello;
@@ -59,20 +59,62 @@ href="https://github.com/Compiler-CampusMinden/CPL-Vorlesung-Master/blob/master/
 
 ## ANTLR einrichten
 
--   Aktuelle Version herunterladen:
-    [antlr.org](https://www.antlr.org/download.html), für Java als Zielsprache:
-    ["Complete ANTLR 4.x Java binaries
-    jar"](https://www.antlr.org/download/antlr-4.11.1-complete.jar)
--   CLASSPATH setzen:
-    `export CLASSPATH=".:/<pathToJar>/antlr-4.11.1-complete.jar:$CLASSPATH"`
--   Aliase einrichten (`.bashrc`):
-    -   `alias antlr='java org.antlr.v4.Tool'`
-    -   `alias grun='java org.antlr.v4.gui.TestRig'`
--   Alternativ über den Python-Installer: `pip install antlr4-tools`
--   Im Web ohne lokale Installation: [ANTLR Lab](http://lab.antlr.org/)
+-   Lokal für die Nutzung in der Konsole:
+
+    -   Aktuelle Version herunterladen:
+        [antlr.org](https://www.antlr.org/download.html), für Java als Zielsprache:
+        ["Complete ANTLR 4.x Java binaries
+        jar"](https://www.antlr.org/download/antlr-4.13.2-complete.jar)
+    -   CLASSPATH setzen:
+        `export CLASSPATH=".:/<pathToJar>/antlr-4.13.2-complete.jar:$CLASSPATH"`
+    -   Aliase einrichten (`.bashrc`):
+        -   `alias antlr='java org.antlr.v4.Tool'`
+        -   `alias grun='java org.antlr.v4.gui.TestRig'`
+
+-   Alternativ für Java-Projekte mit Gradle (empfehlenswert):
+
+        plugins {
+            id 'java'
+            id 'antlr'
+        }
+
+        repositories {
+            mavenCentral()
+        }
+
+        dependencies {
+            antlr 'org.antlr:antlr4:4.13.2'
+        }
+
+-   Alternativ das [ANTLR tool
+    (JAR)](https://www.antlr.org/download/antlr-4.13.2-complete.jar) herunterladen
+    und in der IDE als Library hinzufügen (bitte nur als Ausweichlösung - der Weg
+    über das Build-Tool ist deutlich besser)
+
+-   Im Web ohne lokale Installation: [ANTLR Lab](http://lab.antlr.org/) (nur HTTP)
 
 (vgl.
 [github.com/antlr/antlr4/blob/master/doc/getting-started.md](https://github.com/antlr/antlr4/blob/master/doc/getting-started.md))
+
+**Hinweis**: Im Beispiel-Projekt
+[student-support-code-template](https://github.com/Compiler-CampusMinden/student-support-code-template)
+finden Sie ein fertig eingerichtetes Java-Projekt mit Gradle und ANTLR. Sie können
+dieses Projekt als Template nutzen und in Ihrer IDE importieren, d.h. Sie brauchen
+nur ein installiertes JDK (Version 25 ist die aktuelle LTS) und eine Java-IDE, der
+Rest (Gradle, ANTLR) kommt über die Einstellungen im Beispiel-Projekt. Durch die
+Gradle-Settings sollten anschließend alle nötigen Einstellungen und Abhängigkeiten
+automatisch in der IDE korrekt gesetzt bzw. aufgelöst werden. Im `Main.main()`
+finden Sie eine kurze Demo, wie man einen generierten Lexer/Parser mit einbindet und
+aufruft. Grammatiken können unter `src/main/antlr/` abgelegt werden, wo sie
+automatisch vom ANTLR-Gradle-Plugin beim Build-Prozess (`./gradlew build`) gefunden
+und bearbeitet werden. Die daraus generierten ANTLR-Lexer und -Parser werden im
+Build-Ordner `build/generated-src/antlr/main/` abgelegt und stehen in der IDE damit
+automatisch zur Verfügung, ohne dass die generierten Dateien im versionierten
+Source-Tree auftauchen und diesen "verschmutzen". *Wichtig*: So lange wie die
+generierten Dateien nicht erzeugt wurden, zeigen die IDE für diese Klassen und
+Interfaces entsprechend Fehler an. Ein Übersetzen des Projekts oder ein explizites
+`./gradlew generateGrammarSource` generiert die fehlenden Dateien und die
+Fehlermeldungen sollten verschwinden.
 
 ## "Hello World" übersetzen und ausführen
 
@@ -232,7 +274,15 @@ Die Empfehlung ist, non-greedy Lexer-Regeln nur sparsam einzusetzen (vgl.
 [github.com/antlr/antlr4/blob/master/doc/wildcard.md](https://github.com/antlr/antlr4/blob/master/doc/wildcard.md)).
 :::
 
+::: slides
 # Verhalten des Lexers: 1. Längster Match
+:::
+
+::: notes
+# Verhalten des Lexers
+
+## 1. Längster Match
+:::
 
 Primäres Ziel: Erkennen der längsten Zeichenkette
 
@@ -249,7 +299,13 @@ Die Regel, die den längsten Match für die aktuelle Eingabesequenz produziert,
 Im Beispiel würde ein "foo42" als `FOO` erkannt und nicht als `CHARS DIGITS`.
 :::
 
+::: slides
 # Verhalten des Lexers: 2. Reihenfolge
+:::
+
+::: notes
+## 2. Reihenfolge
+:::
 
 Reihenfolge in Grammatik definiert Priorität
 
@@ -266,7 +322,13 @@ Im Beispiel würden für die Eingabe "foo42bar" beide Regeln den selben längste
 liefern - die Regel `FOO` ist in der Grammatik früher definiert und "gewinnt".
 :::
 
+::: slides
 # Verhalten des Lexers: 3. Non-greedy Regeln
+:::
+
+::: notes
+## 3. Non-greedy Regeln
+:::
 
 Non-greedy Regeln versuchen *so wenig* Zeichen wie möglich zu matchen
 
