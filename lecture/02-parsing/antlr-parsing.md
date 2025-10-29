@@ -347,7 +347,7 @@ Hier würden sich die Regeln `r` und `s` gegenseitig aufrufen und kein Token aus
 Tokenstrom entfernen, so dass der generierte LL-Parser hier in einer Endlosschleife
 stecken bleiben würde. Mit indirekter Links-Rekursion kann ANTLR nicht umgehen.
 
-## Konflikte in Regeln
+## Konflikte in Regeln und implizite Token
 
 Wenn mehrere Alternativen einer Regel anwendbar sind, entscheidet sich ANTLR für die
 erste Alternative.
@@ -368,7 +368,7 @@ Dennoch werden `'func'` und `FOR` erkannt und nicht über `ID` gematcht, weil si
 *vor* der Regel `ID` definiert sind.
 
 Tatsächlich sortiert ANTLR die Regeln intern um, so dass alle Parser-Regeln *vor*
-den Lexer-Regeln definiert sind. Die impliziten Token werden dabei noch vor den
+den Lexer-Regeln definiert sind. Die impliziten Token werden dabei noch *vor* den
 expliziten Token-Regeln angeordnet. Im obigen Beispiel hat also `'func'` eine höhere
 Priorität als `FOR`, und `FOR` hat eine höhere Priorität als `ID`. Aus diesem Grund
 gibt es die Konvention, die Parser-Regeln in der Grammatik vor den Lexer-Regeln zu
@@ -387,6 +387,34 @@ def : 'func' ID '(' ')' block ;
 Intern würde ANTLR die Parser-Regel `def` wieder vor den beiden Lexer-Regeln
 anordnen, und zwischen den Parser-Regeln und den Lexer-Regeln die impliziten Token
 (hier `'func'`).
+
+## Lustige Probleme mit überlappenden Token (typische Stolperfalle)
+
+Die folgende Grammatik sieht harmlos aus:
+
+``` antlr
+foo  :  (ID '(' ')' '=' '0' | ID | NUM) EOF ;
+
+ID      : [a-z][a-zA-Z]* ;
+NUM     : [0-9]+ ;
+WS      : [ \t\n]+ -> skip ;
+```
+
+Was passiert bei der Eingabe von `10` und `01` und `a() = 0`, wie sieht der
+Parse-Tree aus? Was passiert bei der Eingabe von `0`?
+
+Antwort: `10` wird als `foo -> NUM(10)` erkannt, `01` als `foo -> NUM(01)`, und
+`a() = 0` wird zu einem `foo -> ID(a), (, ), =, 0`. Dagegen ist die Eingabe `0` ein
+Fehler!
+
+Das liegt hier an überlappenden Token-Definitionen: Die `0` wird als implizites
+Token definiert, während die Integerzahlen als explizites Token `NUM` definiert
+werden. Damit ist die `0` in `NUM` enthalten. Da ANTLR die impliziten Token intern
+vor den expliziten Token definiert (egal, in welcher Reihenfolge wir die Grammatik
+aufbauen), fällt die Eingabe "0" an das implizite Token `0` und nicht an `NUM`. Da
+es keine Regel gibt, wo eine einzelne "0" erlaubt ist, bekommen wir einen Fehler.
+Sobald die Eingabe länger wird, greift wieder die Regel des längsten Matches und
+`NUM` "gewinnt".
 :::
 
 # Kontext-Objekte für Parser-Regeln
