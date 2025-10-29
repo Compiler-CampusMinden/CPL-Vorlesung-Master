@@ -708,4 +708,36 @@ Pretty-Printer.
 
 (Die genauere Sprachdefinition finden Sie bei Bedarf unter
 [craftinginterpreters.com/the-lox-language.html](https://www.craftinginterpreters.com/the-lox-language.html).)
+
+<!--
+``` antlr
+grammar MiniLox;
+
+program: (functionDecl | statement)* EOF;
+
+functionDecl: 'fun' IDENT '(' (IDENT (',' IDENT)*)? ')' '{' statement* '}';
+
+statement
+  : 'var' IDENT '=' expr ';'
+  | 'if' '(' expr ')' statement ('else' statement)?
+  | 'return' expr ';'
+  | '{' statement* '}'
+  | expr ';'
+  ;
+
+expr
+  : expr '(' (expr (',' expr)*)? ')'
+  | expr ('*'|'/') expr
+  | expr ('+'|'-') expr
+  | expr '==' expr
+  | INT
+  | IDENT
+  | '(' expr ')'
+  ;
+
+IDENT: [a-zA-Z_] [a-zA-Z_0-9]*;
+INT: [0-9]+;
+WS: [ \t\r\n]+ -> skip;
+```
+-->
 :::
