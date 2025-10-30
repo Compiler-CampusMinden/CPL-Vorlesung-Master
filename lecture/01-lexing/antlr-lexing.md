@@ -140,7 +140,8 @@ Fehlermeldungen sollten verschwinden.
 
         public class Main {
             public static void main(String[] args) throws Exception {
-                Lexer l = new HelloLexer(CharStreams.fromStream(System.in));
+                CharStream input = CharStreams.fromString(IO.readln("?> "));
+                Lexer l = new HelloLexer(input);
                 Token t = l.nextToken();
                 while (t.getType() != Token.EOF) {
                     System.out.println(t);

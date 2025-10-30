@@ -91,7 +91,8 @@ href="https://github.com/Compiler-CampusMinden/CPL-Vorlesung-Master/blob/master/
 
         public class Main {
             public static void main(String[] args) throws Exception {
-                HelloLexer lexer = new HelloLexer(CharStreams.fromStream(System.in));
+                CharStream input = CharStreams.fromString(IO.readln("expr?> "));
+                HelloLexer lexer = new HelloLexer(input);
                 CommonTokenStream tokens = new CommonTokenStream(lexer);
                 HelloParser parser = new HelloParser(tokens);
 
