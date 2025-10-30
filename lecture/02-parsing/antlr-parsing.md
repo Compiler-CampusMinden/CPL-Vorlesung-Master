@@ -636,6 +636,55 @@ In [Syntaxgesteuerte Interpreter](../06-interpretation/syntaxdriven.md) werden w
 damit einen einfachen syntaxgesteuerten Interpreter aufbauen.
 :::
 
+# Arbeiten mit Pattern Matching
+
+::: notes
+ANTLR generiert zu jeder Regel `rule` eine Klasse `ruleContext`. Diese Klassen sind
+im generierten Parser definiert und werden für den Parse-Tree genutzt. Seit Java 25
+ist *Pattern Matching* über Klassen und Records so weit ausgebaut, dass man es als
+Alternative zum Visitor-Pattern oder zu den ANTLR-Listenern nutzen kann.
+:::
+
+``` java
+public static class PatternMatching {
+    static Integer eval(calcParser.ExprContext e) {
+        return switch (e) {
+            case calcParser.MULTContext m -> eval(m.e1) * eval(m.e2);
+            case calcParser.ADDContext a -> eval(a.e1) + eval(a.e2);
+            case calcParser.ZAHLContext n -> Integer.parseInt(n.DIGIT().getText());
+            default ->
+                throw new IllegalStateException("Unhandled expr: " + e.getClass().getSimpleName());
+        };
+    }
+}
+```
+
+::: notes
+Anschließend baut man das alles in eine manuelle Traversierung des Parse-Trees ein:
+
+``` java
+public class TestMyPM {
+    public static class PatternMatching {
+        ...
+    }
+
+    public static void main(String[] args) throws Exception {
+        CharStream input = CharStreams.fromString(IO.readln("expr?> "));
+        calcLexer lexer = new calcLexer(input);
+        CommonTokenStream tokens = new CommonTokenStream(lexer);
+        calcParser parser = new calcParser(tokens);
+
+        calcParser.SContext tree = parser.s(); // Start-Regel
+
+        PM.eval(tree.expr());
+    }
+}
+```
+
+[Beispiel: TestMyPM.java und calc.g4]{.ex
+href="https://github.com/Compiler-CampusMinden/CPL-Vorlesung-Master/blob/master/lecture/02-parsing/src/TestMyPM.java"}
+:::
+
 ::: notes
 # Eingebettete Aktionen und Attribute
 
