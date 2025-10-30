@@ -648,6 +648,15 @@ ist *Pattern Matching* über Klassen und Records so weit ausgebaut, dass man es 
 Alternative zum Visitor-Pattern oder zu den ANTLR-Listenern nutzen kann.
 :::
 
+``` antlr
+expr : e1=expr '*' e2=expr      # MULT
+     | e1=expr '+' e2=expr      # ADD
+     | DIGIT                    # ZAHL
+     ;
+```
+
+\bigskip
+
 ``` java
 public static class PatternMatching {
     static Integer eval(calcParser.ExprContext e) {
@@ -655,9 +664,7 @@ public static class PatternMatching {
             case calcParser.MULTContext m -> eval(m.e1) * eval(m.e2);
             case calcParser.ADDContext a -> eval(a.e1) + eval(a.e2);
             case calcParser.ZAHLContext n -> Integer.parseInt(n.DIGIT().getText());
-            default ->
-                throw new IllegalStateException("Unhandled expr: "
-                    + e.getClass().getSimpleName());
+            default -> throw new IllegalStateException();
         };
     }
 }
