@@ -567,6 +567,9 @@ und leere Basisimplementierung).
 Hier muss man im Gegensatz zu den Listeners allerdings selbst für eine geeignete
 Traversierung des Parse-Trees sorgen. Dafür hat man mehr Freiheiten im Vergleich zum
 Einsatz von Listeners, insbesondere im Hinblick auf Rückgabewerte.
+
+**Erinnerung**: Das Visitor-Pattern wurde in Prog2 besprochen:
+https://github.com/Programmiermethoden-CampusMinden/Prog2-Lecture/blob/master/lecture/pattern/visitor.md.
 :::
 
 ``` antlr
