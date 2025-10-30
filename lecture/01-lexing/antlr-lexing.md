@@ -100,6 +100,12 @@ href="https://github.com/Compiler-CampusMinden/CPL-Vorlesung-Master/blob/master/
 (vgl.
 [github.com/antlr/antlr4/blob/master/doc/getting-started.md](https://github.com/antlr/antlr4/blob/master/doc/getting-started.md))
 
+**Tip**: Für IntelliJ gibt es ein sehr gutes
+[ANTLR-Plugin](https://plugins.jetbrains.com/plugin/7358-antlr-v4). Dieses erlaubt
+das interaktive Experimentieren mit ANTLR-Grammatiken, ohne dass man ANTLR selbst
+installiert haben muss oder Code geschrieben haben muss. Für die Arbeit mit
+Grammatiken ist dieses Plugin unbedingt empfehlenswert!
+
 **Hinweis**: Im Beispiel-Projekt
 [student-support-code-template](https://github.com/Compiler-CampusMinden/student-support-code-template)
 finden Sie ein fertig eingerichtetes Java-Projekt mit Gradle und ANTLR. Sie können
