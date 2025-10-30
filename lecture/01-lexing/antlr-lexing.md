@@ -91,9 +91,9 @@ href="https://github.com/Compiler-CampusMinden/CPL-Vorlesung-Master/blob/master/
     das Jar-File für ANTLR herunter und bindet es entsprechend im CLASSPATH ein.
 
 -   Alternativ das [ANTLR tool
-    (JAR)](https://www.antlr.org/download/antlr-4.13.2-complete.jar) herunterladen
-    und in der IDE als Library hinzufügen (bitte nur als Ausweichlösung - der Weg
-    über das Build-Tool ist deutlich besser)
+    (JAR)](https://www.antlr.org/download/antlr-4.13.2-complete.jar) manuell
+    herunterladen und in der IDE als Library hinzufügen (bitte nur als Hilfslösung,
+    der Weg über das Build-Tool ist deutlich besser)
 
 -   Im Web ohne lokale Installation: [ANTLR Lab](http://lab.antlr.org/) (nur HTTP)
 
