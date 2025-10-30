@@ -86,6 +86,10 @@ href="https://github.com/Compiler-CampusMinden/CPL-Vorlesung-Master/blob/master/
             antlr 'org.antlr:antlr4:4.13.2'
         }
 
+    Der Eintrag in `plugins` sorgt dafür, dass Gradle beim Bauen des Java-Projekts
+    die ANTLR-Grammatiken übersetzt, der Eintrag in `dependencies` lädt automatisch
+    das Jar-File für ANTLR herunter und bindet es entsprechend im CLASSPATH ein.
+
 -   Alternativ das [ANTLR tool
     (JAR)](https://www.antlr.org/download/antlr-4.13.2-complete.jar) herunterladen
     und in der IDE als Library hinzufügen (bitte nur als Ausweichlösung - der Weg
