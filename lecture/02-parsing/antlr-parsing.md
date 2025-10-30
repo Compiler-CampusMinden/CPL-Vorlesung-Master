@@ -616,7 +616,8 @@ public class TestMyVisitor {
     }
 
     public static void main(String[] args) throws Exception {
-        calcLexer lexer = new calcLexer(CharStreams.fromStream(System.in));
+        CharStream input = CharStreams.fromString(IO.readln("expr?> "));
+        calcLexer lexer = new calcLexer(input);
         CommonTokenStream tokens = new CommonTokenStream(lexer);
         calcParser parser = new calcParser(tokens);
 
