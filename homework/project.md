@@ -8,6 +8,8 @@ title: "Compiler-Projekt: DSL-gestützte Aufgaben- und Rätselbeschreibung mit
 ::: tldr
 **Zusammenfassung**
 
+For the MIF 1.5 course project, you can pick any idea that has to do with compilers.
+
 In diesem Projekt beschäftigen Sie sich mit der Analyse, dem Entwurf und der
 Implementierung einer domänenspezifischen Sprache (DSL) einschließlich eines
 Interpreters. Ziel ist es, theoretische Grundlagen des Compilerbaus mit praktischer
