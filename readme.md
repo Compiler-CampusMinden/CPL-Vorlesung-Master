@@ -112,7 +112,7 @@ mit allen Terminen der Veranstaltung zum Einbinden in Ihre Kalender-App.
 
 -   **Post Mortem**: Jede Person beschreibt individuell(!) die Bearbeitung des
     jeweiligen Kriteriums bzw. die Teilnahme am Edmonton/Minden-Meeting
-    zurückblickend mit mind. 200 bis max. 400 Wörtern (Nutzlast; Überschriften und
+    zurückblickend mit mind. 150 bis max. 400 Wörtern (Nutzlast; Überschriften und
     Links zählen nicht mit). Gehen Sie dabei aussagekräftig und nachvollziehbar auf
     folgende Punkte ein:
 
