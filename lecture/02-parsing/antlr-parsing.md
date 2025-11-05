@@ -471,9 +471,30 @@ Eingabe `2+3*4` wird jetzt inkorrekt als als "(2+3)\*4" geparst:
 ![](images/screenshot_parsetree_incorrect.png)
 
 ::: caution
-**Präzedenz entsteht in ANTLR4 nur durch die Reihenfolge der linkrekursiven
+**Präzedenz entsteht in ANTLR4 nur durch die Reihenfolge der linksrekursiven
 Alternativen in *derselben* Regel (ggf. mit `<assoc=right>` für
 Rechtsassoziativität).**
+:::
+
+::: note
+Bitte daran denken, dass die Reihenfolge der linksrekursiven Alternativen den
+Vorrang definiert.
+
+Betrachten Sie die folgende Änderung der Grammatik von oben:
+
+``` antlr
+expr
+  : expr '*' expr
+  | expr '/' expr
+  | expr '+' expr
+  | expr '-' expr
+  | INT
+  ;
+```
+
+Das funktioniert, hier wird den Alternativen implizt ein Vorrang zugeordnet. Aber
+jetzt bekommt die Multiplikation Vorrang vor der Division, und auch die Addition
+bekommt Vorrang vor der Subtraktion. Ist das wirklich so gewollt?
 :::
 ::::
 
