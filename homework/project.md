@@ -48,7 +48,7 @@ Potentiell interessante Literatur im Bereich DSL:
     und transformieren Sie diese in eine geeignete IR (z.B. Bril). Fokus: Grammatik,
     statische Checks, saubere IR-Übersetzung.
 
-    ::: {.details title="Hinweise"}
+    ::: details
     Didaktische Inhalte können in Serious-Games effizienter bereitgestellt werden,
     wenn Lehrende über eine fachnahe, deklarative Sprache arbeiten. Spiele wie
     beispielsweise das Dungeon-Framework (ECS, Game-Loop) haben eine entsprechende
@@ -72,7 +72,7 @@ Potentiell interessante Literatur im Bereich DSL:
     Dungeon-Objekte sichtbar (z.B. Datenfluss als Bewegungen/Effekte). Fokus:
     Semantik/Runtime-Mapping, Ereignisverarbeitung.
 
-    ::: {.details title="Hinweise"}
+    ::: details
     Sie entwickeln einen Interpreter, der z.B. einen Sub-Dialekt von Python zur
     Laufzeit in ein Computer-Spiel wie das Java-basierte
     [Dungeon-Framework](https://github.com/Dungeon-CampusMinden/Dungeon) oder das
@@ -86,7 +86,7 @@ Potentiell interessante Literatur im Bereich DSL:
 -   Blockly -\> Dungeon: Parsen und Interpretieren von Blockly-Code im
     [Dungeon](https://github.com/Dungeon-CampusMinden/Dungeon)
 
-    ::: {.details title="Hinweise"}
+    ::: details
     Im [Dungeon-Projekt](https://github.com/Dungeon-CampusMinden/Dungeon) wurde eine
     Blockly-Anbindung realisiert. Dabei werden vordefinierte Rätsel im Dungeon
     gestartet und parallel ein Blockly-Fenster, und durch Zusammenklicken der
@@ -118,7 +118,7 @@ Potentiell interessante Literatur im Bereich DSL:
 
 -   MiniJava als einfache OOP-Sprache mit FP-Features für Spiel mit VSCode Extension
 
-    ::: {.details title="Hinweise"}
+    ::: details
     Im [Dungeon-Projekt](https://github.com/Dungeon-CampusMinden/Dungeon) wurde eine
     VSCode-Extension realisiert. In diesem Plugin kann vereinfachter Java-Code mit
     direkter Anbindung an die Dungeon-API geschrieben werden, der im Dungeon
