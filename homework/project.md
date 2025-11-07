@@ -191,6 +191,9 @@ Potentiell interessante Literatur im Bereich DSL:
     Ausdrücke) mit Lowering nach LLVM; alternativ/ergänzend Optimierung via E-Graphs
     (Equality Saturation) und anschließendes Lowering.
 
+Neben passenden Konzepten soll auch eine geeignete Umsetzung/Implementierung erstellt
+und empirisch untersucht werden.
+
 # Exposé (pro Team, Kurs-GitHub)
 
 -   Umfang: 150--400 Wörter
