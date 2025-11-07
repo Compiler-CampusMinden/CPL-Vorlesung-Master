@@ -147,6 +147,41 @@ Potentiell interessante Literatur im Bereich DSL:
     realisiert den Interpreter für MiniJava im Dungeon.
     :::
 
+-   Compiler Bootstrapping: Eine kleine Sprache mit OOP- und FP-Features entwerfen
+    und zwei Compiler bauen
+
+    ::: details
+    Sie entwerfen eine kleine Sprache "X" mit OOP- und FP-Elementen.
+
+    Sie implementieren Compiler "A" in einer bestehenden Sprache Ihrer Wahl
+    (Haskell, OCaml, Racket, Clojure, Java, zur Not auch Python oder Rust oder
+    andere). Compiler A übersetzt nur ein Minimal-Subset von X: "X-min". A parst
+    X-min, prüft Typen in einfacher Form und erzeugt Code in der gewählten
+    Zielsprache ("transpiling").
+
+    Sie schreiben nun in X-min den Compiler "B", der den vollen Sprachumfang von X
+    übersetzen kann. Sie zeigen Bootstrapping: B wird mit A gebaut und kompiliert
+    anschließend in X formulierte Programme. B parst und kompiliert die
+    Vollsprache X. B darf intern ein Desugaring auf den Kern verwenden.
+
+    Bootstrapping: B wird mit A auf die Zielplattform transpiliert. Sie kompilieren
+    die *Quellen* von B mit dem Compiler A. Sie erhalten daraus den Compiler B in
+    der Zielsprache (Sourcecode für B in der Zielsprache, z.B. Haskell, Java, ...).
+    Sie bauen nun B mit dem passenden Systemwerkzeug (z.B. javac oder gcc).
+    Verwenden sie den so entstehenden ausführbaren Compiler B, um Programme der
+    Vollsprache X zu kompilieren.
+
+    Self-Hosting: Kann Ihr Compiler B sich selbst kompilieren, also kann B den in X
+    geschriebenen Quellcode von B korrekt übersetzen?
+
+    Transpiling: Die Codegenerierung kann als Transpilation in eine bestehende
+    Zielsprache (z.B. Java oder C) erfolgen. Sie brauchen also keine SSA-Phase und
+    Assembler-Generierung o.ä. umsetzen. Der so generierte Code soll sich mit
+    Standardwerkzeugen kompilieren oder ausführen lassen (z.B. javac, gcc, python,
+    node). Sie sollten vermutlich eine kleine Laufzeitbibliothek in der Zielsprache
+    mitliefern.
+    :::
+
 -   LaTeX Equation Language: Parsen und übersetzen eines LaTeX-Teilgrammatik
     (Arithmetik, cases, Funktionsdefinition) in ausführbaren LLVM-IR-Code oder
     Java-Bytecode o.ä. Ziel: Brücke von symbolischer Notation zu maschinennahem
