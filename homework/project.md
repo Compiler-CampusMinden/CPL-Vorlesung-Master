@@ -132,7 +132,7 @@ Potentiell interessante Literatur im Bereich DSL:
 
     Ziel dieses Projekt-Vorschlags ist die Definition einer einfachen
     objektorientierten Sprache ("MiniJava") mit Features aus der funktionalen
-    Programmieren, die sich für Programmier-Einsteiger leicht verstehen lässt und an
+    Programmierung, die sich für Programmier-Einsteiger leicht verstehen lässt und an
     der man wichtige Programmierkonzepte einfach erlernen kann. Diese Sprache soll
     unabhängig von der Dungeon-API sein, aber trotzdem typische Möglichkeiten für
     die Interaktion in Spielen aufweisen. Für diese Sprache soll ein Interpreter
