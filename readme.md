@@ -4,9 +4,11 @@ no_beamer: true
 title: "MIF 1.5: Concepts of Programming Languages (Winter 2025/26)"
 ---
 
+# Syllabus
+
 ![](admin/images/architektur_cb.png){width="80%"}
 
-# Kursbeschreibung
+## Kursbeschreibung
 
 Der Compiler ist das wichtigste Werkzeug in der Informatik. In der Königsdisziplin
 der Informatik schließt sich der Kreis, hier kommen die unterschiedlichen
@@ -18,7 +20,7 @@ Konzepte im Compilerbau sowie um grundlegende Konzepte von Programmiersprachen u
 setzen diese bei der Erstellung eines Bytecode-Compilers für unterschiedliche
 Programmiersprachen für die Java-VM oder WASM ein.
 
-# Überblick Modulinhalte
+## Überblick Modulinhalte
 
 1.  Lexikalische Analyse: Scanner/Lexer
     -   Reguläre Sprachen
@@ -39,7 +41,7 @@ Programmiersprachen für die Java-VM oder WASM ein.
 7.  Programmiersprachen-Konzepte: OOP, FP, LP, CP u.a. und die Auswirkungen auf
     Compiler/Interpreter und Laufzeitumgebung
 
-# Team
+## Team
 
 -   [BC
     George](https://www.hsbi.de/minden/ueber-uns/personenverzeichnis/birgit-christina-george)
@@ -47,7 +49,7 @@ Programmiersprachen für die Java-VM oder WASM ein.
     Gips](https://www.hsbi.de/minden/ueber-uns/personenverzeichnis/carsten-gips)
     (Sprechstunde nach Vereinbarung)
 
-# Kursformat
+## Kursformat
 
 | Seminaristischer Unterricht (2 SWS) | Praktikum (3 SWS)            |
 |:------------------------------------|:-----------------------------|
@@ -57,7 +59,7 @@ Durchführung des seminaristischen Unterrichts als *Flipped Classroom* (Carsten)
 als *reguläre Vorlesung* (BC). Zugangsdaten Zoom siehe
 [ILIAS](https://www.hsbi.de/elearning/goto.php/crs/1555873).
 
-# Fahrplan
+## Fahrplan
 
 Hier finden Sie einen abonnierbaren [Google
 Kalender](https://calendar.google.com/calendar/ical/4ba4736f0bc2005e4bcd75d48671e49cd4c9f3839988bf4f522f45a8bfbf676b%40group.calendar.google.com/public/basic.ics)
@@ -82,7 +84,7 @@ mit allen Terminen der Veranstaltung zum Einbinden in Ihre Kalender-App.
 | 13.01.   |                                                                                                                                                         | *Sprechstunde*                                                                                                  | *Freies Arbeiten*                                                                                    |                                                                                                                                             |
 | 20.01.   |                                                                                                                                                         | *[Vorträge](homework/talk.md) [DSL-Projekt](homework/project.md)*                                               | *[Vorträge](homework/talk.md) [DSL-Projekt](homework/project.md)*                                    |                                                                                                                                             |
 
-# Prüfungsform, Note und Credits
+## Prüfungsform, Note und Credits
 
 **Mündliche Prüfung plus Studienleistung (Portfolio)**, 10 ECTS
 
@@ -138,7 +140,7 @@ mit allen Terminen der Veranstaltung zum Einbinden in Ihre Kalender-App.
 
 :::
 
-# Materialien
+## Materialien
 
 1.  ["**Compilers: Principles, Techniques, and
     Tools**"](https://learning.oreilly.com/library/view/compilers-principles-techniques/9789357054881/).
@@ -175,9 +177,9 @@ mit allen Terminen der Veranstaltung zum Einbinden in Ihre Kalender-App.
     [Online](https://learning.oreilly.com/library/view/seven-languages-in/9781680500059/)
     über die [O'Reilly-Lernplattform](https://www.oreilly.com/library-access/).
 
-# Förderungen und Kooperationen
+## Förderungen und Kooperationen
 
-## Kooperation mit University of Alberta, Edmonton (Kanada)
+### Kooperation mit University of Alberta, Edmonton (Kanada)
 
 Über das Projekt ["We CAN
 virtuOWL"](https://www.uni-bielefeld.de/international/profil/netzwerk/alberta-owl/we-can-virtuowl/)
@@ -192,7 +194,7 @@ durchgeführt.)
 
 ------------------------------------------------------------------------------------
 
-# LICENSE
+## LICENSE
 
 ![](https://licensebuttons.net/l/by-sa/4.0/88x31.png)
 
