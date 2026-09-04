@@ -73,8 +73,8 @@ als *reguläre Vorlesung* (BC). Zugangsdaten Zoom siehe
 | 04.12. | [Interpreter](lecture/06-interpretation/readme.md) |  | **Mo, 30.11., 17:00 - 18:00 Uhr (online): Minden Presentations**: [*Vortrag: Vorstellung "DSL-Projekt"*](homework/talk.md) |
 | 11.12. | [*Vortrag "Compiler": VM & Bytecode*](homework/talk.md) | [*Kurzvortrag/Diskussion "PL-Feature": CP (Gabbrielli & Martini, Kap. 13)*](homework/talk.md) | **Mo, 07.12., 17:00 - 18:00 Uhr (online): Edmonton Presentations** |
 | 18.12. | [Optimierung und Datenfluss- und Kontrollflussanalyse](lecture/05-optimization/optimization.md) |  |  |
-| *25.12.* | *Weihnachtspause* |  |  |
-| *01.01.* | *Weihnachtspause* |  |  |
+| *25.12.* | ***Weihnachtspause*** |  |  |
+| *01.01.* | ***Weihnachtspause*** |  |  |
 | 08.01. | [*Vortrag "Compiler": Garbage Collection*](homework/talk.md) | [*Vortrag "Compiler": JIT*](homework/talk.md) |  |
 | 15.01. | [*Kurzvortrag/Diskussion "PL-Feature": Borrow Checking und Lifetimes (Rust)*](homework/talk.md) | [*Kurzvortrag/Diskussion "PL-Feature": Dependent Type Systems (Idris)*](homework/talk.md) |  |
 | 22.01. | *Sprechstunde* | *Freies Arbeiten* |  |
