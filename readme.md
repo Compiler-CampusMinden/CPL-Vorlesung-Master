@@ -61,10 +61,6 @@ als *reguläre Vorlesung* (BC). Zugangsdaten Zoom siehe
 
 ## Fahrplan
 
-Hier finden Sie einen abonnierbaren [Google
-Kalender](https://calendar.google.com/calendar/ical/4ba4736f0bc2005e4bcd75d48671e49cd4c9f3839988bf4f522f45a8bfbf676b%40group.calendar.google.com/public/basic.ics)
-mit allen Terminen der Veranstaltung zum Einbinden in Ihre Kalender-App.
-
 | Woche    | Sem. Unterricht: Selbststudium (Vorbereitung)                                                                                                           | Sem. Unterricht: Gemeinsame Sitzung                                                                             | Praktikum                                                                                            | Edmonton/Minden-Meetings                                                                                                                    |
 |:---------|:--------------------------------------------------------------------------------------------------------------------------------------------------------|:----------------------------------------------------------------------------------------------------------------|:-----------------------------------------------------------------------------------------------------|:--------------------------------------------------------------------------------------------------------------------------------------------|
 | 07.10.   | [Überblick](lecture/00-intro/overview.md) \| [Sprachen](lecture/00-intro/languages.md) \| [Anwendungen](lecture/00-intro/applications.md)               | [Orga](https://github.com/Compiler-CampusMinden/CPL-Vorlesung-Master-W25) (*Zoom*)                              |                                                                                                      |                                                                                                                                             |
