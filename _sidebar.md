@@ -1,0 +1,21 @@
+- [**Syllabus**](readme.md)
+- **Vorlesungsunterlagen**
+  - **Überblick**
+  - **Lexikalische Analyse**
+    - [Reguläre Sprachen, Ausdrucksstärke](lecture/01-lexing/regular.md)
+    - [Lexer: Handcodierte Implementierung](lecture/01-lexing/recursive.md)
+  - **Syntaktische Analyse**
+    - [CFG](lecture/02-parsing/cfg.md)
+    - [LL-Parser](lecture/02-parsing/ll-parser.md)
+    - [LL-Parser selbst implementiert](lecture/02-parsing/ll-parser-impl.md)
+    - [Syntaxanalyse: LR-Parser (LR(0), LALR)](lecture/02-parsing/lr-parser.md)
+  - **Semantische Analyse**
+  - **Interpreter**
+    - [AST-basierte Interpreter: Basics](lecture/06-interpretation/astdriven-part1.md)
+    - [Syntaxgesteuerte Interpreter](lecture/06-interpretation/syntaxdriven.md)
+    - [AST-basierte Interpreter: Funktionen und Klassen](lecture/06-interpretation/astdriven-part2.md)
+  - **Optimierung**
+    - [Optimierung und Datenflussanalyse](lecture/05-optimization/optimization.md)
+- **Praktikum**
+  - [Seminaristischer Unterricht: Vorträge zu Programmiersprachen und Compilerbau](homework/talk.md)
+  - [MIF 1.5 Kurs-Projekt: Sprachen und Compiler](homework/project.md)
