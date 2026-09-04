@@ -62,17 +62,17 @@ als *reguläre Vorlesung* (BC). Zugangsdaten Zoom siehe
 ## Fahrplan
 
 | Woche (Fr) | Seminaristischer Unterricht | Praktikum | Edmonton/Minden-Meetings |
-|:---|:----------------------------------------|:----------------|:----------------------|
-| 16.10. | [Orga](readme.md) \|\| [Überblick](lecture/00-intro/overview.md) \| [Sprachen](lecture/00-intro/languages.md) \| [Anwendungen](lecture/00-intro/applications.md) |  |  |
+|:----|:---------------------------------------|:----------------|:----------------------|
+| 16.10. | [Orga](readme.md) \|\| [Überblick](lecture/00-intro/readme.md) |  |  |
 | 23.10. | [Reguläre Sprachen](lecture/01-lexing/regular.md) | [CFG](lecture/02-parsing/cfg.md) |  |
 | 30.10. | [Lexer (Implementierung)](lecture/01-lexing/recursive.md) \| [LL-Parser (Theorie)](lecture/02-parsing/ll-parser.md) | [LL-Parser (Implementierung)](lecture/02-parsing/ll-parser-impl.md) |  |
 | 06.11. | [LR-Parser](lecture/02-parsing/lr-parser.md) | [*Vortrag "Compiler": Parsergeneratoren (ANTLR, Treesitter, Flex&Bison, ...)*](homework/talk.md) |  |
-| 13.11. | Symboltabellen: [Überblick](lecture/03-semantics/symbtab0-intro.md) \| [Scopes](lecture/03-semantics/symbtab1-scopes.md) \| [Funktionen](lecture/03-semantics/symbtab2-functions.md) \| [Klassen](lecture/03-semantics/symbtab3-classes.md) | [*Vortrag "Compiler": LALR, PEG, Pratt, Combinators*](homework/talk.md) |  |
+| 13.11. | [Semantische Analyse](lecture/03-semantics/readme.md) | [*Vortrag "Compiler": LALR, PEG, Pratt, Combinators*](homework/talk.md) |  |
 | 20.11. | [*Vortrag "Compiler": Type Checking, Hindley-Milner*](homework/talk.md) | [*Kurzvortrag/Diskussion "PL-Feature": OOP (Gabbrielli & Martini, Kap. 10)*](homework/talk.md) |  |
-| 27.11. | [Syntaxgesteuerte Interpreter](lecture/06-interpretation/syntaxdriven.md) \| [AST-basierte Interpreter 1](lecture/06-interpretation/astdriven-part1.md) \| [AST-basierte Interpreter 2](lecture/06-interpretation/astdriven-part2.md) | *Vorstellung der Konzepte [DSL-Projekt](homework/project.md)* |  |
-| 04.12. | [*Vortrag "Compiler": VM & Bytecode*](homework/talk.md) | [*Kurzvortrag/Diskussion "PL-Feature": FP (Gabbrielli & Martini, Kap. 11)*](homework/talk.md) |  |
-| 11.12. | [Optimierung und Datenfluss- und Kontrollflussanalyse](lecture/05-optimization/optimization.md) | [*Kurzvortrag/Diskussion "PL-Feature": LP (Gabbrielli & Martini, Kap. 12)*](homework/talk.md) | **Mo, 01.12., 18:00 - 19:00 Uhr (online): Edmonton/Minden: Minden Presentations**: [*Vortrag: Vorstellung "DSL-Projekt"*](homework/talk.md) |
-| 18.12. | *Freies Arbeiten* | [*Kurzvortrag/Diskussion "PL-Feature": CP (Gabbrielli & Martini, Kap. 13)*](homework/talk.md) | **Mo, 08.12., 18:00 - 19:00 Uhr (online): Edmonton/Minden: Edmonton Presentations** |
+| 27.11. | [*Kurzvortrag/Diskussion "PL-Feature": FP (Gabbrielli & Martini, Kap. 11)*](homework/talk.md) | [*Kurzvortrag/Diskussion "PL-Feature": LP (Gabbrielli & Martini, Kap. 12)*](homework/talk.md) |  |
+| 04.12. | [Interpreter](lecture/06-interpretation/readme.md) |  |  |
+| 11.12. | [*Vortrag "Compiler": VM & Bytecode*](homework/talk.md) | [*Kurzvortrag/Diskussion "PL-Feature": CP (Gabbrielli & Martini, Kap. 13)*](homework/talk.md) | **Mo, 01.12., 18:00 - 19:00 Uhr (online): Edmonton/Minden: Minden Presentations**: [*Vortrag: Vorstellung "DSL-Projekt"*](homework/talk.md) |
+| 18.12. | [Optimierung und Datenfluss- und Kontrollflussanalyse](lecture/05-optimization/optimization.md) |  | **Mo, 08.12., 18:00 - 19:00 Uhr (online): Edmonton/Minden: Edmonton Presentations** |
 | *25.12.* | *Weihnachtspause* |  |  |
 | *01.01.* | *Weihnachtspause* |  |  |
 | 08.01. | [*Vortrag "Compiler": Garbage Collection*](homework/talk.md) | [*Vortrag "Compiler": JIT*](homework/talk.md) |  |
