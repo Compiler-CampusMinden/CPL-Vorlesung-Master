@@ -25,7 +25,7 @@ Welcher Ausdruck hat welchen Typ?
 -   a = f(b)
 -   a = b + c
 -   a = b + o.nummer
--   if (f(a) == f(b))
+-   if (f(a) \== f(b))
 
 ## Taschenrechner: Parsen von Ausdrücken wie `3*5+4`
 
@@ -111,7 +111,7 @@ Ausdrucks im Code.
     *(Wenn f den Typ $s \rightarrow t$ hat und x den Typ s, dann hat der Ausdruck
     f(x) den Typ t.)*
 
--   z.  B. zur Auflösung von Überladung und Polymorphie zur Laufzeit
+-   z\. B. zur Auflösung von Überladung und Polymorphie zur Laufzeit
 
 ## Statische Typprüfungen
 

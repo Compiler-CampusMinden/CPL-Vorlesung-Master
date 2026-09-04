@@ -132,10 +132,10 @@ Potentiell interessante Literatur im Bereich DSL:
 
     Ziel dieses Projekt-Vorschlags ist die Definition einer einfachen
     objektorientierten Sprache ("MiniJava") mit Features aus der funktionalen
-    Programmierung, die sich für Programmier-Einsteiger leicht verstehen lässt und an
-    der man wichtige Programmierkonzepte einfach erlernen kann. Diese Sprache soll
-    unabhängig von der Dungeon-API sein, aber trotzdem typische Möglichkeiten für
-    die Interaktion in Spielen aufweisen. Für diese Sprache soll ein Interpreter
+    Programmierung, die sich für Programmier-Einsteiger leicht verstehen lässt und
+    an der man wichtige Programmierkonzepte einfach erlernen kann. Diese Sprache
+    soll unabhängig von der Dungeon-API sein, aber trotzdem typische Möglichkeiten
+    für die Interaktion in Spielen aufweisen. Für diese Sprache soll ein Interpreter
     entwickelt werden, der im Dungeon als "System" in der ECS-Architektur mitläuft,
     empfangen und verarbeitet werden und in die entsprechenden Aktionen im Dungeon
     umgesetzt werden. Zusätzlich soll eine VSCode-Extension realisiert werden, die
@@ -191,8 +191,8 @@ Potentiell interessante Literatur im Bereich DSL:
     Ausdrücke) mit Lowering nach LLVM; alternativ/ergänzend Optimierung via E-Graphs
     (Equality Saturation) und anschließendes Lowering.
 
-Neben passenden Konzepten soll auch eine geeignete Umsetzung/Implementierung erstellt
-und empirisch untersucht werden.
+Neben passenden Konzepten soll auch eine geeignete Umsetzung/Implementierung
+erstellt und empirisch untersucht werden.
 
 # Exposé (pro Team, Kurs-GitHub)
 
