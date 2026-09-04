@@ -1,7 +1,7 @@
 ---
 has_license: true
 no_beamer: true
-title: "MIF 1.5: Concepts of Programming Languages (Winter 2025/26)"
+title: "MIF 1.5: Concepts of Programming Languages (Winter 2026/27)"
 ---
 
 # Syllabus
