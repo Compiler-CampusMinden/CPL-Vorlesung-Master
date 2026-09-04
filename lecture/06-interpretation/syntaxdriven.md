@@ -10,7 +10,7 @@ Ergebnisse:
 ![](images/architektur_cb.png){width="60%"}
 
 |  | Phase | Ergebnis |
-|:-----|:--------------------------|:--------------------------------------------------|
+|:-------|:--------------------------|:------------------------------------------------|
 | 0 | Lexer/Parser | AST |
 | 1 | Semantische Analyse, Def-Phase | Symboltabelle (Definitionen), Verknüpfung Scopes mit AST-Knoten |
 | 2 | Semantische Analyse, Ref-Phase | Prüfung auf nicht definierte Referenzen |
