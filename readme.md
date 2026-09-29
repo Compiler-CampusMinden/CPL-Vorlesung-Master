@@ -84,55 +84,60 @@ als *reguläre Vorlesung* (BC). **Zugangsdaten Zoom siehe
 
 **Mündliche Prüfung plus Studienleistung (Portfolio)**, 10 ECTS
 
--   **Studienleistung**: "Portfolio" - Kriterien je Person:
+### **Studienleistung**: "Portfolio" - Kriterien je Person:
 
-    1.  Teilnahme an beiden Edmonton/Minden-Terminen mit aktiver Beteiligung, pro
-        Team ist am ersten Treffen ein Vortrag zum DSL-Projekt a 45 Minuten zu
-        halten (Englisch!)
-    2.  Kurzvortrag "PL Features" a 20 Minuten (pro Team) plus Diskussionsleitung
-    3.  Vortrag "Compiler" a 60 Minuten (pro Team)
-    4.  Abschlussvortrag zum DSL-Projekt am Semesterende (20.01.) a 30 Minuten (pro
-        Team)
+1.  Teilnahme an mind. zwei Edmonton/Minden-Terminen mit aktiver Beteiligung, pro
+    Team ist am zweiten Treffen ein Vortrag zum DSL-Projekt a 45 Minuten zu halten
+    (Englisch!)
+    -   Termin 1: Dienstag, 03.11., 17:00 - 18:00 Uhr (online)
+    -   **Termin 2: Montag, 30.11., 17:00 - 18:00 Uhr (online): Vortrag zum
+        DSL-Projekt**
+    -   Termin 3: Montag, 07.12., 17:00 - 18:00 Uhr (online)
+2.  Kurzvortrag "PL Features" a 20 Minuten (pro Team) plus Diskussionsleitung
+3.  Vortrag "Compiler" a 60 Minuten (pro Team)
+4.  Abschlussvortrag zum DSL-Projekt am Semesterende (29.01.) a 30 Minuten (pro
+    Team)
 
-    Je Kriterium: Abgabe eines Post Mortem im ILIAS (**jede Person individuell**)
+Zu diesen Leistungen soll ein Lerntagebuch geführt und abgegeben werden (**jede
+Person individuell**).
 
--   **Gesamtnote**: Mündliche Prüfung (einzeln, ca. 45 Minuten)
+### **Gesamtnote**: Mündliche Prüfung (einzeln, ca. 45 Minuten)
 
-::: {.details title="Hinweise"}
--   Die Bearbeitung der Leistungen erfolgt im Team.
--   Ein Team umfasst 3 Personen.
--   Die Post Mortems sind individuell zu erstellen und abzugeben.
+Sie können die Prüfung in der ersten oder in der zweiten Prüfungsphase ablegen. Die
+mündliche Prüfung wird über Zoom durchgeführt und dauert ca. 45 Minuten.
+
+### Hinweise
+
+-   Die Bearbeitung der Leistungen erfolgt im Team
+-   Ein Team umfasst 3 Personen
+-   Das Lerntagebuch ist individuell zu erstellen und abzugeben
 -   "Aktive Beteiligung" umfasst Anwesenheit und sachbezogene Beiträge;
-    Anwesenheit/Beteiligung werden dokumentiert.
+    Anwesenheit/Beteiligung werden dokumentiert
 
 \smallskip
 
--   **Post Mortem**: Jede Person beschreibt individuell(!) die Bearbeitung des
-    jeweiligen Kriteriums bzw. die Teilnahme am Edmonton/Minden-Meeting
-    zurückblickend mit mind. 150 bis max. 400 Wörtern (Nutzlast; Überschriften und
+-   **Lerntagebuch**: Jede Person beschreibt individuell(!) die Bearbeitung der
+    Studienleistung (auch die Teilnahme an den Edmonton/Minden-Meetings)
+    zurückblickend mit mind. 750 bis max. 2000 Wörtern (Nutzlast! Überschriften und
     Links zählen nicht mit). Gehen Sie dabei aussagekräftig und nachvollziehbar auf
     folgende Punkte ein:
 
-    1.  Zusammenfassung: Was wurde gemacht bzw. was wurde auf dem Meeting
+    1.  **Zusammenfassung**: Was wurde gemacht bzw. was wurde auf dem Meeting
         besprochen?
-    2.  Details: Kurze Beschreibung besonders interessanter Aspekte.
-    3.  Reflexion: Was war der schwierigste Teil? Wie haben Sie dieses Problem
+    2.  **Details**: Kurze Beschreibung besonders interessanter Aspekte.
+    3.  **Reflexion**: Was war der schwierigste Teil? Wie haben Sie dieses Problem
         gelöst?
-    4.  Reflexion: Was haben Sie gelernt oder (besser) verstanden?
-    5.  Team: Mit wem haben Sie zusammengearbeitet?
-    6.  Link zu Ihrem Repo mit den relevanten Artefakten (Lösung, Slides für den
+    4.  **Reflexion**: Was haben Sie gelernt oder (besser) verstanden?
+    5.  **Team**: Mit wem haben Sie zusammengearbeitet?
+    6.  **Link zu Ihrem Repo** mit den relevanten Artefakten (Lösung, Slides für den
         Vortrag, ...).
 
     Für die Edmonton/Minden-Meetings passen Sie bitte die Punkte (1) bis (4) und (5)
-    entsprechend inhaltlich an, (6) entfällt für das zweite Meeting.
+    entsprechend inhaltlich an, (6) entfällt.
 
-    Die Post Mortems geben Sie bitte pro Person bis spätestens zur letzten
+    Das Lerntagebuch geben Sie bitte pro Person bis spätestens zur letzten
     gemeinsamen Sitzung im
-    [ILIAS](https://www.hsbi.de/elearning/goto.php/exc/1582798) ab.
-
-    Siehe auch
-    https://github.com/Compiler-CampusMinden/CPL-Vorlesung-Master-W25/discussions/2.
-:::
+    [ILIAS](https://www.hsbi.de/elearning/goto.php/exc/1738006) ab.
 
 ## Materialien
 
