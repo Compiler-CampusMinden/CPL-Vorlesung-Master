@@ -56,8 +56,8 @@ Programmiersprachen für die Java-VM oder WASM ein.
 | Fr, 08:45 - 10:15 Uhr (Zoom)        | Fr, 10:30 - 12:45 Uhr (Zoom) |
 
 Durchführung des seminaristischen Unterrichts als *Flipped Classroom* (Carsten) bzw.
-als *reguläre Vorlesung* (BC). Zugangsdaten Zoom siehe
-[ILIAS](https://www.hsbi.de/elearning/goto.php/crs/1555873).
+als *reguläre Vorlesung* (BC). **Zugangsdaten Zoom siehe
+[ILIAS](https://www.hsbi.de/elearning/goto.php/crs/1702087)**.
 
 ## Fahrplan
 
