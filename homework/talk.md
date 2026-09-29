@@ -148,7 +148,7 @@ Diskussion ein.
 
 # Zwei Vorträge zum Projekt
 
-1.  Edmonton-/Minden-Meeting (Mo, 01.12., 18-19 Uhr, EN)
+1.  Edmonton-/Minden-Meeting (Mo, 30.11., 17-18 Uhr, EN)
     -   Dauer: ca. 40-45 Minuten pro Team, parallel in Breakout-Gruppen
     -   Ziel: Vorstellung von Idee, Problemstellung, Architektur/Design,
         MVP/Prototyp-Status, Risiken und Evaluationsplan
@@ -158,7 +158,7 @@ Diskussion ein.
 
 \smallskip
 
-2.  Abschlusspräsentation (Di, 20.01., DE)
+2.  Abschlusspräsentation (Fr, 29.01., DE)
     -   Dauer: ca. 30 Minuten pro Team (Vorlesungs- und Praktikumsslot)
     -   Ziel: Ergebnisse, Demos, Evaluation, Lessons Learned, Ausblick
 

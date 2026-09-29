@@ -221,10 +221,10 @@ spätestens einen Tag vor der internen Projektvorstellung.
     Präsentation von ca. 20 Minuten; das Exposé soll mind. einen Tag vorher im Forum
     eingestellt sein) =\> Generalprobe für den [Talk](talk.md) im
     Edmonton-/Minden-Meeting
--   **Edmonton/Minden**: Vorstellung Ihres Projekts: Mo, 01.12., 18:00 - 19:00 Uhr
+-   **Edmonton/Minden**: Vorstellung Ihres Projekts: Mo, 30.11., 17:00 - 18:00 Uhr
     (pro Team eine (**englisch-sprachige**) Präsentation von ca. 40-45 Minuten plus
     Diskussion in Breakout-Gruppen)
--   **Abschlusspräsentation**: Di, 20.01. (Vorlesungs- und Praktikumsslot, pro Team
+-   **Abschlusspräsentation**: Fr, 29.01. (Vorlesungs- und Praktikumsslot, pro Team
     eine Präsentation von ca. 30 Minuten)
 
 ------------------------------------------------------------------------------------
