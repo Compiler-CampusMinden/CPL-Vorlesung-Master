@@ -1,3 +1,2 @@
-*   [Syllabus](readme.md)
-*   [Skript](lecture/readme.md)
-*   [Hausaufgaben](homework/readme.md)
+*   [Fahrplan](readme.md?id=fahrplan)
+*   [Github](https://github.com/Compiler-CampusMinden/CPL-Vorlesung-Master-W26)
