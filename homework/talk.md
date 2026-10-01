@@ -9,10 +9,10 @@ title: "Seminaristischer Unterricht: Vorträge zu Programmiersprachen und
 In diesem Semester sind mehrere Vorträge Teil der Prüfungsleistung. Pro Team sind zu
 halten:
 
--   ein Kurzvortrag (ca. 20 Minuten) zu einem Thema aus dem Bereich
+-   ein **Kurzvortrag** (ca. 20 Minuten) zu einem Thema aus dem Bereich
     Programmiersprachen/-konzepte,
--   ein Fachvortrag (ca. 60 Minuten) zu einem Compiler-Thema,
--   zwei Projektvorträge (einmal im Edmonton-/Minden-Meeting, einmal zum
+-   ein **Fachvortrag** (ca. 60 Minuten) zu einem Compiler-Thema,
+-   zwei **Projektvorträge** (einmal im Edmonton-/Minden-Meeting, einmal zum
     Semesterende).
 
 Alle Vorträge richten sich an Master-Studierende und sollen fachlich fundiert, klar
