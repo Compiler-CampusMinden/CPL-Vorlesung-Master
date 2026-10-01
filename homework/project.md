@@ -218,15 +218,17 @@ Die Bearbeitung erfolgt in 3er-Teams.
 
 ## Fristen
 
--   **Vorstellung der Konzepte** (intern): Fr, 20.11. (Praktikumsslot, pro Team eine
-    Präsentation von ca. 20 Minuten; das Exposé soll mind. einen Tag vorher im Forum
-    eingestellt sein) =\> Generalprobe für den [Talk](talk.md) im
-    Edmonton-/Minden-Meeting
--   **Edmonton/Minden**: Vorstellung Ihres Projekts: Mo, 30.11., 17:00 - 18:00 Uhr
-    (pro Team eine (**englisch-sprachige**) Präsentation von ca. 40-45 Minuten plus
+-   **Projekt-Pitch** (Praktikumsslot): Vorstellung der Konzepte für das
+    DSL-Projekt; pro Team eine Präsentation von ca. 20 Minuten; das **Exposé** soll
+    mind. einen Tag vorher im ILIAS eingestellt sein =\> Generalprobe für den
+    [Talk](talk.md) im Edmonton-/Minden-Meeting
+-   **Edmonton/Minden**: Vorstellung Ihres Projekts auf dem 2. Edmonton-Meeting (pro
+    Team eine **englisch-sprachige** Präsentation von ca. 40-45 Minuten plus
     Diskussion in Breakout-Gruppen)
--   **Abschlusspräsentation**: Fr, 29.01. (Vorlesungs- und Praktikumsslot, pro Team
-    eine Präsentation von ca. 30 Minuten)
+-   **Abschlusspräsentation** (Vorlesungs- und Praktikumsslot): pro Team eine
+    Präsentation von ca. 30 Minuten zum DSL-Projekt
+
+Die zeitliche Verteilung entnehmen Sie bitte dem [Fahrplan](../readme.md).
 
 [^1]: ... for a given value of "jede" :) ... Die Idee muss zum Thema passen und vom
     Anspruch und Umfang her einem 10 ECTS Master-Modul angemessen sein.

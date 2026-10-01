@@ -62,7 +62,7 @@ gezielte Diskussionsfragen zur Aktivierung der Zuhörenden vor.
     Vorbereitung von einigen Diskussionsfragen
 -   Vortragssprache ist Deutsch
 
-Empfohlene weitere Referenzen (allgemein):
+## Empfohlene weitere Referenzen (allgemein):
 
 -   @Gabbrielli2023
 -   @PLAI2025
@@ -144,7 +144,7 @@ Diskussion ein.
 
 # Zwei Vorträge zum Projekt
 
-1.  **Edmonton-/Minden-Meeting (Termin 2)** (Mo, 30.11., 17-18 Uhr, EN)
+1.  Projektvortrag 1: **Edmonton-/Minden-Meeting (Termin 2)**
     -   Dauer: ca. 40-45 Minuten pro Team, parallel in Breakout-Gruppen
     -   Ziel: Vorstellung von Idee, Problemstellung, Architektur/Design,
         MVP/Prototyp-Status, Risiken und Evaluationsplan
@@ -154,10 +154,11 @@ Diskussion ein.
 
 \smallskip
 
-2.  **Abschlusspräsentation** (Fr, 29.01., DE)
+2.  Projektvortrag 2: **Abschlusspräsentation**
     -   Dauer: ca. 30 Minuten pro Team (Vorlesungs- und Praktikumsslot)
     -   Ziel: Ergebnisse, Demos, Evaluation, Lessons Learned, Ausblick
 
 \bigskip
 
-Siehe auch [Beschreibung zum Projekt](project.md).
+Siehe auch [Beschreibung zum Projekt](project.md). Die zeitliche Verteilung
+entnehmen Sie bitte dem [Fahrplan](../readme.md).

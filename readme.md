@@ -90,25 +90,26 @@ als *reguläre Vorlesung* (BC). **Zugangsdaten Zoom siehe
 ### **Studienleistung**: "Portfolio" - Kriterien je Person:
 
 1.  **Projekt-Pitch** (Vorstellung der Konzepte für das DSL-Projekt): Freitag,
-    20.11., ca. 20 Minuten (pro Team); Exposé bis zum 19.11.
+    20.11., ca. 20 Minuten (pro Team); **Exposé** bis zum 19.11.
 2.  Teilnahme an **mind. zwei Edmonton/Minden-Terminen** mit aktiver Beteiligung,
     pro Team ist am zweiten Treffen ein Vortrag zum DSL-Projekt ca. 45 Minuten zu
     halten (Englisch!)
     -   Termin 1: Dienstag, 03.11., 17:00 - 18:00 Uhr (online)
     -   **Termin 2**: Montag, 30.11., 17:00 - 18:00 Uhr (online): **Vorstellung der
-        DSL-Projekte** ca. 40-45 Minuten pro Team (**Englisch**)
+        DSL-Projekte** (Projektvortrag 1), ca. 40-45 Minuten pro Team (**Englisch**)
     -   Termin 3: Montag, 07.12., 17:00 - 18:00 Uhr (online)
 3.  **Kurzvortrag** "PL Features" ca. 20 Minuten (pro Team) plus Diskussionsleitung
 4.  **Fachvortrag** "Compiler" ca. 60 Minuten (pro Team)
-5.  **Abschlusspräsentation** zum DSL-Projekt am Semesterende (Freitag, 29.01.) ca.
-    30 Minuten (pro Team)
+5.  **Abschlusspräsentation** zum DSL-Projekt (Projektvortrag 2) am Semesterende
+    (Freitag, 29.01.) ca. 30 Minuten (pro Team)
 
 Zu diesen Leistungen soll ein **Lerntagebuch** (s.u.) geführt und abgegeben werden
 (**jede Person individuell**).
 
-Bitte beachtet die Abgaben und die Fristen im
-**[ILIAS](https://www.hsbi.de/elearning/goto.php/exc/1738006)** (Exposé, Slides,
-Lerntagebuch).
+Das Exposé, die Slides (Edmonton-Talk, Kurzvortrag, Fachvortrag,
+Abschlusspräsentation) und das Lerntagebuch sind im
+**[ILIAS](https://www.hsbi.de/elearning/goto.php/exc/1738006)** als PDF abzugeben.
+Bitte beachtet die jeweiligen Abgabefristen im ILIAS!
 
 ### **Gesamtnote**: Mündliche Prüfung (einzeln, ca. 45 Minuten)
 
