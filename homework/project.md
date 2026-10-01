@@ -207,17 +207,18 @@ erstellt und empirisch untersucht werden.
 Bitte beschreiben Sie die einzelnen Punkte so ausführlich wie nötig, um
 nachvollziehbar zu sein.
 
-Abgabe als Beitrag in unserem [Forum im
-Kurs-GitHub](https://github.com/Compiler-CampusMinden/CPL-Vorlesung-Master-W25/discussions/categories/projekt-exposé),
+Abgabe als PDF im [ILIAS](https://www.hsbi.de/elearning/goto.php/exc/1738006),
 spätestens einen Tag vor der internen Projektvorstellung.
 
 # Organisation
 
-**Teams**: Die Bearbeitung erfolgt in 3er-Teams.
+## Teams
 
-**Fristen**
+Die Bearbeitung erfolgt in 3er-Teams.
 
--   **Vorstellung der Konzepte** (intern): Di, 18.11. (Praktikumsslot, pro Team eine
+## Fristen
+
+-   **Vorstellung der Konzepte** (intern): Fr, 20.11. (Praktikumsslot, pro Team eine
     Präsentation von ca. 20 Minuten; das Exposé soll mind. einen Tag vorher im Forum
     eingestellt sein) =\> Generalprobe für den [Talk](talk.md) im
     Edmonton-/Minden-Meeting
@@ -226,11 +227,6 @@ spätestens einen Tag vor der internen Projektvorstellung.
     Diskussion in Breakout-Gruppen)
 -   **Abschlusspräsentation**: Fr, 29.01. (Vorlesungs- und Praktikumsslot, pro Team
     eine Präsentation von ca. 30 Minuten)
-
-------------------------------------------------------------------------------------
-
-Wir freuen uns darauf, Sie in diesem herausfordernden und spannenden Projekt zu
-begleiten und wünschen Ihnen viel Erfolg!
 
 [^1]: ... for a given value of "jede" :) ... Die Idee muss zum Thema passen und vom
     Anspruch und Umfang her einem 10 ECTS Master-Modul angemessen sein.
