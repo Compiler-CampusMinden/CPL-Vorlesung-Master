@@ -80,6 +80,9 @@ als *reguläre Vorlesung* (BC). **Zugangsdaten Zoom siehe
 |          | 22.01.     | *Sprechstunde*                                                                                                                                                                                                                               | *Freies Arbeiten*                                                                                                                |                                                                                                 |
 |          | 29.01.     | **Vorträge DSL-Projekt**                                                                                                                                                                                                                     | **Vorträge DSL-Projekt**                                                                                                         |                                                                                                 |
 
+- [Link zu den Talks](homework/talk.md)
+- [Link zum DSL-Projekt](homework/project.md)
+
 ## Prüfungsform, Note und Credits
 
 **Mündliche Prüfung plus Studienleistung (Portfolio)**, 10 ECTS
