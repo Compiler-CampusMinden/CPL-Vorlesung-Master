@@ -28,11 +28,11 @@ Ziel ist die Einführung in ein ausgewähltes Programmiersprachen-Thema. Das
 vortragende Team arbeitet die Kernideen heraus und demonstriert zentrale Konzepte
 anhand kleiner, prägnanter Beispiele und leitet die anschließende Diskussion.
 
-Alle Teams sollen die Literatur zu den Kurzvorträgen zumindest grob überflogen
-haben. Das vortragende Team leitet die an den Vortrag anschließende Diskussion und
-bereitet 2-4 gezielte Diskussionsfragen zur Aktivierung der Zuhörenden vor.
+Alle Teams haben die Literatur zu den Kurzvorträgen zumindest grob überflogen. Das
+vortragende Team leitet die an den Vortrag anschließende Diskussion und bereitet 2-4
+gezielte Diskussionsfragen zur Aktivierung der Zuhörenden vor.
 
-Verfügbare Themen:
+## Verfügbare Themen:
 
 1.  Object-Oriented Paradigm (OOP) ([@Gabbrielli2023], Kap. 10)
 2.  Functional Programming Paradigm (FP) ([@Gabbrielli2023], Kap. 11)
@@ -45,16 +45,14 @@ Verfügbare Themen:
     -   [IDRIS ---: systems programming meets full dependent
         types](https://dl.acm.org/doi/10.1145/1929529.1929536)
 
-<!--
-Weitere mögliche Themen:
+## Weitere mögliche Themen (nach Absprache):
 
--   Algebraische Effekte und Effekt-Systeme (z. B. Koka), Exceptions vs. Effekte
+-   Algebraische Effekte und Effekt-Systeme (z.B. Koka), Exceptions vs. Effekte
 -   Pattern Matching und Algebraische Datentypen (OCaml/F#/Scala)
 -   Metaprogrammierung und Makros (Lisp/Clojure, Rust macro_rules! und proc-macros)
 -   Gradual Typing (TypeScript, Sorbet), Typklassen und Traits (Haskell/Rust)
--->
 
-Hinweise:
+## Hinweise:
 
 -   *Jede Person* bereitet sich vorab vor; das präsentierende Team moderiert die
     Diskussion
@@ -79,7 +77,7 @@ Thema praktisch anwenden können.
 Bitte achten Sie auf eine präzise Begriffsbildung und den Einordnung in den Stand
 der Forschung/Praxis. Erstellen Sie eigene Beispiele und ggf. kurze Demos.
 
-Verfügbare Themen:
+## Verfügbare Themen:
 
 1.  Parsergeneratoren ([ANTLR](https://www.antlr.org/),
     [Tree-Sitter](http://tree-sitter.github.io/tree-sitter/), Flex & Bison, ...)
@@ -112,8 +110,7 @@ Verfügbare Themen:
     -   [AST vs. Bytecode: Interpreters in the Age of
         Meta-Compilation](https://dl.acm.org/doi/abs/10.1145/3622808)
 
-<!--
-Weitere mögliche Themen:
+## Weitere mögliche Themen (nach Absprache):
 
 -   Fehlertolerantes Parsen und Diagnosequalität (Error Recovery, präzise
     Fehlermeldungen)
@@ -134,9 +131,8 @@ Weitere mögliche Themen:
     -   [Tiny Unified Runner N' Tester (Turnt)](https://github.com/cucapra/turnt)
     -   [Testing Language
         Implementations](https://youtu.be/ZJUk8_k1HbY?si=Mis0l6M07vbI8Rqx)
--->
 
-Empfohlene weitere Referenzen (allgemein):
+## Empfohlene weitere Referenzen (allgemein):
 
 -   @Nystrom2021
 -   @Torczon2012
@@ -148,17 +144,17 @@ Diskussion ein.
 
 # Zwei Vorträge zum Projekt
 
-1.  Edmonton-/Minden-Meeting (Mo, 30.11., 17-18 Uhr, EN)
+1.  **Edmonton-/Minden-Meeting (Termin 2)** (Mo, 30.11., 17-18 Uhr, EN)
     -   Dauer: ca. 40-45 Minuten pro Team, parallel in Breakout-Gruppen
     -   Ziel: Vorstellung von Idee, Problemstellung, Architektur/Design,
         MVP/Prototyp-Status, Risiken und Evaluationsplan
     -   Publikum: Kanadische Studierende; bitte auf klare
         "Problem-Ansatz-Nutzen"-Struktur achten
-    -   Sprache: Englisch
+    -   Sprache: **Englisch**
 
 \smallskip
 
-2.  Abschlusspräsentation (Fr, 29.01., DE)
+2.  **Abschlusspräsentation** (Fr, 29.01., DE)
     -   Dauer: ca. 30 Minuten pro Team (Vorlesungs- und Praktikumsslot)
     -   Ziel: Ergebnisse, Demos, Evaluation, Lessons Learned, Ausblick
 
