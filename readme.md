@@ -90,7 +90,7 @@ als *reguläre Vorlesung* (BC). **Zugangsdaten Zoom siehe
 ### **Studienleistung**: "Portfolio" - Kriterien je Person:
 
 1.  **Projekt-Pitch** (Vorstellung der Konzepte für das DSL-Projekt): Freitag,
-    20.11., ca. 20 Minuten (pro Team); **Exposé** bis zum 19.11.
+    20.11., ca. 20 Minuten (pro Team); **Exposé** (s.u.) bis zum 19.11.
 2.  Teilnahme an **mind. zwei Edmonton/Minden-Terminen** mit aktiver Beteiligung,
     pro Team ist am zweiten Treffen ein Vortrag zum DSL-Projekt ca. 45 Minuten zu
     halten (Englisch!)
@@ -123,6 +123,24 @@ mündliche Prüfung wird über Zoom durchgeführt und dauert ca. 45 Minuten.
 -   Das Lerntagebuch ist individuell zu erstellen und abzugeben
 -   "Aktive Beteiligung" umfasst Anwesenheit und sachbezogene Beiträge;
     Anwesenheit/Beteiligung werden dokumentiert
+
+\smallskip
+
+-   **Exposé** (pro Team)
+
+    -   Umfang: 150-400 Wörter
+    -   Struktur:
+        1.  Was wollt ihr machen?
+        2.  Warum ist das spannend?
+        3.  Wie werdet ihr das umsetzen?
+        4.  Wie könnt ihr euren Erfolg empirisch bewerten?
+        5.  Wer ist alles im Team?
+
+    Bitte beschreiben Sie die einzelnen Punkte so ausführlich wie nötig, um
+    nachvollziehbar zu sein.
+
+    Abgabe als PDF im [ILIAS](https://www.hsbi.de/elearning/goto.php/exc/1738006),
+    spätestens einen Tag vor der internen Projektvorstellung.
 
 \smallskip
 

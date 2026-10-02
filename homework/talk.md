@@ -1,26 +1,8 @@
 ---
 author: BC George, Carsten Gips (HSBI)
 no_beamer: true
-title: "Seminaristischer Unterricht: Vorträge zu Programmiersprachen und
-  Compilerbau"
+title: "Seminaristischer Unterricht: Vortragsthemen Kurzvortrag/Fachvortrag"
 ---
-
-::: tldr
-In diesem Semester sind mehrere Vorträge Teil der Prüfungsleistung. Pro Team sind zu
-halten:
-
--   ein **Kurzvortrag** (ca. 20 Minuten) zu einem Thema aus dem Bereich
-    Programmiersprachen/-konzepte,
--   ein **Fachvortrag** (ca. 60 Minuten) zu einem Compiler-Thema,
--   zwei **Projektvorträge** (einmal im Edmonton-/Minden-Meeting, einmal zum
-    Semesterende).
-
-Alle Vorträge richten sich an Master-Studierende und sollen fachlich fundiert, klar
-strukturiert und mit nachvollziehbaren Beispielen unterlegt sein. Bitte planen Sie
-aktivierende Elemente (Diskussionsfragen, kurze Demos) ein.
-
-Die zeitliche Verteilung entnehmen Sie bitte dem [Fahrplan](../readme.md).
-:::
 
 # Kurzvortrag "PL Feature" (ca. 20 Minuten, DE)
 
@@ -32,7 +14,7 @@ Alle Teams haben die Literatur zu den Kurzvorträgen zumindest grob überflogen.
 vortragende Team leitet die an den Vortrag anschließende Diskussion und bereitet 2-4
 gezielte Diskussionsfragen zur Aktivierung der Zuhörenden vor.
 
-## Verfügbare Themen:
+## Verfügbare Themen
 
 1.  Object-Oriented Paradigm (OOP) ([@Gabbrielli2023], Kap. 10)
 2.  Functional Programming Paradigm (FP) ([@Gabbrielli2023], Kap. 11)
@@ -45,14 +27,14 @@ gezielte Diskussionsfragen zur Aktivierung der Zuhörenden vor.
     -   [IDRIS ---: systems programming meets full dependent
         types](https://dl.acm.org/doi/10.1145/1929529.1929536)
 
-## Weitere mögliche Themen (nach Absprache):
+## Weitere mögliche Themen (nach Absprache)
 
 -   Algebraische Effekte und Effekt-Systeme (z.B. Koka), Exceptions vs. Effekte
 -   Pattern Matching und Algebraische Datentypen (OCaml/F#/Scala)
 -   Metaprogrammierung und Makros (Lisp/Clojure, Rust macro_rules! und proc-macros)
 -   Gradual Typing (TypeScript, Sorbet), Typklassen und Traits (Haskell/Rust)
 
-## Hinweise:
+## Hinweise
 
 -   *Jede Person* bereitet sich vorab vor; das präsentierende Team moderiert die
     Diskussion
@@ -61,12 +43,6 @@ gezielte Diskussionsfragen zur Aktivierung der Zuhörenden vor.
 -   Empfohlen: Zwei bis drei gut kuratierte Codebeispiele (live oder als Snippets),
     Vorbereitung von einigen Diskussionsfragen
 -   Vortragssprache ist Deutsch
-
-## Empfohlene weitere Referenzen (allgemein):
-
--   @Gabbrielli2023
--   @PLAI2025
--   @Thain2020
 
 # Fachvortrag "Compiler" (ca. 60 Minuten + 10 Minuten Q&A, DE)
 
@@ -77,7 +53,7 @@ Thema praktisch anwenden können.
 Bitte achten Sie auf eine präzise Begriffsbildung und den Einordnung in den Stand
 der Forschung/Praxis. Erstellen Sie eigene Beispiele und ggf. kurze Demos.
 
-## Verfügbare Themen:
+## Verfügbare Themen
 
 1.  Parsergeneratoren ([ANTLR](https://www.antlr.org/),
     [Tree-Sitter](http://tree-sitter.github.io/tree-sitter/), Flex & Bison, ...)
@@ -110,7 +86,7 @@ der Forschung/Praxis. Erstellen Sie eigene Beispiele und ggf. kurze Demos.
     -   [AST vs. Bytecode: Interpreters in the Age of
         Meta-Compilation](https://dl.acm.org/doi/abs/10.1145/3622808)
 
-## Weitere mögliche Themen (nach Absprache):
+## Weitere mögliche Themen (nach Absprache)
 
 -   Fehlertolerantes Parsen und Diagnosequalität (Error Recovery, präzise
     Fehlermeldungen)
@@ -132,33 +108,7 @@ der Forschung/Praxis. Erstellen Sie eigene Beispiele und ggf. kurze Demos.
     -   [Testing Language
         Implementations](https://youtu.be/ZJUk8_k1HbY?si=Mis0l6M07vbI8Rqx)
 
-## Empfohlene weitere Referenzen (allgemein):
-
--   @Nystrom2021
--   @Torczon2012
--   @Thain2020
--   @Pierce2002
+## Hinweise
 
 Planen Sie im Anschluss an den 60-minütigen Vortrag ca. 10 Minuten Q&A und
 Diskussion ein.
-
-# Zwei Vorträge zum Projekt
-
-1.  Projektvortrag 1: **Edmonton-/Minden-Meeting (Termin 2)**
-    -   Dauer: ca. 40-45 Minuten pro Team, parallel in Breakout-Gruppen
-    -   Ziel: Vorstellung von Idee, Problemstellung, Architektur/Design,
-        MVP/Prototyp-Status, Risiken und Evaluationsplan
-    -   Publikum: Kanadische Studierende; bitte auf klare
-        "Problem-Ansatz-Nutzen"-Struktur achten
-    -   Sprache: **Englisch**
-
-\smallskip
-
-2.  Projektvortrag 2: **Abschlusspräsentation**
-    -   Dauer: ca. 30 Minuten pro Team (Vorlesungs- und Praktikumsslot)
-    -   Ziel: Ergebnisse, Demos, Evaluation, Lessons Learned, Ausblick
-
-\bigskip
-
-Siehe auch [Beschreibung zum Projekt](project.md). Die zeitliche Verteilung
-entnehmen Sie bitte dem [Fahrplan](../readme.md).
