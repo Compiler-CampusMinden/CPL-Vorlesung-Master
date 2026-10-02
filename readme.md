@@ -121,11 +121,13 @@ mündliche Prüfung wird über Zoom durchgeführt und dauert ca. 45 Minuten.
 
 ### Hinweise
 
--   Die Bearbeitung der Leistungen erfolgt im Team
--   Ein Team umfasst 3 Personen
--   Das Lerntagebuch ist individuell zu erstellen und abzugeben
+-   Die Bearbeitung der Leistungen erfolgt im Team.
+-   Ein Team umfasst 3 Personen.
+-   Es gibt keine Aufgabenblätter. Stattdessen haben wir verschiedene Vorträge und
+    das DSL-Projekt.
+-   Das Lerntagebuch ist individuell zu erstellen und abzugeben.
 -   "Aktive Beteiligung" umfasst Anwesenheit und sachbezogene Beiträge;
-    Anwesenheit/Beteiligung werden dokumentiert
+    Anwesenheit/Beteiligung werden dokumentiert.
 
 \smallskip
 
