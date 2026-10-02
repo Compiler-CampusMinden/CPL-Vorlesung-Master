@@ -87,7 +87,7 @@ als *reguläre Vorlesung* (BC). **Zugangsdaten Zoom siehe
 
 **Mündliche Prüfung plus Studienleistung (Portfolio)**, 10 ECTS
 
-### **Studienleistung**: "Portfolio":
+### **Studienleistung**: "Portfolio"
 
 Die Studienleistung ist eine unbenotete Leistung und setzt sich aus mehreren
 Komponenten zusammen:
@@ -115,6 +115,8 @@ Abschlusspräsentation) und das Lerntagebuch sind im
 Bitte beachtet die jeweiligen Abgabefristen im ILIAS!
 
 ### **Gesamtnote**: Mündliche Prüfung (einzeln, ca. 45 Minuten)
+
+Die Modul-Note ergibt sich aus der Leistung in der mündlichen Prüfung.
 
 Sie können die Prüfung in der ersten oder in der zweiten Prüfungsphase ablegen. Die
 mündliche Prüfung wird über Zoom durchgeführt und dauert ca. 45 Minuten.
