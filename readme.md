@@ -87,7 +87,10 @@ als *reguläre Vorlesung* (BC). **Zugangsdaten Zoom siehe
 
 **Mündliche Prüfung plus Studienleistung (Portfolio)**, 10 ECTS
 
-### **Studienleistung**: "Portfolio" - Kriterien je Person:
+### **Studienleistung**: "Portfolio":
+
+Die Studienleistung ist eine unbenotete Leistung und setzt sich aus mehreren
+Komponenten zusammen:
 
 1.  **Projekt-Pitch** (Vorstellung der Konzepte für das DSL-Projekt): Freitag,
     20.11., ca. 20 Minuten (pro Team); **Exposé** (s.u.) bis zum 19.11.
