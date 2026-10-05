@@ -24,7 +24,8 @@ besonders häufige Typos abfangen.
 :::
 
 ::: youtube
--   [VL Handcodierte Lexer](https://youtu.be/N0WJQ4UkXkM)
+Vorlesung \[[YT](https://youtu.be/uUVEtKqqkqQ)\],
+\[[HSBI](https://www.hsbi.de/medienportal/album/video/cpl-lexer-handcodierte-implementierung/7451fe5237190e44817c3243b13b1ac7/254)\]
 :::
 
 # Lexer: Erzeugen eines Token-Stroms aus einem Zeichenstrom
@@ -252,7 +253,7 @@ Interpunktions-Token) kann man sich das Attribut auch sparen, da das Lexem durch
 Tokennamen eindeutig rekonstruierbar ist.
 
 | Token     | Beschreibung                                         | Beispiel-Lexeme      |
-|:---------------|:----------------------------------------------|:---------------------|
+|:----------------|:---------------------------------------------|:---------------------|
 | `if`      | Zeichen `i` und `f`                                  | `if`                 |
 | `relop`   | `<` oder `>` oder `<=` oder `>=` oder `==` oder `!=` | `<`, `<=`            |
 | `id`      | Buchstabe, gefolgt von Buchstaben oder Ziffern       | `pi`, `count`, `x3`  |
