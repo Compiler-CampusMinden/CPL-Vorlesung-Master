@@ -34,7 +34,8 @@ tokenweisen Verarbeitung.
 :::
 
 ::: youtube
--   [VL LL-Parser selbst implementiert](https://youtu.be/3djLtMtW82k)
+Vorlesung \[[YT](https://youtu.be/p8yFdXhaDyg)\],
+\[[HSBI](https://www.hsbi.de/medienportal/album/video/cpl-ll-parser-selbst-implementiert/6928d27b9f8d43287b445766dd30a3ba/254)\]
 :::
 
 # Erinnerung Lexer: Zeichenstrom =\> Tokenstrom
