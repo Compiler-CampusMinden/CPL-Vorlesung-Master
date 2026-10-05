@@ -10,7 +10,7 @@ Ergebnisse:
 ![](images/architektur_cb.png){width="60%"}
 
 |  | Phase | Ergebnis |
-|:-------|:--------------------------|:------------------------------------------------|
+|:----------|:--------------------------|:---------------------------------------------|
 | 0 | Lexer/Parser | AST |
 | 1 | Semantische Analyse, Def-Phase | Symboltabelle (Definitionen), Verknüpfung Scopes mit AST-Knoten |
 | 2 | Semantische Analyse, Ref-Phase | Prüfung auf nicht definierte Referenzen |
@@ -39,7 +39,8 @@ Klassen](astdriven-part2.md) betrachten.
 :::
 
 ::: youtube
--   [VL Syntaxgesteuerte Interpreter](https://youtu.be/s5wvvoYsxe4)
+Vorlesung \[[YT](https://youtu.be/7G_oDNZmZx8)\],
+\[[HSBI](https://www.hsbi.de/medienportal/album/video/cpl-syntaxgesteuerte-interpreter/593c59c84cbb2fe3bf8878b0a28b35fa/254)\]
 :::
 
 # Überblick Interpreter
