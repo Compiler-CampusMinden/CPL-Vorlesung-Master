@@ -34,7 +34,8 @@ Zugriff definieren, muss man dieses Verhalten entsprechend anpassen.
 :::
 
 ::: youtube
--   [VL AST-basierte Interpreter (Basics)](https://youtu.be/lupQ0f3Tp7A)
+Vorlesung \[[YT](https://youtu.be/zwD1QolJa3M)\],
+\[[HSBI](https://www.hsbi.de/medienportal/album/video/cpl-ast-basierte-interpreter1-basics/c09c15d33e293a6430746ac60f57585b/254)\]
 :::
 
 # Aufgaben im Interpreter
