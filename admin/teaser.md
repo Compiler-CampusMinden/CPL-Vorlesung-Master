@@ -4,8 +4,9 @@ title: Modulvorstellung CPL (Concepts of Programming Languages)
 ---
 
 ::: youtube
-[Modulvorstellung CPL (Concepts of Programming
-Languages)](https://youtu.be/rpbaSy2iy00)
+Modulvorstellung CPL (Concepts of Programming Languages)
+\[[YT](https://youtu.be/wRVf1gKK8NU)\],
+\[[HSBI](https://www.hsbi.de/medienportal/album/video/cpl-modulvorstellung/93c69d15f5ef3fea02794bbacb98acd0/254)\]
 :::
 
 # Sprachen verstehen, (formale) Texte transformieren
