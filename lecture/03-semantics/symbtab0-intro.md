@@ -19,7 +19,8 @@ benutzt.
 :::
 
 ::: youtube
--   [VL Symboltabellen (Intro)](https://youtu.be/5637iNH0wWk)
+Vorlesung \[[YT](https://youtu.be/ZuTl8cuG0BA)\],
+\[[HSBI](https://www.hsbi.de/medienportal/album/video/cpl-symbtab0-berblick-symboltabellen/a68a24ee485352900f89916ebf20f5d1/254)\]
 :::
 
 # Was passiert nach der Syntaxanalyse?
