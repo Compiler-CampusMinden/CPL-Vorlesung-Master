@@ -20,7 +20,8 @@ verschiedene Stufen zusammengefasst werden oder sogar gar nicht auftreten.
 :::
 
 ::: youtube
--   [VL Überblick](https://youtu.be/zpELDC_3G7Q)
+Vorlesung \[[YT](https://youtu.be/bFFvdMDvhYQ)\],
+\[[HSBI](https://www.hsbi.de/medienportal/album/video/cpl-struktur-eines-compilers/72b12f8f1e84ea7980179adb5d067ac2/254)\]
 :::
 
 # Sprachen verstehen, Texte transformieren
