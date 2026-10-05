@@ -42,8 +42,8 @@ verweisen.
 :::
 
 ::: youtube
--   [VL AST-basierte Interpreter (Funktionen,
-    Klassen)](https://youtu.be/LTqk7ifB-V0)
+Vorlesung \[[YT](https://youtu.be/LFOwo6tclC8)\],
+\[[HSBI](https://www.hsbi.de/medienportal/album/video/cpl-ast-basierte-interpreter2-funktionen-und-klassen/6121693c3874442ee84a0a4bf0b5c455/254)\]
 :::
 
 # Funktionen
