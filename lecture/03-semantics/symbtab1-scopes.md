@@ -16,7 +16,8 @@ Bezeichnern aus dem aktuellen Scope oder den Elternscopes unterstützen =\>
 :::
 
 ::: youtube
--   [VL Nested Scopes](https://youtu.be/CdM1gvsi6P0)
+Vorlesung \[[YT](https://youtu.be/W2BJqSuGh3g)\],
+\[[HSBI](https://www.hsbi.de/medienportal/album/video/cpl-symbtab1-nested-scopes/0b1b9519ca20436309120bc6fb8ce84c/254)\]
 :::
 
 ::: notes
