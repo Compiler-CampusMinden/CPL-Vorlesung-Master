@@ -14,7 +14,8 @@ das Auflösen von Symbolen erweitert werden.
 :::
 
 ::: youtube
--   [VL Funktionen](https://youtu.be/yk2x6WGhgVg)
+Vorlesung \[[YT](https://youtu.be/2eVsgOwfoXw)\],
+\[[HSBI](https://www.hsbi.de/medienportal/album/video/cpl-symbtab2-funktionen/47fb53a87c68a0973f40876c83e99ede/254)\]
 :::
 
 # Funktionen und Scopes
