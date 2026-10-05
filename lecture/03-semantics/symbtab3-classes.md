@@ -13,7 +13,8 @@ hier Vererbungshierarchien in der Struktur der Symboltabelle berücksichtigt wer
 :::
 
 ::: youtube
--   [VL Strukturen und Klassen](https://youtu.be/-w9ljeFGq3k)
+Vorlesung \[[YT](https://youtu.be/GQj76LlTAzY)\],
+\[[HSBI](https://www.hsbi.de/medienportal/album/video/cpl-symbtab3-strukturen-und-klassen/22592c83b6275e326ba611778cf39916/254)\]
 :::
 
 # Strukturen
