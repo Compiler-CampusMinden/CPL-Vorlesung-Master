@@ -171,7 +171,7 @@ nolist="true"}
 ``` python
 class Scope:
     Scope enclosingScope    # None if global (outermost) scope
-    Symbol<String, Symbol> symbols
+    Map<String, Symbol> symbols
 
     def resolve(name):
         # do we know "name" here?
